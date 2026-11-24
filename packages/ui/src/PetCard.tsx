@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import type { AtlasSpec, ElementDef, PetSummary } from "@pokepet/core";
 import type { LinkComponent } from "./link.ts";
 import { Sprite } from "./Sprite.tsx";
@@ -13,10 +13,12 @@ export interface PetCardProps {
   href: string;
   Link: LinkComponent;
   numberLabel: string;
+  /** Optional marker in the top-right corner (the app shows "Adopted"). */
+  badge?: ReactNode;
 }
 
 /** Grid card: still frame at rest, plays the idle row on hover or keyboard focus. */
-export function PetCard({ pet, atlas, elements, spriteUrl, href, Link, numberLabel }: PetCardProps) {
+export function PetCard({ pet, atlas, elements, spriteUrl, href, Link, numberLabel, badge }: PetCardProps) {
   const [active, setActive] = useState(false);
   return (
     <div
@@ -30,6 +32,7 @@ export function PetCard({ pet, atlas, elements, spriteUrl, href, Link, numberLab
         <span className="pp-card-num">
           {numberLabel} {String(pet.number).padStart(3, "0")}
         </span>
+        {badge && <span className="pp-card-badge">{badge}</span>}
         <Sprite src={spriteUrl} atlas={atlas} playing={active} scale={0.6} lazy label={pet.name} className="pp-card-sprite" />
         <span className="pp-card-name">{pet.name}</span>
         <span className="pp-card-els">

@@ -1,10 +1,10 @@
 import { invoke, isTauri } from "@tauri-apps/api/core";
-import type { PackManifest } from "@pokepet/core";
-import { createSpritePlayer } from "@pokepet/sprite-engine";
+import { growthOf, pickEvolution, type EvolutionIndex, type PackManifest, type PetSummary } from "@pokepet/core";
+import { createSpritePlayer, type SpritePlayer } from "@pokepet/sprite-engine";
+import { activePet, store, type Collection } from "../shared/store.ts";
 import { Behaviour } from "./behaviour.ts";
 
 const PACK = "pokemon";
-const DEFAULT_PET = "bulbasaur";
 /** Size of the pet relative to its 192×208 sprite cell. */
 const SCALE = 0.5;
 /** Part of the sprite cell that counts as "the pet" for the mouse (cells have some empty margin). */
@@ -21,22 +21,60 @@ const captureMouse = (on: boolean) => void call("set_capture", { on });
 async function start() {
   const el = document.getElementById("pet")!;
   const hint = document.getElementById("hint")!;
-  const pet = new URLSearchParams(location.search).get("pet") ?? localStorage.getItem("pet") ?? DEFAULT_PET;
+  const spriteEl = document.getElementById("sprite")!;
+  const say = document.getElementById("say")!;
 
-  const manifest = (await fetch(`/packs/${PACK}/pack.json`).then((r) => r.json())) as PackManifest;
+  const load = <T,>(path: string) => fetch(`/packs/${PACK}/${path}`).then((r) => r.json() as Promise<T>);
+  const [manifest, evolution, pets] = await Promise.all([
+    load<PackManifest>("pack.json"),
+    load<EvolutionIndex>("data/evolution.json"),
+    load<PetSummary[]>("data/index.json"),
+  ]);
+  const nameOf = (slug: string) => pets.find((p) => p.slug === slug)?.name ?? slug;
   const { atlas } = manifest;
   const petW = atlas.cellWidth * SCALE;
   const petH = atlas.cellHeight * SCALE;
 
+  // ---- which pet is on screen: the active one in the collection ---------------
   // The player animates and flips the inner element. The outer one is what we move,
   // so flipping happens in place instead of around the screen's left edge.
-  const player = createSpritePlayer(document.getElementById("sprite")!, {
-    atlas,
-    src: `/packs/${PACK}/pets/${pet}/spritesheet.webp`,
-    animation: "idle",
-    scale: SCALE,
-    autoplay: true,
-  });
+  let player: SpritePlayer | null = null;
+  let species: string | null = null;
+  // This window is always running, so it is the one that evolves the pet on screen once
+  // it has spent enough time there. The native side owns the clock; we just watch it tick.
+  let evolving: string | null = null;
+  const maybeEvolve = (c: Collection) => {
+    const pet = activePet(c);
+    if (!pet || evolving === pet.id) return;
+    const growth = growthOf(pet.onScreenMs, evolution[pet.species]);
+    const into = growth.ready ? pickEvolution(growth.next) : undefined;
+    if (!into) return;
+    evolving = pet.id;
+    store.evolve(pet.id, into).finally(() => (evolving = null));
+  };
+
+  const drawPet = (c: Collection) => {
+    const next = activePet(c)?.species ?? null;
+    if (next === species) return;
+    species = next;
+    player?.destroy();
+    player = null;
+    el.style.display = species ? "" : "none";
+    if (!species) return;
+    player = createSpritePlayer(spriteEl, {
+      atlas,
+      src: `/packs/${PACK}/pets/${species}/spritesheet.webp`,
+      animation: "idle",
+      scale: SCALE,
+      autoplay: true,
+    });
+    brain.poke(); // a little hello when a pet arrives
+  };
+  // Draw first, then evolve: evolving triggers a fresh update, which must land after this one.
+  const show = (c: Collection) => {
+    drawPet(c);
+    maybeEvolve(c);
+  };
   const savedX = Number(localStorage.getItem("petX"));
   const brain = new Behaviour({
     atlas,
@@ -47,6 +85,21 @@ async function start() {
     startX: Number.isFinite(savedX) && localStorage.getItem("petX") !== null ? savedX : undefined,
   });
   addEventListener("resize", () => brain.resize(innerWidth, innerHeight));
+  // Listen before the first load, so a pet that evolves straight away isn't missed.
+  store.subscribe(show);
+
+  // ---- evolution celebration: a bright flash and a speech bubble ----------------
+  let sayTimer = 0;
+  store.onEvolved((e) => {
+    spriteEl.classList.remove("evolving");
+    void spriteEl.offsetWidth; // restart the animation
+    spriteEl.classList.add("evolving");
+    say.querySelector("span")!.textContent = `${nameOf(e.from)} evolved into ${nameOf(e.to)}!`;
+    document.body.classList.add("saying");
+    clearTimeout(sayTimer);
+    sayTimer = window.setTimeout(() => document.body.classList.remove("saying"), 6000);
+  });
+  show(await store.get());
 
   // ---- picking a spot (after a right click) ----------------------------------
   let ignoreNextContextMenu = false;
@@ -121,22 +174,25 @@ async function start() {
     document.body.classList.remove("carrying");
     captureMouse(false);
   };
+  el.addEventListener("dblclick", () => void store.openManager());
   el.addEventListener("pointerup", release);
   el.addEventListener("pointercancel", release);
   el.addEventListener("lostpointercapture", release);
 
   // ---- tell the native side where the pet is, so only the pet catches the mouse ----
-  let sent = { x: NaN, y: NaN, at: 0 };
+  let sent = { x: NaN, y: NaN, visible: false, at: 0 };
   const sendHitbox = (x: number, y: number, now: number) => {
     if (!native) return;
-    const moved = Math.abs(x - sent.x) >= 1 || Math.abs(y - sent.y) >= 1;
+    const visible = species !== null;
+    const moved = Math.abs(x - sent.x) >= 1 || Math.abs(y - sent.y) >= 1 || visible !== sent.visible;
     if ((!moved && now - sent.at < 500) || now - sent.at < 30) return;
-    sent = { x, y, at: now };
+    sent = { x, y, visible, at: now };
+    // With no pet on screen the box is empty, so every click passes through.
     void invoke("set_hitbox", {
       x: x + petW * HIT_INSET.left,
       y: y + petH * HIT_INSET.top,
-      w: petW * (1 - HIT_INSET.left - HIT_INSET.right),
-      h: petH * (1 - HIT_INSET.top - HIT_INSET.bottom),
+      w: visible ? petW * (1 - HIT_INSET.left - HIT_INSET.right) : 0,
+      h: visible ? petH * (1 - HIT_INSET.top - HIT_INSET.bottom) : 0,
     });
   };
 
@@ -147,9 +203,11 @@ async function start() {
     const dt = Math.min(now - last, 100);
     last = now;
     const f = brain.update(dt);
-    if (player.animation !== f.animation) player.play(f.animation);
+    if (player && player.animation !== f.animation) player.play(f.animation);
     el.style.transform = `translate3d(${Math.round(f.x)}px, ${Math.round(f.y)}px, 0)`;
-    hint.style.transform = `translate3d(${Math.round(f.x + petW / 2)}px, ${Math.round(f.y)}px, 0)`;
+    const above = `translate3d(${Math.round(f.x + petW / 2)}px, ${Math.round(f.y)}px, 0)`;
+    hint.style.transform = above;
+    say.style.transform = above;
     sendHitbox(f.x, f.y, now);
     if (now - savedAt > 2000 && (f.mode === "idle" || f.mode === "react")) {
       savedAt = now;

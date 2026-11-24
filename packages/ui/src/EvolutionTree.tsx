@@ -10,6 +10,8 @@ export interface EvolutionTreeProps {
   hrefFor: (slug: string) => string;
   Link: LinkComponent;
   numberLabel: string;
+  /** Text on the arrow into a stage. Defaults to the pack's own conditions (e.g. "Level 16"). */
+  conditionText?: (node: EvolutionNode) => string;
 }
 
 /** Renders a (possibly branching) chain. Stages missing from the pack show as greyed placeholders. */
@@ -53,7 +55,7 @@ function Stage({ node, current, atlas, spriteUrl, hrefFor, Link, numberLabel, ..
           {node.children.map((c) => (
             <div key={c.key} className="pp-evo-edge">
               <div className="pp-evo-arrow">
-                <span className="pp-evo-cond">{c.conditions.join(" · ") || "Evolves"}</span>
+                <span className="pp-evo-cond">{rest.conditionText?.(c) ?? (c.conditions.join(" · ") || "Evolves")}</span>
                 <span aria-hidden="true">→</span>
               </div>
               <Stage node={c} current={current} atlas={atlas} spriteUrl={spriteUrl} hrefFor={hrefFor} Link={Link} numberLabel={numberLabel} {...rest} />

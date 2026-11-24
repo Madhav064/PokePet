@@ -1,0 +1,53 @@
+/* PokePet design tokens and base styles, shared by the website and the desktop app.
+   Import after "tailwindcss": one centered column, quiet surfaces; color only from creature types and one red accent. */
+:root {
+  --pp-bg: #f4f5f7;
+  --pp-surface: #ffffff;
+  --pp-ink: #15171c;
+  --pp-muted: #677083;
+  --pp-line: #e3e6eb;
+  --pp-tile: #eceef2;
+  --pp-accent: #e0483a;
+  --pp-display: "Pixelify Sans", ui-monospace, "Courier New", monospace;
+  --pp-body: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pp-bg: #0e1014;
+    --pp-surface: #16191f;
+    --pp-ink: #eceef2;
+    --pp-muted: #8d95a6;
+    --pp-line: #262a33;
+    --pp-tile: #20242c;
+    --pp-accent: #ff5e4f;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--pp-bg);
+  --color-surface: var(--pp-surface);
+  --color-ink: var(--pp-ink);
+  --color-muted: var(--pp-muted);
+  --color-line: var(--pp-line);
+  --color-tile: var(--pp-tile);
+  --color-accent: var(--pp-accent);
+  --font-display: var(--pp-display);
+  --font-sans: var(--pp-body);
+}
+
+html { background: var(--pp-bg); }
+body { background: var(--pp-bg); color: var(--pp-ink); font-family: var(--pp-body); -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { text-wrap: balance; }
+:focus-visible { outline: 2px solid var(--pp-accent); outline-offset: 2px; }
+::selection { background: color-mix(in oklab, var(--pp-accent) 30%, transparent); }
+
+.container-pp { width: 100%; max-width: 1180px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--pp-line);
+  background: var(--pp-surface); color: var(--pp-muted); font-size: .82rem; font-weight: 500; cursor: pointer; white-space: nowrap; }
+.chip:hover { color: var(--pp-ink); }
+.chip[aria-pressed="true"] { background: var(--pp-ink); border-color: var(--pp-ink); color: var(--pp-surface); }
+.chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--el); }
+.kbd { font-family: ui-monospace, monospace; font-size: .7rem; border: 1px solid var(--pp-line); border-bottom-width: 2px; border-radius: 5px; padding: 1px 5px; color: var(--pp-muted); }

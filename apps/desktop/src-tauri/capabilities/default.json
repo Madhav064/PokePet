@@ -1,7 +1,7 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
-  "description": "Permissions for the pet window",
-  "windows": ["pet"],
+  "description": "Permissions for the pet window and the PokePet window",
+  "windows": ["pet", "manager"],
   "permissions": ["core:default"]
 }
