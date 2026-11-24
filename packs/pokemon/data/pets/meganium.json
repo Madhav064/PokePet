@@ -1,0 +1,157 @@
+{
+  "slug": "meganium",
+  "name": "Meganium",
+  "number": 154,
+  "group": 2,
+  "elements": [
+    "grass"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/meganium/spritesheet.webp",
+  "category": "Herb Pokémon",
+  "description": "Anyone who stands beside it becomes refreshed, just as if they were soaking in the soothing atmosphere of a forest.",
+  "blurb": "Its breath has the fantastic ability to revive dead plants and flowers.",
+  "heightM": 1.8,
+  "weightKg": 100.5,
+  "stats": {
+    "hp": 80,
+    "atk": 82,
+    "def": 100,
+    "spa": 83,
+    "spd": 100,
+    "spe": 80
+  },
+  "abilities": [
+    {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "hidden": false,
+      "effect": "Strengthens Grass moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "leaf-guard",
+      "name": "Leaf Guard",
+      "hidden": true,
+      "effect": "Protects against major status ailments during strong sunlight."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Herb Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "100.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Plant"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "236"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "ice",
+      "poison",
+      "flying",
+      "bug"
+    ],
+    "0.5": [
+      "water",
+      "electric",
+      "grass",
+      "ground"
+    ]
+  },
+  "evolution": {
+    "key": "chikorita",
+    "name": "Chikorita",
+    "number": 152,
+    "slug": "chikorita",
+    "conditions": [],
+    "children": [
+      {
+        "key": "bayleef",
+        "name": "Bayleef",
+        "number": 153,
+        "slug": "bayleef",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "meganium",
+            "name": "Meganium",
+            "number": 154,
+            "slug": "meganium",
+            "conditions": [
+              "Level 32"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "slug": "dragonair",
+  "name": "Dragonair",
+  "number": 148,
+  "group": 1,
+  "elements": [
+    "dragon"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/dragonair/spritesheet.webp",
+  "category": "Dragon Pokémon",
+  "description": "They say that if it emits an aura from its whole body, the weather will begin to change instantly.",
+  "blurb": "If its body takes on an aura, the weather changes instantly. It is said to live in seas and lakes.",
+  "heightM": 4,
+  "weightKg": 16.5,
+  "stats": {
+    "hp": 61,
+    "atk": 84,
+    "def": 65,
+    "spa": 70,
+    "spd": 70,
+    "spe": 70
+  },
+  "abilities": [
+    {
+      "id": "shed-skin",
+      "name": "Shed Skin",
+      "hidden": false,
+      "effect": "Has a 33% chance of curing any major status ailment after each turn."
+    },
+    {
+      "id": "marvel-scale",
+      "name": "Marvel Scale",
+      "hidden": true,
+      "effect": "Increases Defense to 1.5× with a major status ailment."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Dragon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "4.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "16.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "35"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "147"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ice",
+      "dragon",
+      "fairy"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "electric",
+      "grass"
+    ]
+  },
+  "evolution": {
+    "key": "dratini",
+    "name": "Dratini",
+    "number": 147,
+    "slug": "dratini",
+    "conditions": [],
+    "children": [
+      {
+        "key": "dragonair",
+        "name": "Dragonair",
+        "number": 148,
+        "slug": "dragonair",
+        "conditions": [
+          "Level 30"
+        ],
+        "children": [
+          {
+            "key": "dragonite",
+            "name": "Dragonite",
+            "number": 149,
+            "slug": "dragonite",
+            "conditions": [
+              "Level 55"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

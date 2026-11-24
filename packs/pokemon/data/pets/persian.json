@@ -1,0 +1,155 @@
+{
+  "slug": "persian",
+  "name": "Persian",
+  "number": 53,
+  "group": 1,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/persian/spritesheet.webp",
+  "category": "Classy Cat Pokémon",
+  "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
+  "blurb": "A very haughty Pokémon. Among fans, the size of the jewel in its forehead is a topic of much talk.",
+  "heightM": 1,
+  "weightKg": 32,
+  "stats": {
+    "hp": 65,
+    "atk": 70,
+    "def": 60,
+    "spa": 65,
+    "spd": 65,
+    "spe": 115
+  },
+  "abilities": [
+    {
+      "id": "limber",
+      "name": "Limber",
+      "hidden": false,
+      "effect": "Prevents paralysis."
+    },
+    {
+      "id": "technician",
+      "name": "Technician",
+      "hidden": false,
+      "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+    },
+    {
+      "id": "unnerve",
+      "name": "Unnerve",
+      "hidden": true,
+      "effect": "Prevents opposing Pokémon from eating held Berries."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Classy Cat Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "32.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "90"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "154"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "meowth",
+    "name": "Meowth",
+    "number": 52,
+    "slug": "meowth",
+    "conditions": [],
+    "children": [
+      {
+        "key": "persian",
+        "name": "Persian",
+        "number": 53,
+        "slug": "persian",
+        "conditions": [
+          "Level 28",
+          "High friendship"
+        ],
+        "children": []
+      },
+      {
+        "key": "perrserker",
+        "name": "Perrserker",
+        "number": 863,
+        "conditions": [
+          "Level 28"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

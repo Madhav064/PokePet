@@ -1,0 +1,169 @@
+{
+  "slug": "hitmontop",
+  "name": "Hitmontop",
+  "number": 237,
+  "group": 2,
+  "elements": [
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/hitmontop/spritesheet.webp",
+  "category": "Handstand Pokémon",
+  "description": "This Pokémon is adept at dance-like kicks. The horn atop its head is made from the same substance that generally forms fur and claws.",
+  "blurb": "It fights while spinning like a top. The centrifugal force boosts its destructive power by ten.",
+  "heightM": 1.4,
+  "weightKg": 48,
+  "stats": {
+    "hp": 50,
+    "atk": 95,
+    "def": 95,
+    "spa": 35,
+    "spd": 110,
+    "spe": 70
+  },
+  "abilities": [
+    {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "hidden": false,
+      "effect": "Lowers opponents' Attack one stage upon entering battle."
+    },
+    {
+      "id": "technician",
+      "name": "Technician",
+      "hidden": false,
+      "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+    },
+    {
+      "id": "steadfast",
+      "name": "Steadfast",
+      "hidden": true,
+      "effect": "Raises Speed one stage upon flinching."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Handstand Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "48.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "100% ♂ · 0% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "159"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "flying",
+      "psychic",
+      "fairy"
+    ],
+    "0.5": [
+      "bug",
+      "rock",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "tyrogue",
+    "name": "Tyrogue",
+    "number": 236,
+    "slug": "tyrogue",
+    "conditions": [],
+    "children": [
+      {
+        "key": "hitmonlee",
+        "name": "Hitmonlee",
+        "number": 106,
+        "slug": "hitmonlee",
+        "conditions": [
+          "Level 20, Attack > Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmonchan",
+        "name": "Hitmonchan",
+        "number": 107,
+        "slug": "hitmonchan",
+        "conditions": [
+          "Level 20, Attack < Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmontop",
+        "name": "Hitmontop",
+        "number": 237,
+        "slug": "hitmontop",
+        "conditions": [
+          "Level 20, Attack = Defense"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

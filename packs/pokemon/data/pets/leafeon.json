@@ -1,0 +1,216 @@
+{
+  "slug": "leafeon",
+  "name": "Leafeon",
+  "number": 470,
+  "group": 4,
+  "elements": [
+    "grass"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/leafeon/spritesheet.webp",
+  "category": "Verdant Pokémon",
+  "description": "When you see Leafeon asleep in a patch of sunshine, you’ll know it is using photosynthesis to produce clean air.",
+  "blurb": "It basically does not fight. With cells similar to those of plants, it can perform photosynthesis.",
+  "heightM": 1,
+  "weightKg": 25.5,
+  "stats": {
+    "hp": 65,
+    "atk": 110,
+    "def": 130,
+    "spa": 60,
+    "spd": 65,
+    "spe": 95
+  },
+  "abilities": [
+    {
+      "id": "leaf-guard",
+      "name": "Leaf Guard",
+      "hidden": false,
+      "effect": "Protects against major status ailments during strong sunlight."
+    },
+    {
+      "id": "chlorophyll",
+      "name": "Chlorophyll",
+      "hidden": true,
+      "effect": "Doubles Speed during strong sunlight."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Verdant Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "25.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "35"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "35"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "184"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "ice",
+      "poison",
+      "flying",
+      "bug"
+    ],
+    "0.5": [
+      "water",
+      "electric",
+      "grass",
+      "ground"
+    ]
+  },
+  "evolution": {
+    "key": "eevee",
+    "name": "Eevee",
+    "number": 133,
+    "slug": "eevee",
+    "conditions": [],
+    "children": [
+      {
+        "key": "vaporeon",
+        "name": "Vaporeon",
+        "number": 134,
+        "slug": "vaporeon",
+        "conditions": [
+          "Use Water Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "jolteon",
+        "name": "Jolteon",
+        "number": 135,
+        "slug": "jolteon",
+        "conditions": [
+          "Use Thunder Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "flareon",
+        "name": "Flareon",
+        "number": 136,
+        "slug": "flareon",
+        "conditions": [
+          "Use Fire Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "espeon",
+        "name": "Espeon",
+        "number": 196,
+        "slug": "espeon",
+        "conditions": [
+          "High friendship, during the day"
+        ],
+        "children": []
+      },
+      {
+        "key": "umbreon",
+        "name": "Umbreon",
+        "number": 197,
+        "slug": "umbreon",
+        "conditions": [
+          "High friendship, at night"
+        ],
+        "children": []
+      },
+      {
+        "key": "leafeon",
+        "name": "Leafeon",
+        "number": 470,
+        "slug": "leafeon",
+        "conditions": [
+          "Use Leaf Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "glaceon",
+        "name": "Glaceon",
+        "number": 471,
+        "slug": "glaceon",
+        "conditions": [
+          "Use Ice Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "sylveon",
+        "name": "Sylveon",
+        "number": 700,
+        "conditions": [
+          "High affection, knowing a Fairy move",
+          "High friendship, knowing a Fairy move"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

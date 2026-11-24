@@ -1,0 +1,211 @@
+{
+  "slug": "jolteon",
+  "name": "Jolteon",
+  "number": 135,
+  "group": 1,
+  "elements": [
+    "electric"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/jolteon/spritesheet.webp",
+  "category": "Lightning Pokémon",
+  "description": "It concentrates the weak electric charges emitted by its cells and launches wicked lightning bolts.",
+  "blurb": "If agitated, it uses electricity to straighten out its fur and launch it in small bunches.",
+  "heightM": 0.8,
+  "weightKg": 24.5,
+  "stats": {
+    "hp": 65,
+    "atk": 65,
+    "def": 60,
+    "spa": 110,
+    "spd": 95,
+    "spe": 130
+  },
+  "abilities": [
+    {
+      "id": "volt-absorb",
+      "name": "Volt Absorb",
+      "hidden": false,
+      "effect": "Absorbs Electric moves, healing for 1/4 max HP."
+    },
+    {
+      "id": "quick-feet",
+      "name": "Quick Feet",
+      "hidden": true,
+      "effect": "Increases Speed to 1.5× with a major status ailment."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Lightning Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "24.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "35"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "184"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ground"
+    ],
+    "0.5": [
+      "electric",
+      "flying",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "eevee",
+    "name": "Eevee",
+    "number": 133,
+    "slug": "eevee",
+    "conditions": [],
+    "children": [
+      {
+        "key": "vaporeon",
+        "name": "Vaporeon",
+        "number": 134,
+        "slug": "vaporeon",
+        "conditions": [
+          "Use Water Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "jolteon",
+        "name": "Jolteon",
+        "number": 135,
+        "slug": "jolteon",
+        "conditions": [
+          "Use Thunder Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "flareon",
+        "name": "Flareon",
+        "number": 136,
+        "slug": "flareon",
+        "conditions": [
+          "Use Fire Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "espeon",
+        "name": "Espeon",
+        "number": 196,
+        "slug": "espeon",
+        "conditions": [
+          "High friendship, during the day"
+        ],
+        "children": []
+      },
+      {
+        "key": "umbreon",
+        "name": "Umbreon",
+        "number": 197,
+        "slug": "umbreon",
+        "conditions": [
+          "High friendship, at night"
+        ],
+        "children": []
+      },
+      {
+        "key": "leafeon",
+        "name": "Leafeon",
+        "number": 470,
+        "slug": "leafeon",
+        "conditions": [
+          "Use Leaf Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "glaceon",
+        "name": "Glaceon",
+        "number": 471,
+        "slug": "glaceon",
+        "conditions": [
+          "Use Ice Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "sylveon",
+        "name": "Sylveon",
+        "number": 700,
+        "conditions": [
+          "High affection, knowing a Fairy move",
+          "High friendship, knowing a Fairy move"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

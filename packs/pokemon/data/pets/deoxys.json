@@ -1,0 +1,120 @@
+{
+  "slug": "deoxys",
+  "name": "Deoxys",
+  "number": 386,
+  "group": 3,
+  "elements": [
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [
+    "mythical"
+  ],
+  "spritesheet": "pets/deoxys/spritesheet.webp",
+  "category": "DNA Pokémon",
+  "description": "The DNA of a space virus underwent a sudden mutation upon exposure to a laser beam and resulted in Deoxys. The crystalline organ on this Pokémon’s chest appears to be its brain.",
+  "blurb": "An alien virus that fell to earth on a meteor underwent a DNA mutation to become this Pokémon.",
+  "heightM": 1.7,
+  "weightKg": 60.8,
+  "stats": {
+    "hp": 50,
+    "atk": 150,
+    "def": 50,
+    "spa": 150,
+    "spd": 50,
+    "spe": 150
+  },
+  "abilities": [
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "DNA Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "60.8 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rare"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Red"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "270"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": true,
+    "baby": false
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "slug": "crobat",
+  "name": "Crobat",
+  "number": 169,
+  "group": 2,
+  "elements": [
+    "poison",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/crobat/spritesheet.webp",
+  "category": "Bat Pokémon",
+  "description": "Both of its legs have turned into wings. Without a sound, Crobat flies swiftly toward its prey and sinks its fangs into the nape of its target’s neck.",
+  "blurb": "The transformation of its legs into wings made it better at flying, but more clumsy at walking.",
+  "heightM": 1.8,
+  "weightKg": 75,
+  "stats": {
+    "hp": 85,
+    "atk": 90,
+    "def": 80,
+    "spa": 70,
+    "spd": 80,
+    "spe": 130
+  },
+  "abilities": [
+    {
+      "id": "inner-focus",
+      "name": "Inner Focus",
+      "hidden": false,
+      "effect": "Prevents flinching."
+    },
+    {
+      "id": "infiltrator",
+      "name": "Infiltrator",
+      "hidden": true,
+      "effect": "Bypasses Light Screen, Reflect, and Safeguard."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Bat Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "75.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Flying"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Cave"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Bug Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "90"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "241"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "electric",
+      "ice",
+      "psychic",
+      "rock"
+    ],
+    "0.25": [
+      "grass",
+      "fighting",
+      "bug"
+    ],
+    "0.5": [
+      "poison",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "zubat",
+    "name": "Zubat",
+    "number": 41,
+    "slug": "zubat",
+    "conditions": [],
+    "children": [
+      {
+        "key": "golbat",
+        "name": "Golbat",
+        "number": 42,
+        "slug": "golbat",
+        "conditions": [
+          "Level 22"
+        ],
+        "children": [
+          {
+            "key": "crobat",
+            "name": "Crobat",
+            "number": 169,
+            "slug": "crobat",
+            "conditions": [
+              "High friendship"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

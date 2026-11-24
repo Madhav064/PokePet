@@ -1,0 +1,148 @@
+{
+  "slug": "metapod",
+  "name": "Metapod",
+  "number": 11,
+  "group": 1,
+  "elements": [
+    "bug"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/metapod/spritesheet.webp",
+  "category": "Cocoon Pokémon",
+  "description": "It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.",
+  "blurb": "A steel-hard shell protects its tender body. It quietly endures hardships while awaiting evolution.",
+  "heightM": 0.7,
+  "weightKg": 9.9,
+  "stats": {
+    "hp": 50,
+    "atk": 20,
+    "def": 55,
+    "spa": 25,
+    "spd": 25,
+    "spe": 30
+  },
+  "abilities": [
+    {
+      "id": "shed-skin",
+      "name": "Shed Skin",
+      "hidden": false,
+      "effect": "Has a 33% chance of curing any major status ailment after each turn."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Cocoon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "9.9 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Bug"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "120"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "72"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "flying",
+      "rock"
+    ],
+    "0.5": [
+      "grass",
+      "fighting",
+      "ground"
+    ]
+  },
+  "evolution": {
+    "key": "caterpie",
+    "name": "Caterpie",
+    "number": 10,
+    "slug": "caterpie",
+    "conditions": [],
+    "children": [
+      {
+        "key": "metapod",
+        "name": "Metapod",
+        "number": 11,
+        "slug": "metapod",
+        "conditions": [
+          "Level 7"
+        ],
+        "children": [
+          {
+            "key": "butterfree",
+            "name": "Butterfree",
+            "number": 12,
+            "slug": "butterfree",
+            "conditions": [
+              "Level 10"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

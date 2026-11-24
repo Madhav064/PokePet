@@ -1,0 +1,157 @@
+{
+  "slug": "charmander",
+  "name": "Charmander",
+  "number": 4,
+  "group": 1,
+  "elements": [
+    "fire"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/charmander/spritesheet.webp",
+  "category": "Lizard Pokémon",
+  "description": "The flame on its tail shows the strength of its life-force. If Charmander is weak, the flame also burns weakly.",
+  "blurb": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely.",
+  "heightM": 0.6,
+  "weightKg": 8.5,
+  "stats": {
+    "hp": 39,
+    "atk": 52,
+    "def": 43,
+    "spa": 60,
+    "spd": 50,
+    "spe": 65
+  },
+  "abilities": [
+    {
+      "id": "blaze",
+      "name": "Blaze",
+      "hidden": false,
+      "effect": "Strengthens Fire moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "solar-power",
+      "name": "Solar Power",
+      "hidden": true,
+      "effect": "Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Lizard Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "8.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Red"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "62"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "water",
+      "ground",
+      "rock"
+    ],
+    "0.5": [
+      "fire",
+      "grass",
+      "ice",
+      "bug",
+      "steel",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "charmander",
+    "name": "Charmander",
+    "number": 4,
+    "slug": "charmander",
+    "conditions": [],
+    "children": [
+      {
+        "key": "charmeleon",
+        "name": "Charmeleon",
+        "number": 5,
+        "slug": "charmeleon",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "charizard",
+            "name": "Charizard",
+            "number": 6,
+            "slug": "charizard",
+            "conditions": [
+              "Level 36"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

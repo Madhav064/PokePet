@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.turbo/
+.vercel/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+.cache/
+apps/web/public/packs/
+.DS_Store

@@ -1,0 +1,133 @@
+{
+  "slug": "articuno",
+  "name": "Articuno",
+  "number": 144,
+  "group": 1,
+  "elements": [
+    "ice",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/articuno/spritesheet.webp",
+  "category": "Freeze Pokémon",
+  "description": "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it.",
+  "blurb": "A legendary bird Pokémon. It can create blizzards by freezing moisture in the air.",
+  "heightM": 1.7,
+  "weightKg": 55.4,
+  "stats": {
+    "hp": 90,
+    "atk": 85,
+    "def": 100,
+    "spa": 95,
+    "spd": 125,
+    "spe": 85
+  },
+  "abilities": [
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+      "id": "snow-cloak",
+      "name": "Snow Cloak",
+      "hidden": true,
+      "effect": "Increases evasion to 1.25× during hail. Protects against hail damage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Freeze Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "55.4 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "80"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rare"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "35"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "261"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "fire",
+      "electric",
+      "steel"
+    ],
+    "4": [
+      "rock"
+    ],
+    "0.5": [
+      "grass",
+      "bug"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

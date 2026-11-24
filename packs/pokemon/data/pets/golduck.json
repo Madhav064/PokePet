@@ -1,0 +1,149 @@
+{
+  "slug": "golduck",
+  "name": "Golduck",
+  "number": 55,
+  "group": 1,
+  "elements": [
+    "water"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/golduck/spritesheet.webp",
+  "category": "Duck Pokémon",
+  "description": "When it swims at full speed using its long, webbed limbs, its forehead somehow begins to glow.",
+  "blurb": "It is seen swimming dynamically and elegantly using its well-developed limbs and flippers.",
+  "heightM": 1.7,
+  "weightKg": 76.6,
+  "stats": {
+    "hp": 80,
+    "atk": 82,
+    "def": 78,
+    "spa": 95,
+    "spd": 80,
+    "spe": 85
+  },
+  "abilities": [
+    {
+      "id": "damp",
+      "name": "Damp",
+      "hidden": false,
+      "effect": "Prevents Self-Destruct, Explosion, and Aftermath from working while the Pokémon is in battle."
+    },
+    {
+      "id": "cloud-nine",
+      "name": "Cloud Nine",
+      "hidden": false,
+      "effect": "Negates all effects of weather, but does not prevent the weather itself."
+    },
+    {
+      "id": "swift-swim",
+      "name": "Swift Swim",
+      "hidden": true,
+      "effect": "Doubles Speed during rain."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Duck Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "76.6 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "75"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "175"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "psyduck",
+    "name": "Psyduck",
+    "number": 54,
+    "slug": "psyduck",
+    "conditions": [],
+    "children": [
+      {
+        "key": "golduck",
+        "name": "Golduck",
+        "number": 55,
+        "slug": "golduck",
+        "conditions": [
+          "Level 33"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

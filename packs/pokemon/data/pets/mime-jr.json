@@ -1,0 +1,166 @@
+{
+  "slug": "mime-jr",
+  "name": "Mime Jr.",
+  "number": 439,
+  "group": 4,
+  "elements": [
+    "psychic",
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/mime-jr/spritesheet.webp",
+  "category": "Mime Pokémon",
+  "description": "It mimics everyone it sees, but it puts extra effort into copying the graceful dance steps of Mr. Rime as practice.",
+  "blurb": "It mimics the expressions and motions of those it sees to understand the feelings of others.",
+  "heightM": 0.6,
+  "weightKg": 13,
+  "stats": {
+    "hp": 20,
+    "atk": 25,
+    "def": 45,
+    "spa": 70,
+    "spd": 90,
+    "spe": 60
+  },
+  "abilities": [
+    {
+      "id": "soundproof",
+      "name": "Soundproof",
+      "hidden": false,
+      "effect": "Protects against sound-based moves."
+    },
+    {
+      "id": "filter",
+      "name": "Filter",
+      "hidden": false,
+      "effect": "Decreases damage taken from super-effective moves by 1/4."
+    },
+    {
+      "id": "technician",
+      "name": "Technician",
+      "hidden": true,
+      "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Mime Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "13.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "145"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "62"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "ghost",
+      "steel"
+    ],
+    "0.25": [
+      "fighting"
+    ],
+    "0.5": [
+      "psychic"
+    ]
+  },
+  "evolution": {
+    "key": "mime-jr",
+    "name": "Mime Jr.",
+    "number": 439,
+    "slug": "mime-jr",
+    "conditions": [],
+    "children": [
+      {
+        "key": "mr-mime",
+        "name": "Mr. Mime",
+        "number": 122,
+        "slug": "mr-mime",
+        "conditions": [
+          "Knowing Mimic"
+        ],
+        "children": [
+          {
+            "key": "mr-rime",
+            "name": "Mr. Rime",
+            "number": 866,
+            "conditions": [
+              "Level 42"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

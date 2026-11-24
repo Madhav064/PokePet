@@ -1,0 +1,157 @@
+{
+  "slug": "sceptile",
+  "name": "Sceptile",
+  "number": 254,
+  "group": 3,
+  "elements": [
+    "grass"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/sceptile/spritesheet.webp",
+  "category": "Forest Pokémon",
+  "description": "It agilely flits through the jungle and uses the sharp-edged leaves on its arms to cut down its prey.",
+  "blurb": "The leaves that grow on its arms can slice down thick trees. It is without peer in jungle combat.",
+  "heightM": 1.7,
+  "weightKg": 52.2,
+  "stats": {
+    "hp": 70,
+    "atk": 85,
+    "def": 65,
+    "spa": 105,
+    "spd": 85,
+    "spe": 120
+  },
+  "abilities": [
+    {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "hidden": false,
+      "effect": "Strengthens Grass moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "unburden",
+      "name": "Unburden",
+      "hidden": true,
+      "effect": "Doubles Speed upon using or losing a held item."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Forest Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "52.2 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "239"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "ice",
+      "poison",
+      "flying",
+      "bug"
+    ],
+    "0.5": [
+      "water",
+      "electric",
+      "grass",
+      "ground"
+    ]
+  },
+  "evolution": {
+    "key": "treecko",
+    "name": "Treecko",
+    "number": 252,
+    "slug": "treecko",
+    "conditions": [],
+    "children": [
+      {
+        "key": "grovyle",
+        "name": "Grovyle",
+        "number": 253,
+        "slug": "grovyle",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "sceptile",
+            "name": "Sceptile",
+            "number": 254,
+            "slug": "sceptile",
+            "conditions": [
+              "Level 36"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

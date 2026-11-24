@@ -1,0 +1,157 @@
+{
+  "slug": "magmortar",
+  "name": "Magmortar",
+  "number": 467,
+  "group": 4,
+  "elements": [
+    "fire"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/magmortar/spritesheet.webp",
+  "category": "Blast Pokémon",
+  "description": "When shooting 3,600 degree Fahrenheit fireballs from its arms, its body takes on a whitish hue from the intense heat.",
+  "blurb": "When launching 3,600 degrees F fireballs, its body takes on a whitish hue from the intense heat.",
+  "heightM": 1.6,
+  "weightKg": 68,
+  "stats": {
+    "hp": 75,
+    "atk": 95,
+    "def": 67,
+    "spa": 125,
+    "spd": 95,
+    "spe": 83
+  },
+  "abilities": [
+    {
+      "id": "flame-body",
+      "name": "Flame Body",
+      "hidden": false,
+      "effect": "Has a 30% chance of burning attacking Pokémon on contact."
+    },
+    {
+      "id": "vital-spirit",
+      "name": "Vital Spirit",
+      "hidden": true,
+      "effect": "Prevents sleep."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Blast Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "68.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "75% ♂ · 25% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Red"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "30"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "243"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "water",
+      "ground",
+      "rock"
+    ],
+    "0.5": [
+      "fire",
+      "grass",
+      "ice",
+      "bug",
+      "steel",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "magby",
+    "name": "Magby",
+    "number": 240,
+    "slug": "magby",
+    "conditions": [],
+    "children": [
+      {
+        "key": "magmar",
+        "name": "Magmar",
+        "number": 126,
+        "slug": "magmar",
+        "conditions": [
+          "Level 30"
+        ],
+        "children": [
+          {
+            "key": "magmortar",
+            "name": "Magmortar",
+            "number": 467,
+            "slug": "magmortar",
+            "conditions": [
+              "Trade, holding Magmarizer"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

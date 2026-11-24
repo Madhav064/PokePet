@@ -1,0 +1,132 @@
+{
+  "slug": "rayquaza",
+  "name": "Rayquaza",
+  "number": 384,
+  "group": 3,
+  "elements": [
+    "dragon",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/rayquaza/spritesheet.webp",
+  "category": "Sky High Pokémon",
+  "description": "Rayquaza is said to have lived for hundreds of millions of years. Legends remain of how it put to rest the clash between Kyogre and Groudon.",
+  "blurb": "It lives in the ozone layer far above the clouds and cannot be seen from the ground.",
+  "heightM": 7,
+  "weightKg": 206.5,
+  "stats": {
+    "hp": 105,
+    "atk": 150,
+    "def": 90,
+    "spa": 150,
+    "spd": 90,
+    "spe": 95
+  },
+  "abilities": [
+    {
+      "id": "air-lock",
+      "name": "Air Lock",
+      "hidden": false,
+      "effect": "Negates all effects of weather, but does not prevent the weather itself."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Sky High Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "7.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "206.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rare"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "306"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "rock",
+      "dragon",
+      "fairy"
+    ],
+    "4": [
+      "ice"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "fighting",
+      "bug"
+    ],
+    "0.25": [
+      "grass"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

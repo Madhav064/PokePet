@@ -1,0 +1,165 @@
+{
+  "slug": "igglybuff",
+  "name": "Igglybuff",
+  "number": 174,
+  "group": 2,
+  "elements": [
+    "normal",
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/igglybuff/spritesheet.webp",
+  "category": "Balloon Pokémon",
+  "description": "Its body has a faintly sweet scent and is bouncy and soft. If it bounces even once, it cannot stop.",
+  "blurb": "It has a soft and bouncy body. Once it starts bouncing, it becomes impossible to stop.",
+  "heightM": 0.3,
+  "weightKg": 1,
+  "stats": {
+    "hp": 90,
+    "atk": 30,
+    "def": 15,
+    "spa": 40,
+    "spd": 20,
+    "spe": 15
+  },
+  "abilities": [
+    {
+      "id": "cute-charm",
+      "name": "Cute Charm",
+      "hidden": false,
+      "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
+    },
+    {
+      "id": "competitive",
+      "name": "Competitive",
+      "hidden": false,
+      "effect": "Raises Special Attack by two stages upon having any stat lowered."
+    },
+    {
+      "id": "friend-guard",
+      "name": "Friend Guard",
+      "hidden": true,
+      "effect": "Decreases all direct damage taken by friendly Pokémon to 0.75×."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Balloon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "1.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "25% ♂ · 75% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "170"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "42"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost",
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "steel"
+    ],
+    "0.5": [
+      "bug",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "igglybuff",
+    "name": "Igglybuff",
+    "number": 174,
+    "slug": "igglybuff",
+    "conditions": [],
+    "children": [
+      {
+        "key": "jigglypuff",
+        "name": "Jigglypuff",
+        "number": 39,
+        "slug": "jigglypuff",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "wigglytuff",
+            "name": "Wigglytuff",
+            "number": 40,
+            "slug": "wigglytuff",
+            "conditions": [
+              "Use Moon Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

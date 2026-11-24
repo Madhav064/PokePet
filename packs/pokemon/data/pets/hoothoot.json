@@ -1,0 +1,153 @@
+{
+  "slug": "hoothoot",
+  "name": "Hoothoot",
+  "number": 163,
+  "group": 2,
+  "elements": [
+    "normal",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/hoothoot/spritesheet.webp",
+  "category": "Owl Pokémon",
+  "description": "Hoothoot’s internal clock is precise at all times. It tilts its head in a fixed rhythm.",
+  "blurb": "It marks time precisely. Some countries consider it to be a wise friend, versed in the world’s ways.",
+  "heightM": 0.7,
+  "weightKg": 21.2,
+  "stats": {
+    "hp": 60,
+    "atk": 30,
+    "def": 30,
+    "spa": 36,
+    "spd": 56,
+    "spe": 50
+  },
+  "abilities": [
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "hidden": false,
+      "effect": "Prevents sleep."
+    },
+    {
+      "id": "keen-eye",
+      "name": "Keen Eye",
+      "hidden": false,
+      "effect": "Prevents accuracy from being lowered."
+    },
+    {
+      "id": "tinted-lens",
+      "name": "Tinted Lens",
+      "hidden": true,
+      "effect": "Doubles damage inflicted with not-very-effective moves."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Owl Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "21.2 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Flying"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "52"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground",
+      "ghost"
+    ],
+    "2": [
+      "electric",
+      "ice",
+      "rock"
+    ],
+    "0.5": [
+      "grass",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "hoothoot",
+    "name": "Hoothoot",
+    "number": 163,
+    "slug": "hoothoot",
+    "conditions": [],
+    "children": [
+      {
+        "key": "noctowl",
+        "name": "Noctowl",
+        "number": 164,
+        "slug": "noctowl",
+        "conditions": [
+          "Level 20"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

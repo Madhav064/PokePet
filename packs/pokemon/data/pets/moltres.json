@@ -1,0 +1,138 @@
+{
+  "slug": "moltres",
+  "name": "Moltres",
+  "number": 146,
+  "group": 1,
+  "elements": [
+    "fire",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/moltres/spritesheet.webp",
+  "category": "Flame Pokémon",
+  "description": "It’s one of the legendary bird Pokémon. When Moltres flaps its flaming wings, they glimmer with a dazzling red glow.",
+  "blurb": "One of the legendary bird Pokémon. It is said that its appearance indicates the coming of spring.",
+  "heightM": 2,
+  "weightKg": 60,
+  "stats": {
+    "hp": 90,
+    "atk": 100,
+    "def": 90,
+    "spa": 125,
+    "spd": 85,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+      "id": "flame-body",
+      "name": "Flame Body",
+      "hidden": true,
+      "effect": "Has a 30% chance of burning attacking Pokémon on contact."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Flame Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "2.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "60.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "80"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rare"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "35"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "261"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "water",
+      "electric"
+    ],
+    "4": [
+      "rock"
+    ],
+    "0.5": [
+      "fire",
+      "fighting",
+      "steel",
+      "fairy"
+    ],
+    "0.25": [
+      "grass",
+      "bug"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

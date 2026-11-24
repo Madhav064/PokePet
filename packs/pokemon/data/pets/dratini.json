@@ -1,0 +1,155 @@
+{
+  "slug": "dratini",
+  "name": "Dratini",
+  "number": 147,
+  "group": 1,
+  "elements": [
+    "dragon"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/dratini/spritesheet.webp",
+  "category": "Dragon Pokémon",
+  "description": "It sheds many layers of skin as it grows larger. During this process, it is protected by a rapid waterfall.",
+  "blurb": "It is called the “Mirage Pokémon” because so few have seen it. Its shed skin has been found.",
+  "heightM": 1.8,
+  "weightKg": 3.3,
+  "stats": {
+    "hp": 41,
+    "atk": 64,
+    "def": 45,
+    "spa": 50,
+    "spd": 50,
+    "spe": 50
+  },
+  "abilities": [
+    {
+      "id": "shed-skin",
+      "name": "Shed Skin",
+      "hidden": false,
+      "effect": "Has a 33% chance of curing any major status ailment after each turn."
+    },
+    {
+      "id": "marvel-scale",
+      "name": "Marvel Scale",
+      "hidden": true,
+      "effect": "Increases Defense to 1.5× with a major status ailment."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Dragon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "3.3 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "35"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "60"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ice",
+      "dragon",
+      "fairy"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "electric",
+      "grass"
+    ]
+  },
+  "evolution": {
+    "key": "dratini",
+    "name": "Dratini",
+    "number": 147,
+    "slug": "dratini",
+    "conditions": [],
+    "children": [
+      {
+        "key": "dragonair",
+        "name": "Dragonair",
+        "number": 148,
+        "slug": "dragonair",
+        "conditions": [
+          "Level 30"
+        ],
+        "children": [
+          {
+            "key": "dragonite",
+            "name": "Dragonite",
+            "number": 149,
+            "slug": "dragonite",
+            "conditions": [
+              "Level 55"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

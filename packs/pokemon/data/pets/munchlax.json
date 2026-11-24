@@ -1,0 +1,147 @@
+{
+  "slug": "munchlax",
+  "name": "Munchlax",
+  "number": 446,
+  "group": 4,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/munchlax/spritesheet.webp",
+  "category": "Big Eater Pokémon",
+  "description": "It needs to consume its own weight in food every day. As far as flavor is concerned, it’s indifferent.",
+  "blurb": "In its desperation to gulp down food, it forgets about the food it has hidden under its fur.",
+  "heightM": 0.6,
+  "weightKg": 105,
+  "stats": {
+    "hp": 135,
+    "atk": 85,
+    "def": 40,
+    "spa": 40,
+    "spd": 85,
+    "spe": 5
+  },
+  "abilities": [
+    {
+      "id": "pickup",
+      "name": "Pickup",
+      "hidden": false,
+      "effect": "Picks up other Pokémon's used and Flung held items. May also pick up an item after battle."
+    },
+    {
+      "id": "thick-fat",
+      "name": "Thick Fat",
+      "hidden": false,
+      "effect": "Halves damage from Fire and Ice moves."
+    },
+    {
+      "id": "gluttony",
+      "name": "Gluttony",
+      "hidden": true,
+      "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Big Eater Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "105.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Black"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "50"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "78"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "munchlax",
+    "name": "Munchlax",
+    "number": 446,
+    "slug": "munchlax",
+    "conditions": [],
+    "children": [
+      {
+        "key": "snorlax",
+        "name": "Snorlax",
+        "number": 143,
+        "slug": "snorlax",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

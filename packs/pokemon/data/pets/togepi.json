@@ -1,0 +1,164 @@
+{
+  "slug": "togepi",
+  "name": "Togepi",
+  "number": 175,
+  "group": 2,
+  "elements": [
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/togepi/spritesheet.webp",
+  "category": "Spike Ball Pokémon",
+  "description": "The shell seems to be filled with joy. It is said that it will share good luck when treated kindly.",
+  "blurb": "It transforms the kindness and joy of others into happiness, which it stores in its shell.",
+  "heightM": 0.3,
+  "weightKg": 1.5,
+  "stats": {
+    "hp": 35,
+    "atk": 20,
+    "def": 65,
+    "spa": 40,
+    "spd": 65,
+    "spe": 20
+  },
+  "abilities": [
+    {
+      "id": "hustle",
+      "name": "Hustle",
+      "hidden": false,
+      "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
+    },
+    {
+      "id": "serene-grace",
+      "name": "Serene Grace",
+      "hidden": false,
+      "effect": "Doubles the chance of moves' extra effects occurring."
+    },
+    {
+      "id": "super-luck",
+      "name": "Super Luck",
+      "hidden": true,
+      "effect": "Raises moves' critical hit rates one stage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Spike Ball Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "1.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "White"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "49"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "steel"
+    ],
+    "0.5": [
+      "fighting",
+      "bug",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "togepi",
+    "name": "Togepi",
+    "number": 175,
+    "slug": "togepi",
+    "conditions": [],
+    "children": [
+      {
+        "key": "togetic",
+        "name": "Togetic",
+        "number": 176,
+        "slug": "togetic",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "togekiss",
+            "name": "Togekiss",
+            "number": 468,
+            "slug": "togekiss",
+            "conditions": [
+              "Use Shiny Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

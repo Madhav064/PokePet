@@ -1,0 +1,157 @@
+{
+  "slug": "gastly",
+  "name": "Gastly",
+  "number": 92,
+  "group": 1,
+  "elements": [
+    "ghost",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/gastly/spritesheet.webp",
+  "category": "Gas Pokémon",
+  "description": "It wraps its opponent in its gas-like body, slowly weakening its prey by poisoning it through the skin.",
+  "blurb": "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison.",
+  "heightM": 1.3,
+  "weightKg": 0.1,
+  "stats": {
+    "hp": 30,
+    "atk": 35,
+    "def": 30,
+    "spa": 100,
+    "spd": 35,
+    "spe": 80
+  },
+  "abilities": [
+    {
+      "id": "levitate",
+      "name": "Levitate",
+      "hidden": false,
+      "effect": "Evades Ground moves."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Gas Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "0.1 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Indeterminate"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Cave"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Ball"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "62"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "normal",
+      "fighting"
+    ],
+    "2": [
+      "ground",
+      "psychic",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "grass",
+      "fairy"
+    ],
+    "0.25": [
+      "poison",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "gastly",
+    "name": "Gastly",
+    "number": 92,
+    "slug": "gastly",
+    "conditions": [],
+    "children": [
+      {
+        "key": "haunter",
+        "name": "Haunter",
+        "number": 93,
+        "slug": "haunter",
+        "conditions": [
+          "Level 25"
+        ],
+        "children": [
+          {
+            "key": "gengar",
+            "name": "Gengar",
+            "number": 94,
+            "slug": "gengar",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

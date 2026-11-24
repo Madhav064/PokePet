@@ -1,0 +1,154 @@
+{
+  "slug": "caterpie",
+  "name": "Caterpie",
+  "number": 10,
+  "group": 1,
+  "elements": [
+    "bug"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/caterpie/spritesheet.webp",
+  "category": "Worm Pokémon",
+  "description": "For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
+  "blurb": "It releases a stench from its red antenna to repel enemies. It grows by molting repeatedly.",
+  "heightM": 0.3,
+  "weightKg": 2.9,
+  "stats": {
+    "hp": 45,
+    "atk": 30,
+    "def": 35,
+    "spa": 20,
+    "spd": 20,
+    "spe": 45
+  },
+  "abilities": [
+    {
+      "id": "shield-dust",
+      "name": "Shield Dust",
+      "hidden": false,
+      "effect": "Protects against incoming moves' extra effects."
+    },
+    {
+      "id": "run-away",
+      "name": "Run Away",
+      "hidden": true,
+      "effect": "Ensures success fleeing from wild battles."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Worm Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "2.9 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Bug"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Armor"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "39"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "flying",
+      "rock"
+    ],
+    "0.5": [
+      "grass",
+      "fighting",
+      "ground"
+    ]
+  },
+  "evolution": {
+    "key": "caterpie",
+    "name": "Caterpie",
+    "number": 10,
+    "slug": "caterpie",
+    "conditions": [],
+    "children": [
+      {
+        "key": "metapod",
+        "name": "Metapod",
+        "number": 11,
+        "slug": "metapod",
+        "conditions": [
+          "Level 7"
+        ],
+        "children": [
+          {
+            "key": "butterfree",
+            "name": "Butterfree",
+            "number": 12,
+            "slug": "butterfree",
+            "conditions": [
+              "Level 10"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

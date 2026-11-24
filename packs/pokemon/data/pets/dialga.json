@@ -1,0 +1,138 @@
+{
+  "slug": "dialga",
+  "name": "Dialga",
+  "number": 483,
+  "group": 4,
+  "elements": [
+    "steel",
+    "dragon"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/dialga/spritesheet.webp",
+  "category": "Temporal Pokémon",
+  "description": "A Pokémon spoken of in legend. It is said that time began moving when Dialga was born.",
+  "blurb": "A legendary Pokémon of Sinnoh. It is said that time flows when Dialga’s heart beats.",
+  "heightM": 5.4,
+  "weightKg": 683,
+  "stats": {
+    "hp": 100,
+    "atk": 120,
+    "def": 120,
+    "spa": 150,
+    "spd": 100,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+      "id": "telepathy",
+      "name": "Telepathy",
+      "hidden": true,
+      "effect": "Protects against friendly Pokémon's damaging moves."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Temporal Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "5.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "683.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "White"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "306"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "poison"
+    ],
+    "2": [
+      "fighting",
+      "ground"
+    ],
+    "0.5": [
+      "normal",
+      "water",
+      "electric",
+      "flying",
+      "psychic",
+      "bug",
+      "rock",
+      "steel"
+    ],
+    "0.25": [
+      "grass"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

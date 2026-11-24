@@ -1,0 +1,150 @@
+{
+  "slug": "gyarados",
+  "name": "Gyarados",
+  "number": 130,
+  "group": 1,
+  "elements": [
+    "water",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/gyarados/spritesheet.webp",
+  "category": "Atrocious Pokémon",
+  "description": "Once it appears, it goes on a rampage. It remains enraged until it demolishes everything around it.",
+  "blurb": "Once it begins to rampage, a Gyarados will burn everything down, even in a harsh storm.",
+  "heightM": 6.5,
+  "weightKg": 235,
+  "stats": {
+    "hp": 95,
+    "atk": 125,
+    "def": 79,
+    "spa": 60,
+    "spd": 100,
+    "spe": 81
+  },
+  "abilities": [
+    {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "hidden": false,
+      "effect": "Lowers opponents' Attack one stage upon entering battle."
+    },
+    {
+      "id": "moxie",
+      "name": "Moxie",
+      "hidden": true,
+      "effect": "Raises Attack one stage upon KOing a Pokémon."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Atrocious Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "6.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "235.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water2, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "5"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "189"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "rock"
+    ],
+    "4": [
+      "electric"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "fighting",
+      "bug",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "magikarp",
+    "name": "Magikarp",
+    "number": 129,
+    "slug": "magikarp",
+    "conditions": [],
+    "children": [
+      {
+        "key": "gyarados",
+        "name": "Gyarados",
+        "number": 130,
+        "slug": "gyarados",
+        "conditions": [
+          "Level 20"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

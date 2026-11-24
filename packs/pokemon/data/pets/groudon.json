@@ -1,0 +1,123 @@
+{
+  "slug": "groudon",
+  "name": "Groudon",
+  "number": 383,
+  "group": 3,
+  "elements": [
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/groudon/spritesheet.webp",
+  "category": "Continent Pokémon",
+  "description": "Groudon is said to be the personification of the land itself. Legends tell of its many clashes against Kyogre, as each sought to gain the power of nature.",
+  "blurb": "It had been asleep in underground magma ever since it fiercely fought Kyogre long ago.",
+  "heightM": 3.5,
+  "weightKg": 950,
+  "stats": {
+    "hp": 100,
+    "atk": 150,
+    "def": 140,
+    "spa": 100,
+    "spd": 90,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "drought",
+      "name": "Drought",
+      "hidden": false,
+      "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Continent Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "3.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "950.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rough Terrain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Red"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "302"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "water",
+      "grass",
+      "ice"
+    ],
+    "0.5": [
+      "poison",
+      "rock"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "slug": "venomoth",
+  "name": "Venomoth",
+  "number": 49,
+  "group": 1,
+  "elements": [
+    "bug",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/venomoth/spritesheet.webp",
+  "category": "Poison Moth Pokémon",
+  "description": "The wings are covered with dustlike scales. Every time it flaps its wings, it looses highly toxic dust.",
+  "blurb": "It flutters its wings to scatter dustlike scales. The scales leach toxins if they contact skin.",
+  "heightM": 1.5,
+  "weightKg": 12.5,
+  "stats": {
+    "hp": 70,
+    "atk": 65,
+    "def": 60,
+    "spa": 90,
+    "spd": 75,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "shield-dust",
+      "name": "Shield Dust",
+      "hidden": false,
+      "effect": "Protects against incoming moves' extra effects."
+    },
+    {
+      "id": "tinted-lens",
+      "name": "Tinted Lens",
+      "hidden": false,
+      "effect": "Doubles damage inflicted with not-very-effective moves."
+    },
+    {
+      "id": "wonder-skin",
+      "name": "Wonder Skin",
+      "hidden": true,
+      "effect": "Lowers incoming non-damaging moves' base accuracy to exactly 50%."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Poison Moth Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "12.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Bug"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Bug Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "75"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "158"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "flying",
+      "psychic",
+      "rock"
+    ],
+    "0.25": [
+      "grass",
+      "fighting"
+    ],
+    "0.5": [
+      "poison",
+      "bug",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "venonat",
+    "name": "Venonat",
+    "number": 48,
+    "slug": "venonat",
+    "conditions": [],
+    "children": [
+      {
+        "key": "venomoth",
+        "name": "Venomoth",
+        "number": 49,
+        "slug": "venomoth",
+        "conditions": [
+          "Level 31"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

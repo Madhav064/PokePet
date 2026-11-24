@@ -1,0 +1,170 @@
+{
+  "slug": "gloom",
+  "name": "Gloom",
+  "number": 44,
+  "group": 1,
+  "elements": [
+    "grass",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/gloom/spritesheet.webp",
+  "category": "Weed Pokémon",
+  "description": "The fluid that oozes from its mouth isn’t drool. It is a nectar that is used to attract prey.",
+  "blurb": "The honey it drools from its mouth smells so atrocious, it can curl noses more than a mile away.",
+  "heightM": 0.8,
+  "weightKg": 8.6,
+  "stats": {
+    "hp": 60,
+    "atk": 65,
+    "def": 70,
+    "spa": 85,
+    "spd": 75,
+    "spe": 40
+  },
+  "abilities": [
+    {
+      "id": "chlorophyll",
+      "name": "Chlorophyll",
+      "hidden": false,
+      "effect": "Doubles Speed during strong sunlight."
+    },
+    {
+      "id": "stench",
+      "name": "Stench",
+      "hidden": true,
+      "effect": "Has a 10% chance of making target Pokémon flinch with each hit."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Weed Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "8.6 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Plant"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "120"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "138"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "ice",
+      "flying",
+      "psychic"
+    ],
+    "0.5": [
+      "water",
+      "electric",
+      "fighting",
+      "fairy"
+    ],
+    "0.25": [
+      "grass"
+    ]
+  },
+  "evolution": {
+    "key": "oddish",
+    "name": "Oddish",
+    "number": 43,
+    "slug": "oddish",
+    "conditions": [],
+    "children": [
+      {
+        "key": "gloom",
+        "name": "Gloom",
+        "number": 44,
+        "slug": "gloom",
+        "conditions": [
+          "Level 21"
+        ],
+        "children": [
+          {
+            "key": "vileplume",
+            "name": "Vileplume",
+            "number": 45,
+            "slug": "vileplume",
+            "conditions": [
+              "Use Leaf Stone"
+            ],
+            "children": []
+          },
+          {
+            "key": "bellossom",
+            "name": "Bellossom",
+            "number": 182,
+            "slug": "bellossom",
+            "conditions": [
+              "Use Sun Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

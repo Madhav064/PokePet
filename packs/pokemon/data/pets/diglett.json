@@ -1,0 +1,151 @@
+{
+  "slug": "diglett",
+  "name": "Diglett",
+  "number": 50,
+  "group": 1,
+  "elements": [
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/diglett/spritesheet.webp",
+  "category": "Mole Pokémon",
+  "description": "It lives about one yard underground, where it feeds on plant roots. It sometimes appears aboveground.",
+  "blurb": "A Pokémon that lives underground. Because of its dark habitat, it is repelled by bright sunlight.",
+  "heightM": 0.2,
+  "weightKg": 0.8,
+  "stats": {
+    "hp": 10,
+    "atk": 55,
+    "def": 25,
+    "spa": 35,
+    "spd": 45,
+    "spe": 95
+  },
+  "abilities": [
+    {
+      "id": "sand-veil",
+      "name": "Sand Veil",
+      "hidden": false,
+      "effect": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+    },
+    {
+      "id": "arena-trap",
+      "name": "Arena Trap",
+      "hidden": false,
+      "effect": "Prevents opponents from fleeing or switching out. Eluded by Flying-types and Pokémon in the air."
+    },
+    {
+      "id": "sand-force",
+      "name": "Sand Force",
+      "hidden": true,
+      "effect": "Strengthens Rock, Ground, and Steel moves to 1.3× their power during a sandstorm. Protects against sandstorm damage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Mole Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.2 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "0.8 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Cave"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Blob"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "53"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "water",
+      "grass",
+      "ice"
+    ],
+    "0.5": [
+      "poison",
+      "rock"
+    ]
+  },
+  "evolution": {
+    "key": "diglett",
+    "name": "Diglett",
+    "number": 50,
+    "slug": "diglett",
+    "conditions": [],
+    "children": [
+      {
+        "key": "dugtrio",
+        "name": "Dugtrio",
+        "number": 51,
+        "slug": "dugtrio",
+        "conditions": [
+          "Level 26"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

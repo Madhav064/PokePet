@@ -1,0 +1,164 @@
+{
+  "slug": "mr-mime",
+  "name": "Mr. Mime",
+  "number": 122,
+  "group": 1,
+  "elements": [
+    "psychic",
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/mr-mime/spritesheet.webp",
+  "category": "Barrier Pokémon",
+  "description": "The broadness of its hands may be no coincidence—many scientists believe its palms became enlarged specifically for pantomiming.",
+  "blurb": "It shapes an invisible wall in midair by minutely vibrating its fingertips to stop molecules in the air.",
+  "heightM": 1.3,
+  "weightKg": 54.5,
+  "stats": {
+    "hp": 40,
+    "atk": 45,
+    "def": 65,
+    "spa": 100,
+    "spd": 120,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "soundproof",
+      "name": "Soundproof",
+      "hidden": false,
+      "effect": "Protects against sound-based moves."
+    },
+    {
+      "id": "filter",
+      "name": "Filter",
+      "hidden": false,
+      "effect": "Decreases damage taken from super-effective moves by 1/4."
+    },
+    {
+      "id": "technician",
+      "name": "Technician",
+      "hidden": true,
+      "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Barrier Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "54.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "161"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "ghost",
+      "steel"
+    ],
+    "0.25": [
+      "fighting"
+    ],
+    "0.5": [
+      "psychic"
+    ]
+  },
+  "evolution": {
+    "key": "mime-jr",
+    "name": "Mime Jr.",
+    "number": 439,
+    "slug": "mime-jr",
+    "conditions": [],
+    "children": [
+      {
+        "key": "mr-mime",
+        "name": "Mr. Mime",
+        "number": 122,
+        "slug": "mr-mime",
+        "conditions": [
+          "Knowing Mimic"
+        ],
+        "children": [
+          {
+            "key": "mr-rime",
+            "name": "Mr. Rime",
+            "number": 866,
+            "conditions": [
+              "Level 42"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

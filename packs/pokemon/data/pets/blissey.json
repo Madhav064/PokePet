@@ -1,0 +1,156 @@
+{
+  "slug": "blissey",
+  "name": "Blissey",
+  "number": 242,
+  "group": 2,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/blissey/spritesheet.webp",
+  "category": "Happiness Pokémon",
+  "description": "Anyone who takes even one taste of Blissey’s egg becomes unfailingly caring and pleasant to everyone.",
+  "blurb": "The eggs it lays are filled with happiness. Eating even one bite will bring a smile to anyone.",
+  "heightM": 1.5,
+  "weightKg": 46.8,
+  "stats": {
+    "hp": 255,
+    "atk": 10,
+    "def": 10,
+    "spa": 75,
+    "spd": 135,
+    "spe": 55
+  },
+  "abilities": [
+    {
+      "id": "natural-cure",
+      "name": "Natural Cure",
+      "hidden": false,
+      "effect": "Cures any major status ailment upon switching out."
+    },
+    {
+      "id": "serene-grace",
+      "name": "Serene Grace",
+      "hidden": false,
+      "effect": "Doubles the chance of moves' extra effects occurring."
+    },
+    {
+      "id": "healer",
+      "name": "Healer",
+      "hidden": true,
+      "effect": "Has a 30% chance of curing each adjacent ally of any major status ailment after each turn."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Happiness Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "46.8 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "0% ♂ · 100% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "30"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "140"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "608"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "happiny",
+    "name": "Happiny",
+    "number": 440,
+    "slug": "happiny",
+    "conditions": [],
+    "children": [
+      {
+        "key": "chansey",
+        "name": "Chansey",
+        "number": 113,
+        "slug": "chansey",
+        "conditions": [
+          "Holding Oval Stone, during the day"
+        ],
+        "children": [
+          {
+            "key": "blissey",
+            "name": "Blissey",
+            "number": 242,
+            "slug": "blissey",
+            "conditions": [
+              "High friendship"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

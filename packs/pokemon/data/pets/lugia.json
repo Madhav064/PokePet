@@ -1,0 +1,135 @@
+{
+  "slug": "lugia",
+  "name": "Lugia",
+  "number": 249,
+  "group": 2,
+  "elements": [
+    "psychic",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/lugia/spritesheet.webp",
+  "category": "Diving Pokémon",
+  "description": "Lugia’s wings pack devastating power—a light fluttering of its wings can blow apart regular houses. As a result, this Pokémon chooses to live out of sight deep under the sea.",
+  "blurb": "It sleeps in a deep-sea trench. If it flaps its wings, it is said to cause a 40-day storm.",
+  "heightM": 5.2,
+  "weightKg": 216,
+  "stats": {
+    "hp": 106,
+    "atk": 90,
+    "def": 130,
+    "spa": 90,
+    "spd": 154,
+    "spe": 110
+  },
+  "abilities": [
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+      "id": "multiscale",
+      "name": "Multiscale",
+      "hidden": true,
+      "effect": "Halves damage taken from full HP."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Diving Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "5.2 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "216.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rare"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "White"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "306"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "electric",
+      "ice",
+      "rock",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "grass",
+      "psychic"
+    ],
+    "0.25": [
+      "fighting"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

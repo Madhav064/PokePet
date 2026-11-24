@@ -1,0 +1,160 @@
+{
+  "slug": "ivysaur",
+  "name": "Ivysaur",
+  "number": 2,
+  "group": 1,
+  "elements": [
+    "grass",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/ivysaur/spritesheet.webp",
+  "category": "Seed Pokémon",
+  "description": "The more sunlight Ivysaur bathes in, the more strength wells up within it, allowing the bud on its back to grow larger.",
+  "blurb": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower’s coming bloom.",
+  "heightM": 1,
+  "weightKg": 13,
+  "stats": {
+    "hp": 60,
+    "atk": 62,
+    "def": 63,
+    "spa": 80,
+    "spd": 80,
+    "spe": 60
+  },
+  "abilities": [
+    {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "hidden": false,
+      "effect": "Strengthens Grass moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "chlorophyll",
+      "name": "Chlorophyll",
+      "hidden": true,
+      "effect": "Doubles Speed during strong sunlight."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Seed Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "13.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Plant"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "142"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "ice",
+      "flying",
+      "psychic"
+    ],
+    "0.5": [
+      "water",
+      "electric",
+      "fighting",
+      "fairy"
+    ],
+    "0.25": [
+      "grass"
+    ]
+  },
+  "evolution": {
+    "key": "bulbasaur",
+    "name": "Bulbasaur",
+    "number": 1,
+    "slug": "bulbasaur",
+    "conditions": [],
+    "children": [
+      {
+        "key": "ivysaur",
+        "name": "Ivysaur",
+        "number": 2,
+        "slug": "ivysaur",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "venusaur",
+            "name": "Venusaur",
+            "number": 3,
+            "slug": "venusaur",
+            "conditions": [
+              "Level 32"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

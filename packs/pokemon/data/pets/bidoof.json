@@ -1,0 +1,145 @@
+{
+  "slug": "bidoof",
+  "name": "Bidoof",
+  "number": 399,
+  "group": 4,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/bidoof/spritesheet.webp",
+  "category": "Plump Mouse Pokémon",
+  "description": "With nerves of steel, nothing can perturb it. It is more agile and active than it appears.",
+  "blurb": "A comparison revealed that Bidoof’s front teeth grow at the same rate as Rattata’s.",
+  "heightM": 0.5,
+  "weightKg": 20,
+  "stats": {
+    "hp": 59,
+    "atk": 45,
+    "def": 40,
+    "spa": 35,
+    "spd": 40,
+    "spe": 31
+  },
+  "abilities": [
+    {
+      "id": "simple",
+      "name": "Simple",
+      "hidden": false,
+      "effect": "Doubles the Pokémon's stat modifiers. These doubled modifiers are still capped at -6 or 6 stages."
+    },
+    {
+      "id": "unaware",
+      "name": "Unaware",
+      "hidden": false,
+      "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
+    },
+    {
+      "id": "moody",
+      "name": "Moody",
+      "hidden": true,
+      "effect": "Raises a random stat two stages and lowers another one stage after each turn."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Plump Mouse Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "20.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "50"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "bidoof",
+    "name": "Bidoof",
+    "number": 399,
+    "slug": "bidoof",
+    "conditions": [],
+    "children": [
+      {
+        "key": "bibarel",
+        "name": "Bibarel",
+        "number": 400,
+        "slug": "bibarel",
+        "conditions": [
+          "Level 15"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

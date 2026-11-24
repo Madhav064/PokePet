@@ -1,0 +1,160 @@
+{
+  "slug": "gible",
+  "name": "Gible",
+  "number": 443,
+  "group": 4,
+  "elements": [
+    "dragon",
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/gible/spritesheet.webp",
+  "category": "Land Shark Pokémon",
+  "description": "It skulks in caves, and when prey or an enemy passes by, it leaps out and chomps them. The force of its attack sometimes chips its teeth.",
+  "blurb": "It attacks using its huge mouth. While its attacks are powerful, it hurts itself out of clumsiness, too.",
+  "heightM": 0.7,
+  "weightKg": 20.5,
+  "stats": {
+    "hp": 58,
+    "atk": 70,
+    "def": 45,
+    "spa": 40,
+    "spd": 45,
+    "spe": 42
+  },
+  "abilities": [
+    {
+      "id": "sand-veil",
+      "name": "Sand Veil",
+      "hidden": false,
+      "effect": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+    },
+    {
+      "id": "rough-skin",
+      "name": "Rough Skin",
+      "hidden": true,
+      "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Land Shark Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "20.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "60"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "dragon",
+      "fairy"
+    ],
+    "4": [
+      "ice"
+    ],
+    "0.5": [
+      "fire",
+      "poison",
+      "rock"
+    ]
+  },
+  "evolution": {
+    "key": "gible",
+    "name": "Gible",
+    "number": 443,
+    "slug": "gible",
+    "conditions": [],
+    "children": [
+      {
+        "key": "gabite",
+        "name": "Gabite",
+        "number": 444,
+        "slug": "gabite",
+        "conditions": [
+          "Level 24"
+        ],
+        "children": [
+          {
+            "key": "garchomp",
+            "name": "Garchomp",
+            "number": 445,
+            "slug": "garchomp",
+            "conditions": [
+              "Level 48"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

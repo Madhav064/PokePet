@@ -1,0 +1,159 @@
+{
+  "slug": "abra",
+  "name": "Abra",
+  "number": 63,
+  "group": 1,
+  "elements": [
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/abra/spritesheet.webp",
+  "category": "Psi Pokémon",
+  "description": "This Pokémon uses its psychic powers while it sleeps. The contents of Abra’s dreams affect the powers that the Pokémon wields.",
+  "blurb": "Using its psychic power is such a strain on its brain that it needs to sleep for 18 hours a day.",
+  "heightM": 0.9,
+  "weightKg": 19.5,
+  "stats": {
+    "hp": 25,
+    "atk": 20,
+    "def": 15,
+    "spa": 105,
+    "spd": 55,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "synchronize",
+      "name": "Synchronize",
+      "hidden": false,
+      "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+    },
+    {
+      "id": "inner-focus",
+      "name": "Inner Focus",
+      "hidden": false,
+      "effect": "Prevents flinching."
+    },
+    {
+      "id": "magic-guard",
+      "name": "Magic Guard",
+      "hidden": true,
+      "effect": "Protects against damage not directly caused by a move."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Psi Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.9 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "19.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "75% ♂ · 25% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "200"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "62"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  "evolution": {
+    "key": "abra",
+    "name": "Abra",
+    "number": 63,
+    "slug": "abra",
+    "conditions": [],
+    "children": [
+      {
+        "key": "kadabra",
+        "name": "Kadabra",
+        "number": 64,
+        "slug": "kadabra",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "alakazam",
+            "name": "Alakazam",
+            "number": 65,
+            "slug": "alakazam",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

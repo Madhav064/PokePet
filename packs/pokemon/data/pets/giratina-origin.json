@@ -1,0 +1,135 @@
+{
+  "slug": "giratina-origin",
+  "name": "Giratina (Origin)",
+  "number": 487,
+  "group": 4,
+  "elements": [
+    "ghost",
+    "dragon"
+  ],
+  "isVariant": true,
+  "baseSlug": "giratina",
+  "tags": [
+    "legendary",
+    "form"
+  ],
+  "spritesheet": "pets/giratina-origin/spritesheet.webp",
+  "category": "Renegade Pokémon",
+  "description": "This Pokémon is said to live in a world on the reverse side of ours, where common knowledge is distorted and strange.",
+  "blurb": "Giratina's true form, dwelling in the Distortion World.",
+  "heightM": 6.9,
+  "weightKg": 650,
+  "stats": {
+    "hp": 150,
+    "atk": 120,
+    "def": 100,
+    "spa": 120,
+    "spd": 100,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "levitate",
+      "name": "Levitate",
+      "hidden": false,
+      "effect": "Evades Ground moves."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Renegade Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "6.9 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "650.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Black"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Tentacles"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "340"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "normal",
+      "fighting"
+    ],
+    "2": [
+      "ice",
+      "ghost",
+      "dragon",
+      "dark",
+      "fairy"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "electric",
+      "grass",
+      "poison",
+      "bug"
+    ]
+  },
+  "evolution": null,
+  "variants": [
+    "giratina"
+  ],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

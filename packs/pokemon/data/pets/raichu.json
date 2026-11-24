@@ -1,0 +1,152 @@
+{
+  "slug": "raichu",
+  "name": "Raichu",
+  "number": 26,
+  "group": 1,
+  "elements": [
+    "electric"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/raichu/spritesheet.webp",
+  "category": "Mouse Pokémon",
+  "description": "Its tail discharges electricity into the ground, protecting it from getting shocked.",
+  "blurb": "Its tail discharges electricity into the ground, protecting it from getting shocked.",
+  "heightM": 0.8,
+  "weightKg": 30,
+  "stats": {
+    "hp": 60,
+    "atk": 90,
+    "def": 55,
+    "spa": 90,
+    "spd": 80,
+    "spe": 110
+  },
+  "abilities": [
+    {
+      "id": "static",
+      "name": "Static",
+      "hidden": false,
+      "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+    },
+    {
+      "id": "lightning-rod",
+      "name": "Lightning Rod",
+      "hidden": true,
+      "effect": "Redirects single-target Electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Mouse Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "30.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground, Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "75"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "218"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ground"
+    ],
+    "0.5": [
+      "electric",
+      "flying",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "pichu",
+    "name": "Pichu",
+    "number": 172,
+    "slug": "pichu",
+    "conditions": [],
+    "children": [
+      {
+        "key": "pikachu",
+        "name": "Pikachu",
+        "number": 25,
+        "slug": "pikachu",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "raichu",
+            "name": "Raichu",
+            "number": 26,
+            "slug": "raichu",
+            "conditions": [
+              "Use Thunder Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

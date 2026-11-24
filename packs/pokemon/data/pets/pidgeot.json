@@ -1,0 +1,164 @@
+{
+  "slug": "pidgeot",
+  "name": "Pidgeot",
+  "number": 18,
+  "group": 1,
+  "elements": [
+    "normal",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/pidgeot/spritesheet.webp",
+  "category": "Bird Pokémon",
+  "description": "This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon.",
+  "blurb": "By flapping its wings with all its might, Pidgeot can make a gust of wind capable of bending tall trees.",
+  "heightM": 1.5,
+  "weightKg": 39.5,
+  "stats": {
+    "hp": 83,
+    "atk": 80,
+    "def": 75,
+    "spa": 70,
+    "spd": 70,
+    "spe": 101
+  },
+  "abilities": [
+    {
+      "id": "keen-eye",
+      "name": "Keen Eye",
+      "hidden": false,
+      "effect": "Prevents accuracy from being lowered."
+    },
+    {
+      "id": "tangled-feet",
+      "name": "Tangled Feet",
+      "hidden": false,
+      "effect": "Doubles evasion when confused."
+    },
+    {
+      "id": "big-pecks",
+      "name": "Big Pecks",
+      "hidden": true,
+      "effect": "Protects against Defense drops."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Bird Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "39.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Flying"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "216"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground",
+      "ghost"
+    ],
+    "2": [
+      "electric",
+      "ice",
+      "rock"
+    ],
+    "0.5": [
+      "grass",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "pidgey",
+    "name": "Pidgey",
+    "number": 16,
+    "slug": "pidgey",
+    "conditions": [],
+    "children": [
+      {
+        "key": "pidgeotto",
+        "name": "Pidgeotto",
+        "number": 17,
+        "slug": "pidgeotto",
+        "conditions": [
+          "Level 18"
+        ],
+        "children": [
+          {
+            "key": "pidgeot",
+            "name": "Pidgeot",
+            "number": 18,
+            "slug": "pidgeot",
+            "conditions": [
+              "Level 36"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

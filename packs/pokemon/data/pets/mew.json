@@ -1,0 +1,120 @@
+{
+  "slug": "mew",
+  "name": "Mew",
+  "number": 151,
+  "group": 1,
+  "elements": [
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [
+    "mythical"
+  ],
+  "spritesheet": "pets/mew/spritesheet.webp",
+  "category": "New Species Pokémon",
+  "description": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
+  "blurb": "Because it can use all kinds of moves, many scientists believe Mew to be the ancestor of Pokémon.",
+  "heightM": 0.4,
+  "weightKg": 4,
+  "stats": {
+    "hp": 100,
+    "atk": 100,
+    "def": 100,
+    "spa": 100,
+    "spd": 100,
+    "spe": 100
+  },
+  "abilities": [
+    {
+      "id": "synchronize",
+      "name": "Synchronize",
+      "hidden": false,
+      "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "New Species Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "4.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rare"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "100"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "270"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": true,
+    "baby": false
+  }
+}

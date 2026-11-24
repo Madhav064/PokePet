@@ -1,0 +1,212 @@
+{
+  "slug": "glaceon",
+  "name": "Glaceon",
+  "number": 471,
+  "group": 4,
+  "elements": [
+    "ice"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/glaceon/spritesheet.webp",
+  "category": "Fresh Snow Pokémon",
+  "description": "It can control its body temperature at will. This enables it to freeze the moisture in the atmosphere, creating flurries of diamond dust.",
+  "blurb": "By controlling its body heat, it can freeze the atmosphere around it to make a diamond-dust flurry.",
+  "heightM": 0.8,
+  "weightKg": 25.9,
+  "stats": {
+    "hp": 65,
+    "atk": 60,
+    "def": 110,
+    "spa": 130,
+    "spd": 95,
+    "spe": 65
+  },
+  "abilities": [
+    {
+      "id": "snow-cloak",
+      "name": "Snow Cloak",
+      "hidden": false,
+      "effect": "Increases evasion to 1.25× during hail. Protects against hail damage."
+    },
+    {
+      "id": "ice-body",
+      "name": "Ice Body",
+      "hidden": true,
+      "effect": "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Fresh Snow Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "25.9 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "35"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "35"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "184"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "fighting",
+      "rock",
+      "steel"
+    ],
+    "0.5": [
+      "ice"
+    ]
+  },
+  "evolution": {
+    "key": "eevee",
+    "name": "Eevee",
+    "number": 133,
+    "slug": "eevee",
+    "conditions": [],
+    "children": [
+      {
+        "key": "vaporeon",
+        "name": "Vaporeon",
+        "number": 134,
+        "slug": "vaporeon",
+        "conditions": [
+          "Use Water Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "jolteon",
+        "name": "Jolteon",
+        "number": 135,
+        "slug": "jolteon",
+        "conditions": [
+          "Use Thunder Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "flareon",
+        "name": "Flareon",
+        "number": 136,
+        "slug": "flareon",
+        "conditions": [
+          "Use Fire Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "espeon",
+        "name": "Espeon",
+        "number": 196,
+        "slug": "espeon",
+        "conditions": [
+          "High friendship, during the day"
+        ],
+        "children": []
+      },
+      {
+        "key": "umbreon",
+        "name": "Umbreon",
+        "number": 197,
+        "slug": "umbreon",
+        "conditions": [
+          "High friendship, at night"
+        ],
+        "children": []
+      },
+      {
+        "key": "leafeon",
+        "name": "Leafeon",
+        "number": 470,
+        "slug": "leafeon",
+        "conditions": [
+          "Use Leaf Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "glaceon",
+        "name": "Glaceon",
+        "number": 471,
+        "slug": "glaceon",
+        "conditions": [
+          "Use Ice Stone"
+        ],
+        "children": []
+      },
+      {
+        "key": "sylveon",
+        "name": "Sylveon",
+        "number": 700,
+        "conditions": [
+          "High affection, knowing a Fairy move",
+          "High friendship, knowing a Fairy move"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "slug": "weedle",
+  "name": "Weedle",
+  "number": 13,
+  "group": 1,
+  "elements": [
+    "bug",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/weedle/spritesheet.webp",
+  "category": "Hairy Bug Pokémon",
+  "description": "Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose).",
+  "blurb": "It eats its weight in leaves every day. It fends off attackers with the needle on its head.",
+  "heightM": 0.3,
+  "weightKg": 3.2,
+  "stats": {
+    "hp": 40,
+    "atk": 35,
+    "def": 30,
+    "spa": 20,
+    "spd": 20,
+    "spe": 50
+  },
+  "abilities": [
+    {
+      "id": "shield-dust",
+      "name": "Shield Dust",
+      "hidden": false,
+      "effect": "Protects against incoming moves' extra effects."
+    },
+    {
+      "id": "run-away",
+      "name": "Run Away",
+      "hidden": true,
+      "effect": "Ensures success fleeing from wild battles."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Hairy Bug Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "3.2 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Bug"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Armor"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "39"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "flying",
+      "psychic",
+      "rock"
+    ],
+    "0.25": [
+      "grass",
+      "fighting"
+    ],
+    "0.5": [
+      "poison",
+      "bug",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "weedle",
+    "name": "Weedle",
+    "number": 13,
+    "slug": "weedle",
+    "conditions": [],
+    "children": [
+      {
+        "key": "kakuna",
+        "name": "Kakuna",
+        "number": 14,
+        "slug": "kakuna",
+        "conditions": [
+          "Level 7"
+        ],
+        "children": [
+          {
+            "key": "beedrill",
+            "name": "Beedrill",
+            "number": 15,
+            "slug": "beedrill",
+            "conditions": [
+              "Level 10"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

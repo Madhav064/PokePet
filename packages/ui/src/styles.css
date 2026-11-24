@@ -1,0 +1,64 @@
+/* Component styles for @pokepet/ui. Colors come from the host app's tokens:
+   --pp-bg --pp-surface --pp-ink --pp-muted --pp-line --pp-accent --pp-tile --pp-display --pp-body */
+
+/* Badge */
+.pp-badge { display: inline-flex; align-items: center; border-radius: 999px; font-weight: 600; color: #fff;
+  background: var(--el); letter-spacing: .02em; text-shadow: 0 1px 0 rgb(0 0 0 / .18); white-space: nowrap; }
+.pp-badge-sm { font-size: .64rem; padding: 2px 8px; }
+.pp-badge-md { font-size: .78rem; padding: 4px 12px; }
+
+/* Card */
+.pp-card-wrap { min-width: 0; }
+.pp-card { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 10px 14px;
+  border-radius: 14px; background: var(--pp-surface); border: 1px solid var(--pp-line); color: inherit; text-decoration: none;
+  transition: border-color .15s, transform .15s; }
+.pp-card:hover { border-color: color-mix(in oklab, var(--pp-accent) 45%, var(--pp-line)); transform: translateY(-2px); }
+.pp-card:focus-visible { outline: 2px solid var(--pp-accent); outline-offset: 2px; }
+.pp-card-num { align-self: flex-start; font-size: .7rem; color: var(--pp-muted); font-variant-numeric: tabular-nums; }
+.pp-card-sprite { margin-top: -6px; }
+.pp-card-name { font-weight: 600; font-size: .9rem; text-align: center; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pp-card-els { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; min-height: 18px; }
+@media (prefers-reduced-motion: reduce) { .pp-card, .pp-card:hover { transition: none; transform: none; } }
+
+/* Stats */
+.pp-stats { display: grid; gap: 8px; margin: 0; }
+.pp-stat { display: grid; grid-template-columns: 7.5rem 2.5rem 1fr; align-items: center; gap: 12px; }
+.pp-stat dt { color: var(--pp-muted); font-size: .85rem; }
+.pp-stat dd { margin: 0; }
+.pp-stat-val { font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.pp-stat-bar { height: 8px; border-radius: 999px; background: var(--pp-tile); overflow: hidden; }
+.pp-stat-bar span { display: block; height: 100%; border-radius: inherit; background: var(--pp-ink); opacity: .85; }
+.pp-stat-bar span[data-tier="high"] { background: var(--pp-accent); opacity: 1; }
+.pp-stat-total { border-top: 1px solid var(--pp-line); padding-top: 8px; }
+.pp-stat-total dt { color: var(--pp-ink); font-weight: 600; }
+@media (max-width: 480px) { .pp-stat { grid-template-columns: 6rem 2.25rem 1fr; gap: 8px; } }
+
+/* Evolution tree */
+.pp-evo { overflow-x: auto; padding-bottom: 4px; }
+.pp-evo-branch { display: flex; align-items: center; gap: 0; }
+.pp-evo-children { display: flex; flex-direction: column; gap: 10px; }
+.pp-evo-edge { display: flex; align-items: center; }
+.pp-evo-arrow { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 128px; padding: 0 8px; color: var(--pp-muted); text-align: center; }
+.pp-evo-arrow > span:last-child { font-size: 1.1rem; line-height: 1; }
+.pp-evo-cond { font-size: .7rem; line-height: 1.3; }
+.pp-evo-card { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 112px; padding: 8px 6px 10px; border-radius: 12px;
+  border: 1px solid var(--pp-line); background: var(--pp-surface); color: inherit; text-decoration: none; flex-shrink: 0; }
+a.pp-evo-card:hover { border-color: color-mix(in oklab, var(--pp-accent) 45%, var(--pp-line)); }
+a.pp-evo-card:focus-visible { outline: 2px solid var(--pp-accent); outline-offset: 2px; }
+.pp-evo-card.is-current { border-color: var(--pp-accent); box-shadow: inset 0 0 0 1px var(--pp-accent); }
+.pp-evo-card.is-missing { border-style: dashed; opacity: .6; }
+.pp-evo-missing { width: 80px; height: 87px; display: grid; place-items: center; font-family: var(--pp-display); font-size: 1.8rem; color: var(--pp-muted); }
+.pp-evo-name { font-size: .8rem; font-weight: 600; text-align: center; }
+.pp-evo-num { font-size: .66rem; color: var(--pp-muted); font-variant-numeric: tabular-nums; }
+.pp-evo-note { font-size: .62rem; color: var(--pp-muted); text-transform: uppercase; letter-spacing: .06em; }
+.pp-evo-children.is-fan { display: grid; grid-template-columns: repeat(2, max-content); gap: 10px 8px; }
+@media (max-width: 640px) {
+  .pp-evo { overflow-x: visible; }
+  .pp-evo-branch, .pp-evo-edge { flex-direction: column; }
+  .pp-evo-children { align-items: center; }
+  .pp-evo-children.is-fan, .pp-evo-children.is-branch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); justify-items: center; align-items: start; gap: 12px 8px; width: 100%; }
+  .pp-evo-branch { width: 100%; align-items: center; }
+  .pp-evo-arrow { width: auto; max-width: 140px; padding: 6px 0; flex-direction: column-reverse; }
+  .pp-evo-arrow > span:last-child { transform: rotate(90deg); }
+  .pp-evo-children:not(.is-fan) { gap: 0; }
+}

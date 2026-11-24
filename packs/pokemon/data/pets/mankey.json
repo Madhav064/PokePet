@@ -1,0 +1,159 @@
+{
+  "slug": "mankey",
+  "name": "Mankey",
+  "number": 56,
+  "group": 1,
+  "elements": [
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/mankey/spritesheet.webp",
+  "category": "Pig Monkey Pokémon",
+  "description": "It lives in groups in the treetops. If it loses sight of its group, it becomes infuriated by its loneliness.",
+  "blurb": "It lives in treetop colonies. If one becomes enraged, the whole colony rampages for no reason.",
+  "heightM": 0.5,
+  "weightKg": 28,
+  "stats": {
+    "hp": 40,
+    "atk": 80,
+    "def": 35,
+    "spa": 35,
+    "spd": 45,
+    "spe": 70
+  },
+  "abilities": [
+    {
+      "id": "vital-spirit",
+      "name": "Vital Spirit",
+      "hidden": false,
+      "effect": "Prevents sleep."
+    },
+    {
+      "id": "anger-point",
+      "name": "Anger Point",
+      "hidden": false,
+      "effect": "Raises Attack to the maximum of six stages upon receiving a critical hit."
+    },
+    {
+      "id": "defiant",
+      "name": "Defiant",
+      "hidden": true,
+      "effect": "Raises Attack two stages upon having any stat lowered."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Pig Monkey Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "28.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "61"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "flying",
+      "psychic",
+      "fairy"
+    ],
+    "0.5": [
+      "bug",
+      "rock",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "mankey",
+    "name": "Mankey",
+    "number": 56,
+    "slug": "mankey",
+    "conditions": [],
+    "children": [
+      {
+        "key": "primeape",
+        "name": "Primeape",
+        "number": 57,
+        "slug": "primeape",
+        "conditions": [
+          "Level 28"
+        ],
+        "children": [
+          {
+            "key": "annihilape",
+            "name": "Annihilape",
+            "number": 979,
+            "conditions": [
+              "Special move condition"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

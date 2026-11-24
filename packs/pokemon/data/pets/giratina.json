@@ -1,0 +1,139 @@
+{
+  "slug": "giratina",
+  "name": "Giratina",
+  "number": 487,
+  "group": 4,
+  "elements": [
+    "ghost",
+    "dragon"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/giratina/spritesheet.webp",
+  "category": "Renegade Pokémon",
+  "description": "This Pokémon is said to live in a world on the reverse side of ours, where common knowledge is distorted and strange.",
+  "blurb": "It was banished for its violence. It silently gazed upon the old world from the Distortion World.",
+  "heightM": 4.5,
+  "weightKg": 750,
+  "stats": {
+    "hp": 150,
+    "atk": 100,
+    "def": 120,
+    "spa": 100,
+    "spd": 120,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+      "id": "telepathy",
+      "name": "Telepathy",
+      "hidden": true,
+      "effect": "Protects against friendly Pokémon's damaging moves."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Renegade Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "4.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "750.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Black"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Tentacles"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "306"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "normal",
+      "fighting"
+    ],
+    "2": [
+      "ice",
+      "ghost",
+      "dragon",
+      "dark",
+      "fairy"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "electric",
+      "grass",
+      "poison",
+      "bug"
+    ]
+  },
+  "evolution": null,
+  "variants": [
+    "giratina-origin"
+  ],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "slug": "clefable",
+  "name": "Clefable",
+  "number": 36,
+  "group": 1,
+  "elements": [
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/clefable/spritesheet.webp",
+  "category": "Fairy Pokémon",
+  "description": "Said to live in quiet, remote mountains, this type of fairy has a strong aversion to being seen.",
+  "blurb": "It is very wary and rarely shows itself to people. Its ears can hear a pin drop over half a mile away.",
+  "heightM": 1.3,
+  "weightKg": 40,
+  "stats": {
+    "hp": 95,
+    "atk": 70,
+    "def": 73,
+    "spa": 95,
+    "spd": 90,
+    "spe": 60
+  },
+  "abilities": [
+    {
+      "id": "cute-charm",
+      "name": "Cute Charm",
+      "hidden": false,
+      "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
+    },
+    {
+      "id": "magic-guard",
+      "name": "Magic Guard",
+      "hidden": false,
+      "effect": "Protects against damage not directly caused by a move."
+    },
+    {
+      "id": "unaware",
+      "name": "Unaware",
+      "hidden": true,
+      "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Fairy Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "40.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "25% ♂ · 75% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "25"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "140"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "217"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "steel"
+    ],
+    "0.5": [
+      "fighting",
+      "bug",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "cleffa",
+    "name": "Cleffa",
+    "number": 173,
+    "slug": "cleffa",
+    "conditions": [],
+    "children": [
+      {
+        "key": "clefairy",
+        "name": "Clefairy",
+        "number": 35,
+        "slug": "clefairy",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "clefable",
+            "name": "Clefable",
+            "number": 36,
+            "slug": "clefable",
+            "conditions": [
+              "Use Moon Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

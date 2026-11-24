@@ -1,0 +1,145 @@
+{
+  "slug": "snorlax",
+  "name": "Snorlax",
+  "number": 143,
+  "group": 1,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/snorlax/spritesheet.webp",
+  "category": "Sleeping Pokémon",
+  "description": "This gluttonous Pokémon eats constantly, apart from when it’s asleep. It devours nearly 900 pounds of food per day.",
+  "blurb": "When its belly is full, it becomes too lethargic to even lift a finger, so it is safe to bounce on its belly.",
+  "heightM": 2.1,
+  "weightKg": 460,
+  "stats": {
+    "hp": 160,
+    "atk": 110,
+    "def": 65,
+    "spa": 65,
+    "spd": 110,
+    "spe": 30
+  },
+  "abilities": [
+    {
+      "id": "immunity",
+      "name": "Immunity",
+      "hidden": false,
+      "effect": "Prevents poison."
+    },
+    {
+      "id": "thick-fat",
+      "name": "Thick Fat",
+      "hidden": false,
+      "effect": "Halves damage from Fire and Ice moves."
+    },
+    {
+      "id": "gluttony",
+      "name": "Gluttony",
+      "hidden": true,
+      "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Sleeping Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "2.1 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "460.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Black"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "25"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "189"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "munchlax",
+    "name": "Munchlax",
+    "number": 446,
+    "slug": "munchlax",
+    "conditions": [],
+    "children": [
+      {
+        "key": "snorlax",
+        "name": "Snorlax",
+        "number": 143,
+        "slug": "snorlax",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

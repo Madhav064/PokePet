@@ -1,0 +1,173 @@
+{
+  "slug": "golem",
+  "name": "Golem",
+  "number": 76,
+  "group": 1,
+  "elements": [
+    "rock",
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/golem/spritesheet.webp",
+  "category": "Megaton Pokémon",
+  "description": "It is enclosed in a hard shell that is as rugged as slabs of rock. It sheds skin once a year to grow larger.",
+  "blurb": "Even dynamite can’t harm its hard, boulderlike body. It sheds its hide just once a year.",
+  "heightM": 1.4,
+  "weightKg": 300,
+  "stats": {
+    "hp": 80,
+    "atk": 120,
+    "def": 130,
+    "spa": 55,
+    "spd": 65,
+    "spe": 45
+  },
+  "abilities": [
+    {
+      "id": "rock-head",
+      "name": "Rock Head",
+      "hidden": false,
+      "effect": "Protects against recoil damage."
+    },
+    {
+      "id": "sturdy",
+      "name": "Sturdy",
+      "hidden": false,
+      "effect": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
+    },
+    {
+      "id": "sand-veil",
+      "name": "Sand Veil",
+      "hidden": true,
+      "effect": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Megaton Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "300.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Mineral"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "223"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "ice",
+      "fighting",
+      "ground",
+      "steel"
+    ],
+    "4": [
+      "water",
+      "grass"
+    ],
+    "0.5": [
+      "normal",
+      "fire",
+      "flying",
+      "rock"
+    ],
+    "0.25": [
+      "poison"
+    ]
+  },
+  "evolution": {
+    "key": "geodude",
+    "name": "Geodude",
+    "number": 74,
+    "slug": "geodude",
+    "conditions": [],
+    "children": [
+      {
+        "key": "graveler",
+        "name": "Graveler",
+        "number": 75,
+        "slug": "graveler",
+        "conditions": [
+          "Level 25"
+        ],
+        "children": [
+          {
+            "key": "golem",
+            "name": "Golem",
+            "number": 76,
+            "slug": "golem",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

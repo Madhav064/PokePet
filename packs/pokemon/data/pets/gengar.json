@@ -1,0 +1,157 @@
+{
+  "slug": "gengar",
+  "name": "Gengar",
+  "number": 94,
+  "group": 1,
+  "elements": [
+    "ghost",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/gengar/spritesheet.webp",
+  "category": "Shadow Pokémon",
+  "description": "To steal the life of its target, it slips into the prey’s shadow and silently waits for an opportunity.",
+  "blurb": "The leer that floats in darkness belongs to a Gengar delighting in casting curses on people.",
+  "heightM": 1.5,
+  "weightKg": 40.5,
+  "stats": {
+    "hp": 60,
+    "atk": 65,
+    "def": 60,
+    "spa": 130,
+    "spd": 75,
+    "spe": 110
+  },
+  "abilities": [
+    {
+      "id": "cursed-body",
+      "name": "Cursed Body",
+      "hidden": false,
+      "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Shadow Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "40.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Indeterminate"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Cave"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "225"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "normal",
+      "fighting"
+    ],
+    "2": [
+      "ground",
+      "psychic",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "grass",
+      "fairy"
+    ],
+    "0.25": [
+      "poison",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "gastly",
+    "name": "Gastly",
+    "number": 92,
+    "slug": "gastly",
+    "conditions": [],
+    "children": [
+      {
+        "key": "haunter",
+        "name": "Haunter",
+        "number": 93,
+        "slug": "haunter",
+        "conditions": [
+          "Level 25"
+        ],
+        "children": [
+          {
+            "key": "gengar",
+            "name": "Gengar",
+            "number": 94,
+            "slug": "gengar",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "hitmonlee",
+  "name": "Hitmonlee",
+  "number": 106,
+  "group": 1,
+  "elements": [
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/hitmonlee/spritesheet.webp",
+  "category": "Kicking Pokémon",
+  "description": "At the exact moment it lands a kick on its target, Hitmonlee hardens the muscles on the sole of its foot, maximizing the power of the kick.",
+  "blurb": "Its legs can stretch double. First-time foes are startled by its extensible reach.",
+  "heightM": 1.5,
+  "weightKg": 49.8,
+  "stats": {
+    "hp": 50,
+    "atk": 120,
+    "def": 53,
+    "spa": 35,
+    "spd": 110,
+    "spe": 87
+  },
+  "abilities": [
+    {
+      "id": "limber",
+      "name": "Limber",
+      "hidden": false,
+      "effect": "Prevents paralysis."
+    },
+    {
+      "id": "reckless",
+      "name": "Reckless",
+      "hidden": false,
+      "effect": "Strengthens recoil moves to 1.2× their power."
+    },
+    {
+      "id": "unburden",
+      "name": "Unburden",
+      "hidden": true,
+      "effect": "Doubles Speed upon using or losing a held item."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Kicking Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "49.8 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "100% ♂ · 0% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "159"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "flying",
+      "psychic",
+      "fairy"
+    ],
+    "0.5": [
+      "bug",
+      "rock",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "tyrogue",
+    "name": "Tyrogue",
+    "number": 236,
+    "slug": "tyrogue",
+    "conditions": [],
+    "children": [
+      {
+        "key": "hitmonlee",
+        "name": "Hitmonlee",
+        "number": 106,
+        "slug": "hitmonlee",
+        "conditions": [
+          "Level 20, Attack > Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmonchan",
+        "name": "Hitmonchan",
+        "number": 107,
+        "slug": "hitmonchan",
+        "conditions": [
+          "Level 20, Attack < Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmontop",
+        "name": "Hitmontop",
+        "number": 237,
+        "slug": "hitmontop",
+        "conditions": [
+          "Level 20, Attack = Defense"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "slug": "rapidash",
+  "name": "Rapidash",
+  "number": 78,
+  "group": 1,
+  "elements": [
+    "fire"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/rapidash/spritesheet.webp",
+  "category": "Fire Horse Pokémon",
+  "description": "This Pokémon can be seen galloping through fields at speeds of up to 150 mph, its fiery mane fluttering in the wind.",
+  "blurb": "When at an all-out gallop, its blazing mane sparkles, enhancing its beautiful appearance.",
+  "heightM": 1.7,
+  "weightKg": 95,
+  "stats": {
+    "hp": 65,
+    "atk": 100,
+    "def": 70,
+    "spa": 80,
+    "spd": 80,
+    "spe": 105
+  },
+  "abilities": [
+    {
+      "id": "run-away",
+      "name": "Run Away",
+      "hidden": false,
+      "effect": "Ensures success fleeing from wild battles."
+    },
+    {
+      "id": "flash-fire",
+      "name": "Flash Fire",
+      "hidden": false,
+      "effect": "Protects against Fire moves. Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+    },
+    {
+      "id": "flame-body",
+      "name": "Flame Body",
+      "hidden": true,
+      "effect": "Has a 30% chance of burning attacking Pokémon on contact."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Fire Horse Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "95.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "60"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "175"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "water",
+      "ground",
+      "rock"
+    ],
+    "0.5": [
+      "fire",
+      "grass",
+      "ice",
+      "bug",
+      "steel",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "ponyta",
+    "name": "Ponyta",
+    "number": 77,
+    "slug": "ponyta",
+    "conditions": [],
+    "children": [
+      {
+        "key": "rapidash",
+        "name": "Rapidash",
+        "number": 78,
+        "slug": "rapidash",
+        "conditions": [
+          "Level 40"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

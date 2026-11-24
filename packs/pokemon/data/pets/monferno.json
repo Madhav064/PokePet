@@ -1,0 +1,161 @@
+{
+  "slug": "monferno",
+  "name": "Monferno",
+  "number": 391,
+  "group": 4,
+  "elements": [
+    "fire",
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/monferno/spritesheet.webp",
+  "category": "Playful Pokémon",
+  "description": "It skillfully controls the intensity of the fire on its tail to keep its foes at an ideal distance.",
+  "blurb": "It skillfully controls the intensity of the fire on its tail to keep its foes at an ideal distance.",
+  "heightM": 0.9,
+  "weightKg": 22,
+  "stats": {
+    "hp": 64,
+    "atk": 78,
+    "def": 52,
+    "spa": 78,
+    "spd": 52,
+    "spe": 81
+  },
+  "abilities": [
+    {
+      "id": "blaze",
+      "name": "Blaze",
+      "hidden": false,
+      "effect": "Strengthens Fire moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "iron-fist",
+      "name": "Iron Fist",
+      "hidden": true,
+      "effect": "Strengthens punch-based moves to 1.2× their power."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Playful Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.9 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "22.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground, Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "142"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "water",
+      "ground",
+      "flying",
+      "psychic"
+    ],
+    "0.5": [
+      "fire",
+      "grass",
+      "ice",
+      "dark",
+      "steel"
+    ],
+    "0.25": [
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "chimchar",
+    "name": "Chimchar",
+    "number": 390,
+    "slug": "chimchar",
+    "conditions": [],
+    "children": [
+      {
+        "key": "monferno",
+        "name": "Monferno",
+        "number": 391,
+        "slug": "monferno",
+        "conditions": [
+          "Level 14"
+        ],
+        "children": [
+          {
+            "key": "infernape",
+            "name": "Infernape",
+            "number": 392,
+            "slug": "infernape",
+            "conditions": [
+              "Level 36"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

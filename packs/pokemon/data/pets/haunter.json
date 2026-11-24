@@ -1,0 +1,157 @@
+{
+  "slug": "haunter",
+  "name": "Haunter",
+  "number": 93,
+  "group": 1,
+  "elements": [
+    "ghost",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/haunter/spritesheet.webp",
+  "category": "Gas Pokémon",
+  "description": "It likes to lurk in the dark and tap shoulders with a gaseous hand. Its touch causes endless shuddering.",
+  "blurb": "It likes to lurk in the dark and tap shoulders with a gaseous hand. Its touch causes endless shuddering.",
+  "heightM": 1.6,
+  "weightKg": 0.1,
+  "stats": {
+    "hp": 45,
+    "atk": 50,
+    "def": 45,
+    "spa": 115,
+    "spd": 55,
+    "spe": 95
+  },
+  "abilities": [
+    {
+      "id": "levitate",
+      "name": "Levitate",
+      "hidden": false,
+      "effect": "Evades Ground moves."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Gas Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "0.1 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Indeterminate"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Cave"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Arms"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "90"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "142"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "normal",
+      "fighting"
+    ],
+    "2": [
+      "ground",
+      "psychic",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "grass",
+      "fairy"
+    ],
+    "0.25": [
+      "poison",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "gastly",
+    "name": "Gastly",
+    "number": 92,
+    "slug": "gastly",
+    "conditions": [],
+    "children": [
+      {
+        "key": "haunter",
+        "name": "Haunter",
+        "number": 93,
+        "slug": "haunter",
+        "conditions": [
+          "Level 25"
+        ],
+        "children": [
+          {
+            "key": "gengar",
+            "name": "Gengar",
+            "number": 94,
+            "slug": "gengar",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

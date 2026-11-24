@@ -1,0 +1,145 @@
+{
+  "slug": "lickilicky",
+  "name": "Lickilicky",
+  "number": 463,
+  "group": 4,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/lickilicky/spritesheet.webp",
+  "category": "Licking Pokémon",
+  "description": "Lickilicky’s strange tongue can stretch to many times the length of its body. No one has figured out how Lickilicky’s tongue can stretch so far.",
+  "blurb": "The long tongue is always soggy with slobber. The saliva contains a solvent that causes numbness.",
+  "heightM": 1.7,
+  "weightKg": 140,
+  "stats": {
+    "hp": 110,
+    "atk": 85,
+    "def": 95,
+    "spa": 80,
+    "spd": 95,
+    "spe": 50
+  },
+  "abilities": [
+    {
+      "id": "own-tempo",
+      "name": "Own Tempo",
+      "hidden": false,
+      "effect": "Prevents confusion."
+    },
+    {
+      "id": "oblivious",
+      "name": "Oblivious",
+      "hidden": false,
+      "effect": "Prevents infatuation and protects against Captivate."
+    },
+    {
+      "id": "cloud-nine",
+      "name": "Cloud Nine",
+      "hidden": true,
+      "effect": "Negates all effects of weather, but does not prevent the weather itself."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Licking Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "140.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "30"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "180"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "lickitung",
+    "name": "Lickitung",
+    "number": 108,
+    "slug": "lickitung",
+    "conditions": [],
+    "children": [
+      {
+        "key": "lickilicky",
+        "name": "Lickilicky",
+        "number": 463,
+        "slug": "lickilicky",
+        "conditions": [
+          "Knowing Rollout"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "slug": "nidoran-m",
+  "name": "Nidoran♂",
+  "number": 32,
+  "group": 1,
+  "elements": [
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/nidoran-m/spritesheet.webp",
+  "category": "Poison Pin Pokémon",
+  "description": "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears.",
+  "blurb": "It scans its surroundings by raising its ears out of the grass. Its toxic horn is for protection.",
+  "heightM": 0.5,
+  "weightKg": 9,
+  "stats": {
+    "hp": 46,
+    "atk": 57,
+    "def": 40,
+    "spa": 40,
+    "spd": 40,
+    "spe": 50
+  },
+  "abilities": [
+    {
+      "id": "poison-point",
+      "name": "Poison Point",
+      "hidden": false,
+      "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
+    },
+    {
+      "id": "rivalry",
+      "name": "Rivalry",
+      "hidden": false,
+      "effect": "Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender."
+    },
+    {
+      "id": "hustle",
+      "name": "Hustle",
+      "hidden": true,
+      "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Poison Pin Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "9.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "100% ♂ · 0% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "235"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "55"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ground",
+      "psychic"
+    ],
+    "0.5": [
+      "grass",
+      "fighting",
+      "poison",
+      "bug",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "nidoran-m",
+    "name": "Nidoran♂",
+    "number": 32,
+    "slug": "nidoran-m",
+    "conditions": [],
+    "children": [
+      {
+        "key": "nidorino",
+        "name": "Nidorino",
+        "number": 33,
+        "slug": "nidorino",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "nidoking",
+            "name": "Nidoking",
+            "number": 34,
+            "slug": "nidoking",
+            "conditions": [
+              "Use Moon Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

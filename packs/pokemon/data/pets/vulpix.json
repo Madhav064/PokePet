@@ -1,0 +1,147 @@
+{
+  "slug": "vulpix",
+  "name": "Vulpix",
+  "number": 37,
+  "group": 1,
+  "elements": [
+    "fire"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/vulpix/spritesheet.webp",
+  "category": "Fox Pokémon",
+  "description": "If it is attacked by an enemy that is stronger than itself, it feigns injury to fool the enemy and escapes.",
+  "blurb": "It controls balls of fire. As it grows, its six tails split from their tips to make more tails.",
+  "heightM": 0.6,
+  "weightKg": 9.9,
+  "stats": {
+    "hp": 38,
+    "atk": 41,
+    "def": 40,
+    "spa": 50,
+    "spd": 65,
+    "spe": 65
+  },
+  "abilities": [
+    {
+      "id": "flash-fire",
+      "name": "Flash Fire",
+      "hidden": false,
+      "effect": "Protects against Fire moves. Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+    },
+    {
+      "id": "drought",
+      "name": "Drought",
+      "hidden": true,
+      "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Fox Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "9.9 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "25% ♂ · 75% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "60"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "water",
+      "ground",
+      "rock"
+    ],
+    "0.5": [
+      "fire",
+      "grass",
+      "ice",
+      "bug",
+      "steel",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "vulpix",
+    "name": "Vulpix",
+    "number": 37,
+    "slug": "vulpix",
+    "conditions": [],
+    "children": [
+      {
+        "key": "ninetales",
+        "name": "Ninetales",
+        "number": 38,
+        "slug": "ninetales",
+        "conditions": [
+          "Use Fire Stone",
+          "Use Ice Stone"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

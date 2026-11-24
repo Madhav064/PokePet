@@ -1,0 +1,167 @@
+{
+  "slug": "bellossom",
+  "name": "Bellossom",
+  "number": 182,
+  "group": 2,
+  "elements": [
+    "grass"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/bellossom/spritesheet.webp",
+  "category": "Flower Pokémon",
+  "description": "Due to the effects of the Sun Stone, it is now active during the daytime. It likes to dance in pools of sunlight.",
+  "blurb": "When the heavy rainfall season ends, it is drawn out by warm sunlight to dance in the open.",
+  "heightM": 0.4,
+  "weightKg": 5.8,
+  "stats": {
+    "hp": 75,
+    "atk": 80,
+    "def": 95,
+    "spa": 90,
+    "spd": 100,
+    "spe": 50
+  },
+  "abilities": [
+    {
+      "id": "chlorophyll",
+      "name": "Chlorophyll",
+      "hidden": false,
+      "effect": "Doubles Speed during strong sunlight."
+    },
+    {
+      "id": "healer",
+      "name": "Healer",
+      "hidden": true,
+      "effect": "Has a 30% chance of curing each adjacent ally of any major status ailment after each turn."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Flower Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "5.8 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Plant"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "221"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "ice",
+      "poison",
+      "flying",
+      "bug"
+    ],
+    "0.5": [
+      "water",
+      "electric",
+      "grass",
+      "ground"
+    ]
+  },
+  "evolution": {
+    "key": "oddish",
+    "name": "Oddish",
+    "number": 43,
+    "slug": "oddish",
+    "conditions": [],
+    "children": [
+      {
+        "key": "gloom",
+        "name": "Gloom",
+        "number": 44,
+        "slug": "gloom",
+        "conditions": [
+          "Level 21"
+        ],
+        "children": [
+          {
+            "key": "vileplume",
+            "name": "Vileplume",
+            "number": 45,
+            "slug": "vileplume",
+            "conditions": [
+              "Use Leaf Stone"
+            ],
+            "children": []
+          },
+          {
+            "key": "bellossom",
+            "name": "Bellossom",
+            "number": 182,
+            "slug": "bellossom",
+            "conditions": [
+              "Use Sun Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

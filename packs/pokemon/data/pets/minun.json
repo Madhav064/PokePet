@@ -1,0 +1,123 @@
+{
+  "slug": "minun",
+  "name": "Minun",
+  "number": 312,
+  "group": 3,
+  "elements": [
+    "electric"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/minun/spritesheet.webp",
+  "category": "Cheering Pokémon",
+  "description": "Exposure to electricity from Minun and Plusle promotes blood circulation and relaxes muscles.",
+  "blurb": "It cheers on friends. If its friends are losing, its body lets off more and more sparks.",
+  "heightM": 0.4,
+  "weightKg": 4.2,
+  "stats": {
+    "hp": 60,
+    "atk": 40,
+    "def": 50,
+    "spa": 75,
+    "spd": 85,
+    "spe": 95
+  },
+  "abilities": [
+    {
+      "id": "minus",
+      "name": "Minus",
+      "hidden": false,
+      "effect": "Increases Special Attack to 1.5× when a friendly Pokémon has Plus or Minus."
+    },
+    {
+      "id": "volt-absorb",
+      "name": "Volt Absorb",
+      "hidden": true,
+      "effect": "Absorbs Electric moves, healing for 1/4 max HP."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Cheering Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "4.2 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "200"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "142"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ground"
+    ],
+    "0.5": [
+      "electric",
+      "flying",
+      "steel"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

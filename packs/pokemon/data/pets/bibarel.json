@@ -1,0 +1,154 @@
+{
+  "slug": "bibarel",
+  "name": "Bibarel",
+  "number": 400,
+  "group": 4,
+  "elements": [
+    "normal",
+    "water"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/bibarel/spritesheet.webp",
+  "category": "Beaver Pokémon",
+  "description": "It busily makes its nest with stacks of branches and roots it has cut up with its sharp incisors.",
+  "blurb": "A river dammed by Bibarel will never overflow its banks, which is appreciated by people nearby.",
+  "heightM": 1,
+  "weightKg": 31.5,
+  "stats": {
+    "hp": 79,
+    "atk": 85,
+    "def": 60,
+    "spa": 55,
+    "spd": 60,
+    "spe": 71
+  },
+  "abilities": [
+    {
+      "id": "simple",
+      "name": "Simple",
+      "hidden": false,
+      "effect": "Doubles the Pokémon's stat modifiers. These doubled modifiers are still capped at -6 or 6 stages."
+    },
+    {
+      "id": "unaware",
+      "name": "Unaware",
+      "hidden": false,
+      "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
+    },
+    {
+      "id": "moody",
+      "name": "Moody",
+      "hidden": true,
+      "effect": "Raises a random stat two stages and lowers another one stage after each turn."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Beaver Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "31.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "127"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "144"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "electric",
+      "grass",
+      "fighting"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "bidoof",
+    "name": "Bidoof",
+    "number": 399,
+    "slug": "bidoof",
+    "conditions": [],
+    "children": [
+      {
+        "key": "bibarel",
+        "name": "Bibarel",
+        "number": 400,
+        "slug": "bibarel",
+        "conditions": [
+          "Level 15"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

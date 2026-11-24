@@ -1,0 +1,121 @@
+{
+  "slug": "kyogre",
+  "name": "Kyogre",
+  "number": 382,
+  "group": 3,
+  "elements": [
+    "water"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/kyogre/spritesheet.webp",
+  "category": "Sea Basin Pokémon",
+  "description": "Through Primal Reversion and with nature’s full power, it will take back its true form. It can summon storms that cause the sea levels to rise.",
+  "blurb": "It is said to have widened the seas by causing downpours. It had been asleep in a marine trench.",
+  "heightM": 4.5,
+  "weightKg": 352,
+  "stats": {
+    "hp": 100,
+    "atk": 100,
+    "def": 90,
+    "spa": 150,
+    "spd": 140,
+    "spe": 90
+  },
+  "abilities": [
+    {
+      "id": "drizzle",
+      "name": "Drizzle",
+      "hidden": false,
+      "effect": "Summons rain that lasts indefinitely upon entering battle."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Sea Basin Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "4.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "352.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Sea"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Fish"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "302"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "steel"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "slug": "magby",
+  "name": "Magby",
+  "number": 240,
+  "group": 2,
+  "elements": [
+    "fire"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/magby/spritesheet.webp",
+  "category": "Live Coal Pokémon",
+  "description": "Each and every time it inhales and exhales, sparks leak from its mouth and nostrils.",
+  "blurb": "Its magma-like blood circulates throughout its body. Its body’s heat can top 1,100 degrees F.",
+  "heightM": 0.7,
+  "weightKg": 21.4,
+  "stats": {
+    "hp": 45,
+    "atk": 75,
+    "def": 37,
+    "spa": 70,
+    "spd": 55,
+    "spe": 83
+  },
+  "abilities": [
+    {
+      "id": "flame-body",
+      "name": "Flame Body",
+      "hidden": false,
+      "effect": "Has a 30% chance of burning attacking Pokémon on contact."
+    },
+    {
+      "id": "vital-spirit",
+      "name": "Vital Spirit",
+      "hidden": true,
+      "effect": "Prevents sleep."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Live Coal Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "21.4 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "75% ♂ · 25% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Red"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "73"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "water",
+      "ground",
+      "rock"
+    ],
+    "0.5": [
+      "fire",
+      "grass",
+      "ice",
+      "bug",
+      "steel",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "magby",
+    "name": "Magby",
+    "number": 240,
+    "slug": "magby",
+    "conditions": [],
+    "children": [
+      {
+        "key": "magmar",
+        "name": "Magmar",
+        "number": 126,
+        "slug": "magmar",
+        "conditions": [
+          "Level 30"
+        ],
+        "children": [
+          {
+            "key": "magmortar",
+            "name": "Magmortar",
+            "number": 467,
+            "slug": "magmortar",
+            "conditions": [
+              "Trade, holding Magmarizer"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

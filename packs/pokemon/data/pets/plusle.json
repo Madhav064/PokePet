@@ -1,0 +1,123 @@
+{
+  "slug": "plusle",
+  "name": "Plusle",
+  "number": 311,
+  "group": 3,
+  "elements": [
+    "electric"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/plusle/spritesheet.webp",
+  "category": "Cheering Pokémon",
+  "description": "It cheers on partners while scattering sparks from its body. It climbs telephone poles to absorb electricity.",
+  "blurb": "It cheers on friends with pom-poms made of sparks. It drains power from telephone poles.",
+  "heightM": 0.4,
+  "weightKg": 4.2,
+  "stats": {
+    "hp": 60,
+    "atk": 50,
+    "def": 40,
+    "spa": 85,
+    "spd": 75,
+    "spe": 95
+  },
+  "abilities": [
+    {
+      "id": "plus",
+      "name": "Plus",
+      "hidden": false,
+      "effect": "Increases Special Attack to 1.5× when a friendly Pokémon has Plus or Minus."
+    },
+    {
+      "id": "lightning-rod",
+      "name": "Lightning Rod",
+      "hidden": true,
+      "effect": "Redirects single-target Electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Cheering Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "4.2 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "200"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "142"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ground"
+    ],
+    "0.5": [
+      "electric",
+      "flying",
+      "steel"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

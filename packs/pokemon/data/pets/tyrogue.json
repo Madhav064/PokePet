@@ -1,0 +1,171 @@
+{
+  "slug": "tyrogue",
+  "name": "Tyrogue",
+  "number": 236,
+  "group": 2,
+  "elements": [
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/tyrogue/spritesheet.webp",
+  "category": "Scuffle Pokémon",
+  "description": "This earnest Pokémon battles all sorts of opponents, searching for the fighting style that suits it best.",
+  "blurb": "It is famous for its eagerness to fight and always nurses injuries from challenging larger foes.",
+  "heightM": 0.7,
+  "weightKg": 21,
+  "stats": {
+    "hp": 35,
+    "atk": 35,
+    "def": 35,
+    "spa": 35,
+    "spd": 35,
+    "spe": 35
+  },
+  "abilities": [
+    {
+      "id": "guts",
+      "name": "Guts",
+      "hidden": false,
+      "effect": "Increases Attack to 1.5× with a major status ailment."
+    },
+    {
+      "id": "steadfast",
+      "name": "Steadfast",
+      "hidden": false,
+      "effect": "Raises Speed one stage upon flinching."
+    },
+    {
+      "id": "vital-spirit",
+      "name": "Vital Spirit",
+      "hidden": true,
+      "effect": "Prevents sleep."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Scuffle Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "21.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "100% ♂ · 0% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "75"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "42"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "flying",
+      "psychic",
+      "fairy"
+    ],
+    "0.5": [
+      "bug",
+      "rock",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "tyrogue",
+    "name": "Tyrogue",
+    "number": 236,
+    "slug": "tyrogue",
+    "conditions": [],
+    "children": [
+      {
+        "key": "hitmonlee",
+        "name": "Hitmonlee",
+        "number": 106,
+        "slug": "hitmonlee",
+        "conditions": [
+          "Level 20, Attack > Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmonchan",
+        "name": "Hitmonchan",
+        "number": 107,
+        "slug": "hitmonchan",
+        "conditions": [
+          "Level 20, Attack < Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmontop",
+        "name": "Hitmontop",
+        "number": 237,
+        "slug": "hitmontop",
+        "conditions": [
+          "Level 20, Attack = Defense"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

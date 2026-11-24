@@ -1,0 +1,163 @@
+{
+  "slug": "jigglypuff",
+  "name": "Jigglypuff",
+  "number": 39,
+  "group": 1,
+  "elements": [
+    "normal",
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/jigglypuff/spritesheet.webp",
+  "category": "Balloon Pokémon",
+  "description": "When its huge eyes waver, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
+  "blurb": "When it wavers its big, round eyes, it begins singing a lullaby that makes everyone drowsy.",
+  "heightM": 0.5,
+  "weightKg": 5.5,
+  "stats": {
+    "hp": 115,
+    "atk": 45,
+    "def": 20,
+    "spa": 45,
+    "spd": 25,
+    "spe": 20
+  },
+  "abilities": [
+    {
+      "id": "cute-charm",
+      "name": "Cute Charm",
+      "hidden": false,
+      "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
+    },
+    {
+      "id": "competitive",
+      "name": "Competitive",
+      "hidden": false,
+      "effect": "Raises Special Attack by two stages upon having any stat lowered."
+    },
+    {
+      "id": "friend-guard",
+      "name": "Friend Guard",
+      "hidden": true,
+      "effect": "Decreases all direct damage taken by friendly Pokémon to 0.75×."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Balloon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "5.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "25% ♂ · 75% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "170"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "95"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost",
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "steel"
+    ],
+    "0.5": [
+      "bug",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "igglybuff",
+    "name": "Igglybuff",
+    "number": 174,
+    "slug": "igglybuff",
+    "conditions": [],
+    "children": [
+      {
+        "key": "jigglypuff",
+        "name": "Jigglypuff",
+        "number": 39,
+        "slug": "jigglypuff",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "wigglytuff",
+            "name": "Wigglytuff",
+            "number": 40,
+            "slug": "wigglytuff",
+            "conditions": [
+              "Use Moon Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

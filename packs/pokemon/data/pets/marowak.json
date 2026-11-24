@@ -1,0 +1,152 @@
+{
+  "slug": "marowak",
+  "name": "Marowak",
+  "number": 105,
+  "group": 1,
+  "elements": [
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/marowak/spritesheet.webp",
+  "category": "Bone Keeper Pokémon",
+  "description": "This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon.",
+  "blurb": "From its birth, this savage Pokémon constantly holds bones. It is skilled in using them as weapons.",
+  "heightM": 1,
+  "weightKg": 45,
+  "stats": {
+    "hp": 60,
+    "atk": 80,
+    "def": 110,
+    "spa": 50,
+    "spd": 80,
+    "spe": 45
+  },
+  "abilities": [
+    {
+      "id": "rock-head",
+      "name": "Rock Head",
+      "hidden": false,
+      "effect": "Protects against recoil damage."
+    },
+    {
+      "id": "lightning-rod",
+      "name": "Lightning Rod",
+      "hidden": false,
+      "effect": "Redirects single-target Electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
+    },
+    {
+      "id": "battle-armor",
+      "name": "Battle Armor",
+      "hidden": true,
+      "effect": "Protects against critical hits."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Bone Keeper Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "45.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "75"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "149"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "water",
+      "grass",
+      "ice"
+    ],
+    "0.5": [
+      "poison",
+      "rock"
+    ]
+  },
+  "evolution": {
+    "key": "cubone",
+    "name": "Cubone",
+    "number": 104,
+    "slug": "cubone",
+    "conditions": [],
+    "children": [
+      {
+        "key": "marowak",
+        "name": "Marowak",
+        "number": 105,
+        "slug": "marowak",
+        "conditions": [
+          "Level 28",
+          "Level 28, at night"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

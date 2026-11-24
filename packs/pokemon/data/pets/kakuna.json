@@ -1,0 +1,154 @@
+{
+  "slug": "kakuna",
+  "name": "Kakuna",
+  "number": 14,
+  "group": 1,
+  "elements": [
+    "bug",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/kakuna/spritesheet.webp",
+  "category": "Cocoon Pokémon",
+  "description": "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
+  "blurb": "While awaiting evolution, it hides from predators under leaves and in nooks of branches.",
+  "heightM": 0.6,
+  "weightKg": 10,
+  "stats": {
+    "hp": 45,
+    "atk": 25,
+    "def": 50,
+    "spa": 25,
+    "spd": 25,
+    "spe": 35
+  },
+  "abilities": [
+    {
+      "id": "shed-skin",
+      "name": "Shed Skin",
+      "hidden": false,
+      "effect": "Has a 33% chance of curing any major status ailment after each turn."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Cocoon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "10.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Bug"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "120"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "72"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "flying",
+      "psychic",
+      "rock"
+    ],
+    "0.25": [
+      "grass",
+      "fighting"
+    ],
+    "0.5": [
+      "poison",
+      "bug",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "weedle",
+    "name": "Weedle",
+    "number": 13,
+    "slug": "weedle",
+    "conditions": [],
+    "children": [
+      {
+        "key": "kakuna",
+        "name": "Kakuna",
+        "number": 14,
+        "slug": "kakuna",
+        "conditions": [
+          "Level 7"
+        ],
+        "children": [
+          {
+            "key": "beedrill",
+            "name": "Beedrill",
+            "number": 15,
+            "slug": "beedrill",
+            "conditions": [
+              "Level 10"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

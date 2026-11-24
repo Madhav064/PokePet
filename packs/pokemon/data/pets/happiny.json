@@ -1,0 +1,158 @@
+{
+  "slug": "happiny",
+  "name": "Happiny",
+  "number": 440,
+  "group": 4,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/happiny/spritesheet.webp",
+  "category": "Playhouse Pokémon",
+  "description": "It carries a round, white rock in its belly pouch. If it gets along well with someone, it will sometimes give that person the rock.",
+  "blurb": "It likes to carry around a small rock. It may wander around others’ feet and cause them to stumble.",
+  "heightM": 0.6,
+  "weightKg": 24.4,
+  "stats": {
+    "hp": 100,
+    "atk": 5,
+    "def": 5,
+    "spa": 15,
+    "spd": 65,
+    "spe": 30
+  },
+  "abilities": [
+    {
+      "id": "natural-cure",
+      "name": "Natural Cure",
+      "hidden": false,
+      "effect": "Cures any major status ailment upon switching out."
+    },
+    {
+      "id": "serene-grace",
+      "name": "Serene Grace",
+      "hidden": false,
+      "effect": "Doubles the chance of moves' extra effects occurring."
+    },
+    {
+      "id": "friend-guard",
+      "name": "Friend Guard",
+      "hidden": true,
+      "effect": "Decreases all direct damage taken by friendly Pokémon to 0.75×."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Playhouse Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "24.4 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "0% ♂ · 100% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "130"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "140"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "110"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "happiny",
+    "name": "Happiny",
+    "number": 440,
+    "slug": "happiny",
+    "conditions": [],
+    "children": [
+      {
+        "key": "chansey",
+        "name": "Chansey",
+        "number": 113,
+        "slug": "chansey",
+        "conditions": [
+          "Holding Oval Stone, during the day"
+        ],
+        "children": [
+          {
+            "key": "blissey",
+            "name": "Blissey",
+            "number": 242,
+            "slug": "blissey",
+            "conditions": [
+              "High friendship"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

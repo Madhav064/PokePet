@@ -1,0 +1,152 @@
+{
+  "slug": "cubone",
+  "name": "Cubone",
+  "number": 104,
+  "group": 1,
+  "elements": [
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/cubone/spritesheet.webp",
+  "category": "Lonely Pokémon",
+  "description": "When the memory of its departed mother brings it to tears, its cries echo mournfully within the skull it wears on its head.",
+  "blurb": "When it thinks of its dead mother, it cries. Its crying makes the skull it wears rattle hollowly.",
+  "heightM": 0.4,
+  "weightKg": 6.5,
+  "stats": {
+    "hp": 50,
+    "atk": 50,
+    "def": 95,
+    "spa": 40,
+    "spd": 50,
+    "spe": 35
+  },
+  "abilities": [
+    {
+      "id": "rock-head",
+      "name": "Rock Head",
+      "hidden": false,
+      "effect": "Protects against recoil damage."
+    },
+    {
+      "id": "lightning-rod",
+      "name": "Lightning Rod",
+      "hidden": false,
+      "effect": "Redirects single-target Electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
+    },
+    {
+      "id": "battle-armor",
+      "name": "Battle Armor",
+      "hidden": true,
+      "effect": "Protects against critical hits."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Lonely Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "6.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "64"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "water",
+      "grass",
+      "ice"
+    ],
+    "0.5": [
+      "poison",
+      "rock"
+    ]
+  },
+  "evolution": {
+    "key": "cubone",
+    "name": "Cubone",
+    "number": 104,
+    "slug": "cubone",
+    "conditions": [],
+    "children": [
+      {
+        "key": "marowak",
+        "name": "Marowak",
+        "number": 105,
+        "slug": "marowak",
+        "conditions": [
+          "Level 28",
+          "Level 28, at night"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

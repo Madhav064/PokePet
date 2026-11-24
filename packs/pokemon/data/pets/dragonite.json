@@ -1,0 +1,165 @@
+{
+  "slug": "dragonite",
+  "name": "Dragonite",
+  "number": 149,
+  "group": 1,
+  "elements": [
+    "dragon",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/dragonite/spritesheet.webp",
+  "category": "Dragon Pokémon",
+  "description": "It is said that somewhere in the ocean lies an island where these gather. Only they live there.",
+  "blurb": "It is said to make its home somewhere in the sea. It guides crews of shipwrecks to shore.",
+  "heightM": 2.2,
+  "weightKg": 210,
+  "stats": {
+    "hp": 91,
+    "atk": 134,
+    "def": 95,
+    "spa": 100,
+    "spd": 100,
+    "spe": 80
+  },
+  "abilities": [
+    {
+      "id": "inner-focus",
+      "name": "Inner Focus",
+      "hidden": false,
+      "effect": "Prevents flinching."
+    },
+    {
+      "id": "multiscale",
+      "name": "Multiscale",
+      "hidden": true,
+      "effect": "Halves damage taken from full HP."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Dragon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "2.2 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "210.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "35"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "270"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "rock",
+      "dragon",
+      "fairy"
+    ],
+    "4": [
+      "ice"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "fighting",
+      "bug"
+    ],
+    "0.25": [
+      "grass"
+    ]
+  },
+  "evolution": {
+    "key": "dratini",
+    "name": "Dratini",
+    "number": 147,
+    "slug": "dratini",
+    "conditions": [],
+    "children": [
+      {
+        "key": "dragonair",
+        "name": "Dragonair",
+        "number": 148,
+        "slug": "dragonair",
+        "conditions": [
+          "Level 30"
+        ],
+        "children": [
+          {
+            "key": "dragonite",
+            "name": "Dragonite",
+            "number": 149,
+            "slug": "dragonite",
+            "conditions": [
+              "Level 55"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

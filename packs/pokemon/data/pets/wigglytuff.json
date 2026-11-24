@@ -1,0 +1,163 @@
+{
+  "slug": "wigglytuff",
+  "name": "Wigglytuff",
+  "number": 40,
+  "group": 1,
+  "elements": [
+    "normal",
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/wigglytuff/spritesheet.webp",
+  "category": "Balloon Pokémon",
+  "description": "It has a very fine fur. Take care not to make it angry, or it may inflate steadily and hit with a body slam.",
+  "blurb": "Its fine fur feels sublime to the touch. It can expand its body by inhaling air.",
+  "heightM": 1,
+  "weightKg": 12,
+  "stats": {
+    "hp": 140,
+    "atk": 70,
+    "def": 45,
+    "spa": 85,
+    "spd": 50,
+    "spe": 45
+  },
+  "abilities": [
+    {
+      "id": "cute-charm",
+      "name": "Cute Charm",
+      "hidden": false,
+      "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
+    },
+    {
+      "id": "competitive",
+      "name": "Competitive",
+      "hidden": false,
+      "effect": "Raises Special Attack by two stages upon having any stat lowered."
+    },
+    {
+      "id": "frisk",
+      "name": "Frisk",
+      "hidden": true,
+      "effect": "Reveals an opponent's held item upon entering battle."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Balloon Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "12.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "25% ♂ · 75% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "50"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "196"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost",
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "steel"
+    ],
+    "0.5": [
+      "bug",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "igglybuff",
+    "name": "Igglybuff",
+    "number": 174,
+    "slug": "igglybuff",
+    "conditions": [],
+    "children": [
+      {
+        "key": "jigglypuff",
+        "name": "Jigglypuff",
+        "number": 39,
+        "slug": "jigglypuff",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "wigglytuff",
+            "name": "Wigglytuff",
+            "number": 40,
+            "slug": "wigglytuff",
+            "conditions": [
+              "Use Moon Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

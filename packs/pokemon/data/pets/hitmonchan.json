@@ -1,0 +1,169 @@
+{
+  "slug": "hitmonchan",
+  "name": "Hitmonchan",
+  "number": 107,
+  "group": 1,
+  "elements": [
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/hitmonchan/spritesheet.webp",
+  "category": "Punching Pokémon",
+  "description": "It corners its foes with combo punches from both sides, then finishes them off with a single straight punch launched at over 300 mph.",
+  "blurb": "The arm-twisting punches it throws pulverize even concrete. It rests after three minutes of fighting.",
+  "heightM": 1.4,
+  "weightKg": 50.2,
+  "stats": {
+    "hp": 50,
+    "atk": 105,
+    "def": 79,
+    "spa": 35,
+    "spd": 110,
+    "spe": 76
+  },
+  "abilities": [
+    {
+      "id": "keen-eye",
+      "name": "Keen Eye",
+      "hidden": false,
+      "effect": "Prevents accuracy from being lowered."
+    },
+    {
+      "id": "iron-fist",
+      "name": "Iron Fist",
+      "hidden": false,
+      "effect": "Strengthens punch-based moves to 1.2× their power."
+    },
+    {
+      "id": "inner-focus",
+      "name": "Inner Focus",
+      "hidden": true,
+      "effect": "Prevents flinching."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Punching Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.4 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "50.2 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "100% ♂ · 0% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "25"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "159"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "flying",
+      "psychic",
+      "fairy"
+    ],
+    "0.5": [
+      "bug",
+      "rock",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "tyrogue",
+    "name": "Tyrogue",
+    "number": 236,
+    "slug": "tyrogue",
+    "conditions": [],
+    "children": [
+      {
+        "key": "hitmonlee",
+        "name": "Hitmonlee",
+        "number": 106,
+        "slug": "hitmonlee",
+        "conditions": [
+          "Level 20, Attack > Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmonchan",
+        "name": "Hitmonchan",
+        "number": 107,
+        "slug": "hitmonchan",
+        "conditions": [
+          "Level 20, Attack < Defense"
+        ],
+        "children": []
+      },
+      {
+        "key": "hitmontop",
+        "name": "Hitmontop",
+        "number": 237,
+        "slug": "hitmontop",
+        "conditions": [
+          "Level 20, Attack = Defense"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

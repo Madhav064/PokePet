@@ -1,0 +1,152 @@
+{
+  "slug": "growlithe",
+  "name": "Growlithe",
+  "number": 58,
+  "group": 1,
+  "elements": [
+    "fire"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/growlithe/spritesheet.webp",
+  "category": "Puppy Pokémon",
+  "description": "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.",
+  "blurb": "A Pokémon with a loyal nature. It will remain motionless until it is given an order by its Trainer.",
+  "heightM": 0.7,
+  "weightKg": 19,
+  "stats": {
+    "hp": 55,
+    "atk": 70,
+    "def": 45,
+    "spa": 70,
+    "spd": 50,
+    "spe": 60
+  },
+  "abilities": [
+    {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "hidden": false,
+      "effect": "Lowers opponents' Attack one stage upon entering battle."
+    },
+    {
+      "id": "flash-fire",
+      "name": "Flash Fire",
+      "hidden": false,
+      "effect": "Protects against Fire moves. Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+    },
+    {
+      "id": "justified",
+      "name": "Justified",
+      "hidden": true,
+      "effect": "Raises Attack one stage upon taking damage from a Dark move."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Puppy Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "19.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "75% ♂ · 25% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "70"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "water",
+      "ground",
+      "rock"
+    ],
+    "0.5": [
+      "fire",
+      "grass",
+      "ice",
+      "bug",
+      "steel",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "growlithe",
+    "name": "Growlithe",
+    "number": 58,
+    "slug": "growlithe",
+    "conditions": [],
+    "children": [
+      {
+        "key": "arcanine",
+        "name": "Arcanine",
+        "number": 59,
+        "slug": "arcanine",
+        "conditions": [
+          "Use Fire Stone"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

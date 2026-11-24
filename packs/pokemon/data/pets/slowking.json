@@ -1,0 +1,165 @@
+{
+  "slug": "slowking",
+  "name": "Slowking",
+  "number": 199,
+  "group": 2,
+  "elements": [
+    "water",
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/slowking/spritesheet.webp",
+  "category": "Royal Pokémon",
+  "description": "When its head was bitten, toxins entered Slowpoke’s head and unlocked an extraordinary power.",
+  "blurb": "Being bitten by Shellder gave it intelligence comparable to that of award-winning scientists.",
+  "heightM": 2,
+  "weightKg": 79.5,
+  "stats": {
+    "hp": 95,
+    "atk": 75,
+    "def": 80,
+    "spa": 100,
+    "spd": 110,
+    "spe": 30
+  },
+  "abilities": [
+    {
+      "id": "oblivious",
+      "name": "Oblivious",
+      "hidden": false,
+      "effect": "Prevents infatuation and protects against Captivate."
+    },
+    {
+      "id": "own-tempo",
+      "name": "Own Tempo",
+      "hidden": false,
+      "effect": "Prevents confusion."
+    },
+    {
+      "id": "regenerator",
+      "name": "Regenerator",
+      "hidden": true,
+      "effect": "Heals for 1/3 max HP upon switching out."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Royal Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "2.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "79.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Water1"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "70"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "172"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass",
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "fighting",
+      "psychic",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "slowpoke",
+    "name": "Slowpoke",
+    "number": 79,
+    "slug": "slowpoke",
+    "conditions": [],
+    "children": [
+      {
+        "key": "slowbro",
+        "name": "Slowbro",
+        "number": 80,
+        "slug": "slowbro",
+        "conditions": [
+          "Level 37"
+        ],
+        "children": []
+      },
+      {
+        "key": "slowking",
+        "name": "Slowking",
+        "number": 199,
+        "slug": "slowking",
+        "conditions": [
+          "Trade, holding King's Rock"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

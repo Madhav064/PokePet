@@ -1,0 +1,173 @@
+{
+  "slug": "graveler",
+  "name": "Graveler",
+  "number": 75,
+  "group": 1,
+  "elements": [
+    "rock",
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/graveler/spritesheet.webp",
+  "category": "Rock Pokémon",
+  "description": "A slow walker, it rolls to move. It pays no attention to any object that happens to be in its path.",
+  "blurb": "It rolls on mountain paths to move. Once it builds momentum, no Pokémon can stop it without difficulty.",
+  "heightM": 1,
+  "weightKg": 105,
+  "stats": {
+    "hp": 55,
+    "atk": 95,
+    "def": 115,
+    "spa": 45,
+    "spd": 45,
+    "spe": 35
+  },
+  "abilities": [
+    {
+      "id": "rock-head",
+      "name": "Rock Head",
+      "hidden": false,
+      "effect": "Protects against recoil damage."
+    },
+    {
+      "id": "sturdy",
+      "name": "Sturdy",
+      "hidden": false,
+      "effect": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
+    },
+    {
+      "id": "sand-veil",
+      "name": "Sand Veil",
+      "hidden": true,
+      "effect": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Rock Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "105.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Mineral"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "120"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "137"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "ice",
+      "fighting",
+      "ground",
+      "steel"
+    ],
+    "4": [
+      "water",
+      "grass"
+    ],
+    "0.5": [
+      "normal",
+      "fire",
+      "flying",
+      "rock"
+    ],
+    "0.25": [
+      "poison"
+    ]
+  },
+  "evolution": {
+    "key": "geodude",
+    "name": "Geodude",
+    "number": 74,
+    "slug": "geodude",
+    "conditions": [],
+    "children": [
+      {
+        "key": "graveler",
+        "name": "Graveler",
+        "number": 75,
+        "slug": "graveler",
+        "conditions": [
+          "Level 25"
+        ],
+        "children": [
+          {
+            "key": "golem",
+            "name": "Golem",
+            "number": 76,
+            "slug": "golem",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

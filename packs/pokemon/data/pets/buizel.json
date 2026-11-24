@@ -1,0 +1,143 @@
+{
+  "slug": "buizel",
+  "name": "Buizel",
+  "number": 418,
+  "group": 4,
+  "elements": [
+    "water"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/buizel/spritesheet.webp",
+  "category": "Sea Weasel Pokémon",
+  "description": "It spins its two tails like a screw to propel itself through water. The tails also slice clinging seaweed.",
+  "blurb": "It spins its two tails like a screw to propel itself through water. The tails also slice clinging seaweed.",
+  "heightM": 0.7,
+  "weightKg": 29.5,
+  "stats": {
+    "hp": 55,
+    "atk": 65,
+    "def": 35,
+    "spa": 60,
+    "spd": 30,
+    "spe": 85
+  },
+  "abilities": [
+    {
+      "id": "swift-swim",
+      "name": "Swift Swim",
+      "hidden": false,
+      "effect": "Doubles Speed during rain."
+    },
+    {
+      "id": "water-veil",
+      "name": "Water Veil",
+      "hidden": true,
+      "effect": "Prevents burns."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Sea Weasel Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.7 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "29.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "66"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "buizel",
+    "name": "Buizel",
+    "number": 418,
+    "slug": "buizel",
+    "conditions": [],
+    "children": [
+      {
+        "key": "floatzel",
+        "name": "Floatzel",
+        "number": 419,
+        "slug": "floatzel",
+        "conditions": [
+          "Level 26"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

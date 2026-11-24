@@ -1,0 +1,155 @@
+{
+  "slug": "ursaring",
+  "name": "Ursaring",
+  "number": 217,
+  "group": 2,
+  "elements": [
+    "normal"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/ursaring/spritesheet.webp",
+  "category": "Hibernator Pokémon",
+  "description": "It usually wears a hardened expression, but when it’s licking up honey—which it loves—the joy it feels will cause it to break into a wide grin.",
+  "blurb": "In its territory, it leaves scratches on trees that bear delicious berries or fruits.",
+  "heightM": 1.8,
+  "weightKg": 125.8,
+  "stats": {
+    "hp": 90,
+    "atk": 130,
+    "def": 75,
+    "spa": 75,
+    "spd": 75,
+    "spe": 55
+  },
+  "abilities": [
+    {
+      "id": "guts",
+      "name": "Guts",
+      "hidden": false,
+      "effect": "Increases Attack to 1.5× with a major status ailment."
+    },
+    {
+      "id": "quick-feet",
+      "name": "Quick Feet",
+      "hidden": false,
+      "effect": "Increases Speed to 1.5× with a major status ailment."
+    },
+    {
+      "id": "unnerve",
+      "name": "Unnerve",
+      "hidden": true,
+      "effect": "Prevents opposing Pokémon from eating held Berries."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Hibernator Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "125.8 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "60"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "175"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ghost"
+    ],
+    "2": [
+      "fighting"
+    ]
+  },
+  "evolution": {
+    "key": "teddiursa",
+    "name": "Teddiursa",
+    "number": 216,
+    "slug": "teddiursa",
+    "conditions": [],
+    "children": [
+      {
+        "key": "ursaring",
+        "name": "Ursaring",
+        "number": 217,
+        "slug": "ursaring",
+        "conditions": [
+          "Level 30"
+        ],
+        "children": [
+          {
+            "key": "ursaluna",
+            "name": "Ursaluna",
+            "number": 901,
+            "conditions": [
+              "Use Peat Block, at full-moon"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

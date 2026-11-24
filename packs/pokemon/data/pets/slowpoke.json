@@ -1,0 +1,165 @@
+{
+  "slug": "slowpoke",
+  "name": "Slowpoke",
+  "number": 79,
+  "group": 1,
+  "elements": [
+    "water",
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/slowpoke/spritesheet.webp",
+  "category": "Dopey Pokémon",
+  "description": "It is incredibly slow and dopey. It takes five seconds for it to feel pain when under attack.",
+  "blurb": "Although slow, it is skilled at fishing with its tail. It does not feel pain if its tail is bitten.",
+  "heightM": 1.2,
+  "weightKg": 36,
+  "stats": {
+    "hp": 90,
+    "atk": 65,
+    "def": 65,
+    "spa": 40,
+    "spd": 40,
+    "spe": 15
+  },
+  "abilities": [
+    {
+      "id": "oblivious",
+      "name": "Oblivious",
+      "hidden": false,
+      "effect": "Prevents infatuation and protects against Captivate."
+    },
+    {
+      "id": "own-tempo",
+      "name": "Own Tempo",
+      "hidden": false,
+      "effect": "Prevents confusion."
+    },
+    {
+      "id": "regenerator",
+      "name": "Regenerator",
+      "hidden": true,
+      "effect": "Heals for 1/3 max HP upon switching out."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Dopey Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.2 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "36.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Water1"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "63"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass",
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "fighting",
+      "psychic",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "slowpoke",
+    "name": "Slowpoke",
+    "number": 79,
+    "slug": "slowpoke",
+    "conditions": [],
+    "children": [
+      {
+        "key": "slowbro",
+        "name": "Slowbro",
+        "number": 80,
+        "slug": "slowbro",
+        "conditions": [
+          "Level 37"
+        ],
+        "children": []
+      },
+      {
+        "key": "slowking",
+        "name": "Slowking",
+        "number": 199,
+        "slug": "slowking",
+        "conditions": [
+          "Trade, holding King's Rock"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

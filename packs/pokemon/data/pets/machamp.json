@@ -1,0 +1,160 @@
+{
+  "slug": "machamp",
+  "name": "Machamp",
+  "number": 68,
+  "group": 1,
+  "elements": [
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/machamp/spritesheet.webp",
+  "category": "Superpower Pokémon",
+  "description": "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles.",
+  "blurb": "Its four muscled arms slam foes with powerful punches and chops at blinding speed.",
+  "heightM": 1.6,
+  "weightKg": 130,
+  "stats": {
+    "hp": 90,
+    "atk": 130,
+    "def": 80,
+    "spa": 65,
+    "spd": 85,
+    "spe": 55
+  },
+  "abilities": [
+    {
+      "id": "guts",
+      "name": "Guts",
+      "hidden": false,
+      "effect": "Increases Attack to 1.5× with a major status ailment."
+    },
+    {
+      "id": "no-guard",
+      "name": "No Guard",
+      "hidden": false,
+      "effect": "Ensures all moves used by and against the Pokémon hit."
+    },
+    {
+      "id": "steadfast",
+      "name": "Steadfast",
+      "hidden": true,
+      "effect": "Raises Speed one stage upon flinching."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Superpower Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "130.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "75% ♂ · 25% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Gray"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "227"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "flying",
+      "psychic",
+      "fairy"
+    ],
+    "0.5": [
+      "bug",
+      "rock",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "machop",
+    "name": "Machop",
+    "number": 66,
+    "slug": "machop",
+    "conditions": [],
+    "children": [
+      {
+        "key": "machoke",
+        "name": "Machoke",
+        "number": 67,
+        "slug": "machoke",
+        "conditions": [
+          "Level 28"
+        ],
+        "children": [
+          {
+            "key": "machamp",
+            "name": "Machamp",
+            "number": 68,
+            "slug": "machamp",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

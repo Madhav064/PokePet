@@ -1,0 +1,155 @@
+{
+  "slug": "ariados",
+  "name": "Ariados",
+  "number": 168,
+  "group": 2,
+  "elements": [
+    "bug",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/ariados/spritesheet.webp",
+  "category": "Long Leg Pokémon",
+  "description": "A single strand of a special thread is endlessly spun out of its rear. The thread leads back to its nest.",
+  "blurb": "It attaches silk to its prey and sets it free. Later, it tracks the silk to the prey and its friends.",
+  "heightM": 1.1,
+  "weightKg": 33.5,
+  "stats": {
+    "hp": 70,
+    "atk": 90,
+    "def": 70,
+    "spa": 60,
+    "spd": 70,
+    "spe": 40
+  },
+  "abilities": [
+    {
+      "id": "swarm",
+      "name": "Swarm",
+      "hidden": false,
+      "effect": "Strengthens Bug moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "hidden": false,
+      "effect": "Prevents sleep."
+    },
+    {
+      "id": "sniper",
+      "name": "Sniper",
+      "hidden": true,
+      "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Long Leg Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.1 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "33.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Bug"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Red"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Armor"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "90"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "140"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "flying",
+      "psychic",
+      "rock"
+    ],
+    "0.25": [
+      "grass",
+      "fighting"
+    ],
+    "0.5": [
+      "poison",
+      "bug",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "spinarak",
+    "name": "Spinarak",
+    "number": 167,
+    "slug": "spinarak",
+    "conditions": [],
+    "children": [
+      {
+        "key": "ariados",
+        "name": "Ariados",
+        "number": 168,
+        "slug": "ariados",
+        "conditions": [
+          "Level 22"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "slug": "tentacruel",
+  "name": "Tentacruel",
+  "number": 73,
+  "group": 1,
+  "elements": [
+    "water",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/tentacruel/spritesheet.webp",
+  "category": "Jellyfish Pokémon",
+  "description": "On the rare occasions that large outbreaks of Tentacruel occur, all fish Pokémon disappear from the surrounding sea.",
+  "blurb": "It extends its 80 tentacles to form an encircling poisonous net that is difficult to escape.",
+  "heightM": 1.6,
+  "weightKg": 55,
+  "stats": {
+    "hp": 80,
+    "atk": 70,
+    "def": 65,
+    "spa": 80,
+    "spd": 120,
+    "spe": 100
+  },
+  "abilities": [
+    {
+      "id": "clear-body",
+      "name": "Clear Body",
+      "hidden": false,
+      "effect": "Prevents stats from being lowered by other Pokémon."
+    },
+    {
+      "id": "liquid-ooze",
+      "name": "Liquid Ooze",
+      "hidden": false,
+      "effect": "Damages opponents using leeching moves for as much as they would heal."
+    },
+    {
+      "id": "rain-dish",
+      "name": "Rain Dish",
+      "hidden": true,
+      "effect": "Heals for 1/16 max HP after each turn during rain."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Jellyfish Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "55.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water3"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Sea"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Tentacles"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "60"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "180"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "ground",
+      "psychic"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "fighting",
+      "poison",
+      "bug",
+      "steel",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "tentacool",
+    "name": "Tentacool",
+    "number": 72,
+    "slug": "tentacool",
+    "conditions": [],
+    "children": [
+      {
+        "key": "tentacruel",
+        "name": "Tentacruel",
+        "number": 73,
+        "slug": "tentacruel",
+        "conditions": [
+          "Level 30"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

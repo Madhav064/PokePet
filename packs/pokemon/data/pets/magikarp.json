@@ -1,0 +1,143 @@
+{
+  "slug": "magikarp",
+  "name": "Magikarp",
+  "number": 129,
+  "group": 1,
+  "elements": [
+    "water"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/magikarp/spritesheet.webp",
+  "category": "Fish Pokémon",
+  "description": "An underpowered, pathetic Pokémon. It may jump high on rare occasions but never more than seven feet.",
+  "blurb": "A Magikarp living for many years can leap a mountain using Splash. The move remains useless, though.",
+  "heightM": 0.9,
+  "weightKg": 10,
+  "stats": {
+    "hp": 20,
+    "atk": 10,
+    "def": 55,
+    "spa": 15,
+    "spd": 20,
+    "spe": 80
+  },
+  "abilities": [
+    {
+      "id": "swift-swim",
+      "name": "Swift Swim",
+      "hidden": false,
+      "effect": "Doubles Speed during rain."
+    },
+    {
+      "id": "rattled",
+      "name": "Rattled",
+      "hidden": true,
+      "effect": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Fish Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.9 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "10.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water2, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "5"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Red"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Fish"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "40"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "magikarp",
+    "name": "Magikarp",
+    "number": 129,
+    "slug": "magikarp",
+    "conditions": [],
+    "children": [
+      {
+        "key": "gyarados",
+        "name": "Gyarados",
+        "number": 130,
+        "slug": "gyarados",
+        "conditions": [
+          "Level 20"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

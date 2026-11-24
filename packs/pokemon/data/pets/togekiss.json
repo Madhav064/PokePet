@@ -1,0 +1,170 @@
+{
+  "slug": "togekiss",
+  "name": "Togekiss",
+  "number": 468,
+  "group": 4,
+  "elements": [
+    "fairy",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/togekiss/spritesheet.webp",
+  "category": "Jubilee Pokémon",
+  "description": "These Pokémon are never seen anywhere near conflict or turmoil. In recent times, they’ve hardly been seen at all.",
+  "blurb": "It shares many blessings with people who respect one another’s rights and avoid needless strife.",
+  "heightM": 1.5,
+  "weightKg": 38,
+  "stats": {
+    "hp": 85,
+    "atk": 50,
+    "def": 95,
+    "spa": 120,
+    "spd": 115,
+    "spe": 80
+  },
+  "abilities": [
+    {
+      "id": "hustle",
+      "name": "Hustle",
+      "hidden": false,
+      "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
+    },
+    {
+      "id": "serene-grace",
+      "name": "Serene Grace",
+      "hidden": false,
+      "effect": "Doubles the chance of moves' extra effects occurring."
+    },
+    {
+      "id": "super-luck",
+      "name": "Super Luck",
+      "hidden": true,
+      "effect": "Raises moves' critical hit rates one stage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Jubilee Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "38.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Flying, Fairy"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "White"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "30"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "245"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground",
+      "dragon"
+    ],
+    "2": [
+      "electric",
+      "ice",
+      "poison",
+      "rock",
+      "steel"
+    ],
+    "0.5": [
+      "grass",
+      "dark"
+    ],
+    "0.25": [
+      "fighting",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "togepi",
+    "name": "Togepi",
+    "number": 175,
+    "slug": "togepi",
+    "conditions": [],
+    "children": [
+      {
+        "key": "togetic",
+        "name": "Togetic",
+        "number": 176,
+        "slug": "togetic",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "togekiss",
+            "name": "Togekiss",
+            "number": 468,
+            "slug": "togekiss",
+            "conditions": [
+              "Use Shiny Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

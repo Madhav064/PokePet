@@ -1,0 +1,159 @@
+{
+  "slug": "alakazam",
+  "name": "Alakazam",
+  "number": 65,
+  "group": 1,
+  "elements": [
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/alakazam/spritesheet.webp",
+  "category": "Psi Pokémon",
+  "description": "It has an incredibly high level of intelligence. Some say that Alakazam remembers everything that ever happens to it, from birth till death.",
+  "blurb": "The spoons clutched in its hands are said to have been created by its psychic powers.",
+  "heightM": 1.5,
+  "weightKg": 48,
+  "stats": {
+    "hp": 55,
+    "atk": 50,
+    "def": 45,
+    "spa": 135,
+    "spd": 95,
+    "spe": 120
+  },
+  "abilities": [
+    {
+      "id": "synchronize",
+      "name": "Synchronize",
+      "hidden": false,
+      "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+    },
+    {
+      "id": "inner-focus",
+      "name": "Inner Focus",
+      "hidden": false,
+      "effect": "Prevents flinching."
+    },
+    {
+      "id": "magic-guard",
+      "name": "Magic Guard",
+      "hidden": true,
+      "effect": "Protects against damage not directly caused by a move."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Psi Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "48.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "75% ♂ · 25% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Urban"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "50"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "225"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  "evolution": {
+    "key": "abra",
+    "name": "Abra",
+    "number": 63,
+    "slug": "abra",
+    "conditions": [],
+    "children": [
+      {
+        "key": "kadabra",
+        "name": "Kadabra",
+        "number": 64,
+        "slug": "kadabra",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "alakazam",
+            "name": "Alakazam",
+            "number": 65,
+            "slug": "alakazam",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

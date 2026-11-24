@@ -1,0 +1,148 @@
+{
+  "slug": "hypno",
+  "name": "Hypno",
+  "number": 97,
+  "group": 1,
+  "elements": [
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/hypno/spritesheet.webp",
+  "category": "Hypnosis Pokémon",
+  "description": "When it locks eyes with an enemy, it will use a mix of psi moves, such as Hypnosis and Confusion.",
+  "blurb": "Seeing its swinging pendulum can induce sleep in three seconds, even in someone who just woke up.",
+  "heightM": 1.6,
+  "weightKg": 75.6,
+  "stats": {
+    "hp": 85,
+    "atk": 73,
+    "def": 70,
+    "spa": 73,
+    "spd": 115,
+    "spe": 67
+  },
+  "abilities": [
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "hidden": false,
+      "effect": "Prevents sleep."
+    },
+    {
+      "id": "forewarn",
+      "name": "Forewarn",
+      "hidden": false,
+      "effect": "Reveals the opponents' strongest move upon entering battle."
+    },
+    {
+      "id": "inner-focus",
+      "name": "Inner Focus",
+      "hidden": true,
+      "effect": "Prevents flinching."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Hypnosis Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "75.6 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "75"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "169"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  "evolution": {
+    "key": "drowzee",
+    "name": "Drowzee",
+    "number": 96,
+    "slug": "drowzee",
+    "conditions": [],
+    "children": [
+      {
+        "key": "hypno",
+        "name": "Hypno",
+        "number": 97,
+        "slug": "hypno",
+        "conditions": [
+          "Level 26"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

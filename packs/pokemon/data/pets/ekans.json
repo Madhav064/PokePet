@@ -1,0 +1,150 @@
+{
+  "slug": "ekans",
+  "name": "Ekans",
+  "number": 23,
+  "group": 1,
+  "elements": [
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/ekans/spritesheet.webp",
+  "category": "Snake Pokémon",
+  "description": "It can freely detach its jaw to swallow large prey whole. It can become too heavy to move, however.",
+  "blurb": "It sneaks through grass without making a sound and strikes unsuspecting prey from behind.",
+  "heightM": 2,
+  "weightKg": 6.9,
+  "stats": {
+    "hp": 35,
+    "atk": 60,
+    "def": 44,
+    "spa": 40,
+    "spd": 54,
+    "spe": 55
+  },
+  "abilities": [
+    {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "hidden": false,
+      "effect": "Lowers opponents' Attack one stage upon entering battle."
+    },
+    {
+      "id": "shed-skin",
+      "name": "Shed Skin",
+      "hidden": false,
+      "effect": "Has a 33% chance of curing any major status ailment after each turn."
+    },
+    {
+      "id": "unnerve",
+      "name": "Unnerve",
+      "hidden": true,
+      "effect": "Prevents opposing Pokémon from eating held Berries."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Snake Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "2.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "6.9 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "58"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ground",
+      "psychic"
+    ],
+    "0.5": [
+      "grass",
+      "fighting",
+      "poison",
+      "bug",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "ekans",
+    "name": "Ekans",
+    "number": 23,
+    "slug": "ekans",
+    "conditions": [],
+    "children": [
+      {
+        "key": "arbok",
+        "name": "Arbok",
+        "number": 24,
+        "slug": "arbok",
+        "conditions": [
+          "Level 22"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

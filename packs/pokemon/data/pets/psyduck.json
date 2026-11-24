@@ -1,0 +1,149 @@
+{
+  "slug": "psyduck",
+  "name": "Psyduck",
+  "number": 54,
+  "group": 1,
+  "elements": [
+    "water"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/psyduck/spritesheet.webp",
+  "category": "Duck Pokémon",
+  "description": "It is constantly wracked by a headache. When the headache turns intense, it begins using mysterious powers.",
+  "blurb": "Overwhelmed by enigmatic abilities, it suffers a constant headache. It sometimes uses mysterious powers.",
+  "heightM": 0.8,
+  "weightKg": 19.6,
+  "stats": {
+    "hp": 50,
+    "atk": 52,
+    "def": 48,
+    "spa": 65,
+    "spd": 50,
+    "spe": 55
+  },
+  "abilities": [
+    {
+      "id": "damp",
+      "name": "Damp",
+      "hidden": false,
+      "effect": "Prevents Self-Destruct, Explosion, and Aftermath from working while the Pokémon is in battle."
+    },
+    {
+      "id": "cloud-nine",
+      "name": "Cloud Nine",
+      "hidden": false,
+      "effect": "Negates all effects of weather, but does not prevent the weather itself."
+    },
+    {
+      "id": "swift-swim",
+      "name": "Swift Swim",
+      "hidden": true,
+      "effect": "Doubles Speed during rain."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Duck Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "19.6 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Water1, Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "64"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass"
+    ],
+    "0.5": [
+      "fire",
+      "water",
+      "ice",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "psyduck",
+    "name": "Psyduck",
+    "number": 54,
+    "slug": "psyduck",
+    "conditions": [],
+    "children": [
+      {
+        "key": "golduck",
+        "name": "Golduck",
+        "number": 55,
+        "slug": "golduck",
+        "conditions": [
+          "Level 33"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

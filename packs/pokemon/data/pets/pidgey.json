@@ -1,0 +1,164 @@
+{
+  "slug": "pidgey",
+  "name": "Pidgey",
+  "number": 16,
+  "group": 1,
+  "elements": [
+    "normal",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/pidgey/spritesheet.webp",
+  "category": "Tiny Bird Pokémon",
+  "description": "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
+  "blurb": "It is docile and prefers to avoid conflict. If disturbed, however, it can ferociously strike back.",
+  "heightM": 0.3,
+  "weightKg": 1.8,
+  "stats": {
+    "hp": 40,
+    "atk": 45,
+    "def": 40,
+    "spa": 35,
+    "spd": 35,
+    "spe": 56
+  },
+  "abilities": [
+    {
+      "id": "keen-eye",
+      "name": "Keen Eye",
+      "hidden": false,
+      "effect": "Prevents accuracy from being lowered."
+    },
+    {
+      "id": "tangled-feet",
+      "name": "Tangled Feet",
+      "hidden": false,
+      "effect": "Doubles evasion when confused."
+    },
+    {
+      "id": "big-pecks",
+      "name": "Big Pecks",
+      "hidden": true,
+      "effect": "Protects against Defense drops."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Tiny Bird Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "1.8 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Flying"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "50"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground",
+      "ghost"
+    ],
+    "2": [
+      "electric",
+      "ice",
+      "rock"
+    ],
+    "0.5": [
+      "grass",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "pidgey",
+    "name": "Pidgey",
+    "number": 16,
+    "slug": "pidgey",
+    "conditions": [],
+    "children": [
+      {
+        "key": "pidgeotto",
+        "name": "Pidgeotto",
+        "number": 17,
+        "slug": "pidgeotto",
+        "conditions": [
+          "Level 18"
+        ],
+        "children": [
+          {
+            "key": "pidgeot",
+            "name": "Pidgeot",
+            "number": 18,
+            "slug": "pidgeot",
+            "conditions": [
+              "Level 36"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

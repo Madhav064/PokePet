@@ -1,0 +1,129 @@
+{
+  "slug": "palkia",
+  "name": "Palkia",
+  "number": 484,
+  "group": 4,
+  "elements": [
+    "water",
+    "dragon"
+  ],
+  "isVariant": false,
+  "tags": [
+    "legendary"
+  ],
+  "spritesheet": "pets/palkia/spritesheet.webp",
+  "category": "Spatial Pokémon",
+  "description": "It is said to live in a gap in the spatial dimension parallel to ours. It appears in mythology.",
+  "blurb": "A legendary Pokémon of Sinnoh. It is said that space becomes more stable with Palkia’s every breath.",
+  "heightM": 4.2,
+  "weightKg": 336,
+  "stats": {
+    "hp": 90,
+    "atk": 120,
+    "def": 100,
+    "spa": 150,
+    "spd": 120,
+    "spe": 100
+  },
+  "abilities": [
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+      "id": "telepathy",
+      "name": "Telepathy",
+      "hidden": true,
+      "effect": "Protects against friendly Pokémon's damaging moves."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Spatial Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "4.2 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "336.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "Genderless"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "120"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "3"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "0"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "306"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "dragon",
+      "fairy"
+    ],
+    "0.25": [
+      "fire",
+      "water"
+    ],
+    "0.5": [
+      "steel"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": true,
+    "mythical": false,
+    "baby": false
+  }
+}

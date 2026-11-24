@@ -1,0 +1,146 @@
+{
+  "slug": "sandshrew",
+  "name": "Sandshrew",
+  "number": 27,
+  "group": 1,
+  "elements": [
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/sandshrew/spritesheet.webp",
+  "category": "Mouse Pokémon",
+  "description": "It digs deep burrows to live in. When in danger, it rolls up its body to withstand attacks.",
+  "blurb": "To protect itself from attackers, it curls up into a ball. It lives in arid regions with minimal rainfall.",
+  "heightM": 0.6,
+  "weightKg": 12,
+  "stats": {
+    "hp": 50,
+    "atk": 75,
+    "def": 85,
+    "spa": 20,
+    "spd": 30,
+    "spe": 40
+  },
+  "abilities": [
+    {
+      "id": "sand-veil",
+      "name": "Sand Veil",
+      "hidden": false,
+      "effect": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+    },
+    {
+      "id": "sand-rush",
+      "name": "Sand Rush",
+      "hidden": true,
+      "effect": "Doubles Speed during a sandstorm. Protects against sandstorm damage."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Mouse Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.6 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "12.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Rough Terrain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "60"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "water",
+      "grass",
+      "ice"
+    ],
+    "0.5": [
+      "poison",
+      "rock"
+    ]
+  },
+  "evolution": {
+    "key": "sandshrew",
+    "name": "Sandshrew",
+    "number": 27,
+    "slug": "sandshrew",
+    "conditions": [],
+    "children": [
+      {
+        "key": "sandslash",
+        "name": "Sandslash",
+        "number": 28,
+        "slug": "sandslash",
+        "conditions": [
+          "Level 22",
+          "Use Ice Stone"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "id": "pokemon",
+  "name": "Pokémon (fan pack)",
+  "version": "0.1.0",
+  "description": "Gen 1–4 pixel-art pets from the Black/White animated sprites.",
+  "attribution": "Pokémon and sprite artwork © Nintendo / Game Freak / Creatures Inc. Sprites via PokeAPI/sprites and codex-pokepets. Data via PokeAPI.",
+  "license": "Non-commercial fan use",
+  "atlas": {
+    "width": 1536,
+    "height": 1872,
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "animations": [
+      {
+        "id": "idle",
+        "label": "Idle",
+        "row": 0,
+        "frames": 6,
+        "frameMs": 180
+      },
+      {
+        "id": "running-right",
+        "label": "Run right",
+        "row": 1,
+        "frames": 8,
+        "frameMs": 90
+      },
+      {
+        "id": "running-left",
+        "label": "Run left",
+        "row": 2,
+        "frames": 8,
+        "frameMs": 90
+      },
+      {
+        "id": "waving",
+        "label": "Wave",
+        "row": 3,
+        "frames": 4,
+        "frameMs": 160
+      },
+      {
+        "id": "jumping",
+        "label": "Jump",
+        "row": 4,
+        "frames": 5,
+        "frameMs": 120
+      },
+      {
+        "id": "failed",
+        "label": "Sad",
+        "row": 5,
+        "frames": 8,
+        "frameMs": 140
+      },
+      {
+        "id": "waiting",
+        "label": "Wait",
+        "row": 6,
+        "frames": 6,
+        "frameMs": 200
+      },
+      {
+        "id": "running",
+        "label": "Run",
+        "row": 7,
+        "frames": 6,
+        "frameMs": 100
+      },
+      {
+        "id": "review",
+        "label": "Think",
+        "row": 8,
+        "frames": 6,
+        "frameMs": 180
+      }
+    ]
+  },
+  "numberLabel": "No.",
+  "statSchema": [
+    {
+      "id": "hp",
+      "label": "HP",
+      "short": "HP",
+      "max": 255
+    },
+    {
+      "id": "atk",
+      "label": "Attack",
+      "short": "Atk",
+      "max": 190
+    },
+    {
+      "id": "def",
+      "label": "Defense",
+      "short": "Def",
+      "max": 230
+    },
+    {
+      "id": "spa",
+      "label": "Sp. Attack",
+      "short": "SpA",
+      "max": 194
+    },
+    {
+      "id": "spd",
+      "label": "Sp. Defense",
+      "short": "SpD",
+      "max": 230
+    },
+    {
+      "id": "spe",
+      "label": "Speed",
+      "short": "Spe",
+      "max": 200
+    }
+  ],
+  "elements": [
+    {
+      "id": "normal",
+      "label": "Normal",
+      "color": "#9a9a7d"
+    },
+    {
+      "id": "fire",
+      "label": "Fire",
+      "color": "#e8643c"
+    },
+    {
+      "id": "water",
+      "label": "Water",
+      "color": "#4f8fe0"
+    },
+    {
+      "id": "electric",
+      "label": "Electric",
+      "color": "#e8c22e"
+    },
+    {
+      "id": "grass",
+      "label": "Grass",
+      "color": "#5fae4a"
+    },
+    {
+      "id": "ice",
+      "label": "Ice",
+      "color": "#6cc8c8"
+    },
+    {
+      "id": "fighting",
+      "label": "Fighting",
+      "color": "#bf3a30"
+    },
+    {
+      "id": "poison",
+      "label": "Poison",
+      "color": "#9b4fa3"
+    },
+    {
+      "id": "ground",
+      "label": "Ground",
+      "color": "#cfa752"
+    },
+    {
+      "id": "flying",
+      "label": "Flying",
+      "color": "#8f9ee6"
+    },
+    {
+      "id": "psychic",
+      "label": "Psychic",
+      "color": "#e85486"
+    },
+    {
+      "id": "bug",
+      "label": "Bug",
+      "color": "#9aaa22"
+    },
+    {
+      "id": "rock",
+      "label": "Rock",
+      "color": "#b39c3e"
+    },
+    {
+      "id": "ghost",
+      "label": "Ghost",
+      "color": "#6b5a96"
+    },
+    {
+      "id": "dragon",
+      "label": "Dragon",
+      "color": "#6a46e8"
+    },
+    {
+      "id": "dark",
+      "label": "Dark",
+      "color": "#6b5848"
+    },
+    {
+      "id": "steel",
+      "label": "Steel",
+      "color": "#9c9cb6"
+    },
+    {
+      "id": "fairy",
+      "label": "Fairy",
+      "color": "#e08fb0"
+    }
+  ],
+  "counts": {
+    "pets": 175
+  }
+}

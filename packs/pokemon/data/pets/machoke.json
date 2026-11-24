@@ -1,0 +1,160 @@
+{
+  "slug": "machoke",
+  "name": "Machoke",
+  "number": 67,
+  "group": 1,
+  "elements": [
+    "fighting"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/machoke/spritesheet.webp",
+  "category": "Superpower Pokémon",
+  "description": "Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions.",
+  "blurb": "It happily carries heavy cargo to toughen up. It willingly does hard work for people.",
+  "heightM": 1.5,
+  "weightKg": 70.5,
+  "stats": {
+    "hp": 80,
+    "atk": 100,
+    "def": 70,
+    "spa": 50,
+    "spd": 60,
+    "spe": 45
+  },
+  "abilities": [
+    {
+      "id": "guts",
+      "name": "Guts",
+      "hidden": false,
+      "effect": "Increases Attack to 1.5× with a major status ailment."
+    },
+    {
+      "id": "no-guard",
+      "name": "No Guard",
+      "hidden": false,
+      "effect": "Ensures all moves used by and against the Pokémon hit."
+    },
+    {
+      "id": "steadfast",
+      "name": "Steadfast",
+      "hidden": true,
+      "effect": "Raises Speed one stage upon flinching."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Superpower Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "70.5 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "75% ♂ · 25% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Gray"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "90"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "142"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "flying",
+      "psychic",
+      "fairy"
+    ],
+    "0.5": [
+      "bug",
+      "rock",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "machop",
+    "name": "Machop",
+    "number": 66,
+    "slug": "machop",
+    "conditions": [],
+    "children": [
+      {
+        "key": "machoke",
+        "name": "Machoke",
+        "number": 67,
+        "slug": "machoke",
+        "conditions": [
+          "Level 28"
+        ],
+        "children": [
+          {
+            "key": "machamp",
+            "name": "Machamp",
+            "number": 68,
+            "slug": "machamp",
+            "conditions": [
+              "Trade"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

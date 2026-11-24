@@ -1,0 +1,164 @@
+{
+  "slug": "cleffa",
+  "name": "Cleffa",
+  "number": 173,
+  "group": 2,
+  "elements": [
+    "fairy"
+  ],
+  "isVariant": false,
+  "tags": [
+    "baby"
+  ],
+  "spritesheet": "pets/cleffa/spritesheet.webp",
+  "category": "Star Shape Pokémon",
+  "description": "On late nights illuminated by shooting stars, it gazes intently skyward, as if thinking of its home.",
+  "blurb": "It is often seen when shooting stars fill the night skies. It’s said to arrive riding on a shooting star.",
+  "heightM": 0.3,
+  "weightKg": 3,
+  "stats": {
+    "hp": 50,
+    "atk": 25,
+    "def": 28,
+    "spa": 45,
+    "spd": 55,
+    "spe": 15
+  },
+  "abilities": [
+    {
+      "id": "cute-charm",
+      "name": "Cute Charm",
+      "hidden": false,
+      "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
+    },
+    {
+      "id": "magic-guard",
+      "name": "Magic Guard",
+      "hidden": false,
+      "effect": "Protects against damage not directly caused by a move."
+    },
+    {
+      "id": "friend-guard",
+      "name": "Friend Guard",
+      "hidden": true,
+      "effect": "Decreases all direct damage taken by friendly Pokémon to 0.75×."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Star Shape Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.3 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "3.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "25% ♂ · 75% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "No Eggs"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "10"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Pink"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "150"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "140"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Fast"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "44"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "dragon"
+    ],
+    "2": [
+      "poison",
+      "steel"
+    ],
+    "0.5": [
+      "fighting",
+      "bug",
+      "dark"
+    ]
+  },
+  "evolution": {
+    "key": "cleffa",
+    "name": "Cleffa",
+    "number": 173,
+    "slug": "cleffa",
+    "conditions": [],
+    "children": [
+      {
+        "key": "clefairy",
+        "name": "Clefairy",
+        "number": 35,
+        "slug": "clefairy",
+        "conditions": [
+          "High friendship"
+        ],
+        "children": [
+          {
+            "key": "clefable",
+            "name": "Clefable",
+            "number": 36,
+            "slug": "clefable",
+            "conditions": [
+              "Use Moon Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": true
+  }
+}

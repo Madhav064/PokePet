@@ -1,0 +1,134 @@
+{
+  "slug": "lapras",
+  "name": "Lapras",
+  "number": 131,
+  "group": 1,
+  "elements": [
+    "water",
+    "ice"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/lapras/spritesheet.webp",
+  "category": "Transport Pokémon",
+  "description": "It ferries people across the sea on its back. It may sing an enchanting cry if it is in a good mood.",
+  "blurb": "It loves crossing the sea with people and Pokémon on its back. It understands human speech.",
+  "heightM": 2.5,
+  "weightKg": 220,
+  "stats": {
+    "hp": 130,
+    "atk": 85,
+    "def": 80,
+    "spa": 85,
+    "spd": 95,
+    "spe": 60
+  },
+  "abilities": [
+    {
+      "id": "water-absorb",
+      "name": "Water Absorb",
+      "hidden": false,
+      "effect": "Absorbs Water moves, healing for 1/4 max HP."
+    },
+    {
+      "id": "shell-armor",
+      "name": "Shell Armor",
+      "hidden": false,
+      "effect": "Protects against critical hits."
+    },
+    {
+      "id": "hydration",
+      "name": "Hydration",
+      "hidden": true,
+      "effect": "Cures any major status ailment after each turn during rain."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Transport Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "2.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "220.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Water1"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Sea"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Fish"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "187"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "electric",
+      "grass",
+      "fighting",
+      "rock"
+    ],
+    "0.5": [
+      "water"
+    ],
+    "0.25": [
+      "ice"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

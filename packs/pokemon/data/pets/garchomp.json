@@ -1,0 +1,160 @@
+{
+  "slug": "garchomp",
+  "name": "Garchomp",
+  "number": 445,
+  "group": 4,
+  "elements": [
+    "dragon",
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/garchomp/spritesheet.webp",
+  "category": "Mach Pokémon",
+  "description": "It is said that when one runs at high speed, its wings create blades of wind that can fell nearby trees.",
+  "blurb": "It is said that when one runs at high speed, its wings create blades of wind that can fell nearby trees.",
+  "heightM": 1.9,
+  "weightKg": 95,
+  "stats": {
+    "hp": 108,
+    "atk": 130,
+    "def": 95,
+    "spa": 80,
+    "spd": 85,
+    "spe": 102
+  },
+  "abilities": [
+    {
+      "id": "sand-veil",
+      "name": "Sand Veil",
+      "hidden": false,
+      "effect": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+    },
+    {
+      "id": "rough-skin",
+      "name": "Rough Skin",
+      "hidden": true,
+      "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Mach Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.9 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "95.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "40"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "270"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "dragon",
+      "fairy"
+    ],
+    "4": [
+      "ice"
+    ],
+    "0.5": [
+      "fire",
+      "poison",
+      "rock"
+    ]
+  },
+  "evolution": {
+    "key": "gible",
+    "name": "Gible",
+    "number": 443,
+    "slug": "gible",
+    "conditions": [],
+    "children": [
+      {
+        "key": "gabite",
+        "name": "Gabite",
+        "number": 444,
+        "slug": "gabite",
+        "conditions": [
+          "Level 24"
+        ],
+        "children": [
+          {
+            "key": "garchomp",
+            "name": "Garchomp",
+            "number": 445,
+            "slug": "garchomp",
+            "conditions": [
+              "Level 48"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

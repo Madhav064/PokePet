@@ -1,0 +1,148 @@
+{
+  "slug": "drowzee",
+  "name": "Drowzee",
+  "number": 96,
+  "group": 1,
+  "elements": [
+    "psychic"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/drowzee/spritesheet.webp",
+  "category": "Hypnosis Pokémon",
+  "description": "It remembers every dream it eats. It rarely eats the dreams of adults because children’s are much tastier.",
+  "blurb": "It can tell what people are dreaming by sniffing with its big nose. It loves fun dreams.",
+  "heightM": 1,
+  "weightKg": 32.4,
+  "stats": {
+    "hp": 60,
+    "atk": 48,
+    "def": 45,
+    "spa": 43,
+    "spd": 90,
+    "spe": 42
+  },
+  "abilities": [
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "hidden": false,
+      "effect": "Prevents sleep."
+    },
+    {
+      "id": "forewarn",
+      "name": "Forewarn",
+      "hidden": false,
+      "effect": "Reveals the opponents' strongest move upon entering battle."
+    },
+    {
+      "id": "inner-focus",
+      "name": "Inner Focus",
+      "hidden": true,
+      "effect": "Prevents flinching."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Hypnosis Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.0 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "32.4 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Humanshape"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Yellow"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Humanoid"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "190"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "66"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "bug",
+      "ghost",
+      "dark"
+    ],
+    "0.5": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  "evolution": {
+    "key": "drowzee",
+    "name": "Drowzee",
+    "number": 96,
+    "slug": "drowzee",
+    "conditions": [],
+    "children": [
+      {
+        "key": "hypno",
+        "name": "Hypno",
+        "number": 97,
+        "slug": "hypno",
+        "conditions": [
+          "Level 26"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

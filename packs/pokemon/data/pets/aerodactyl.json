@@ -1,0 +1,139 @@
+{
+  "slug": "aerodactyl",
+  "name": "Aerodactyl",
+  "number": 142,
+  "group": 1,
+  "elements": [
+    "rock",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/aerodactyl/spritesheet.webp",
+  "category": "Fossil Pokémon",
+  "description": "This is a ferocious Pokémon from ancient times. Apparently even modern technology is incapable of producing a perfectly restored specimen.",
+  "blurb": "A Pokémon that roamed the skies in the dinosaur era. Its teeth are like saw blades.",
+  "heightM": 1.8,
+  "weightKg": 59,
+  "stats": {
+    "hp": 80,
+    "atk": 105,
+    "def": 65,
+    "spa": 60,
+    "spd": 75,
+    "spe": 130
+  },
+  "abilities": [
+    {
+      "id": "rock-head",
+      "name": "Rock Head",
+      "hidden": false,
+      "effect": "Protects against recoil damage."
+    },
+    {
+      "id": "pressure",
+      "name": "Pressure",
+      "hidden": false,
+      "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+      "id": "unnerve",
+      "name": "Unnerve",
+      "hidden": true,
+      "effect": "Prevents opposing Pokémon from eating held Berries."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Fossil Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.8 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "59.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Flying"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "35"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Mountain"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "180"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground"
+    ],
+    "2": [
+      "water",
+      "electric",
+      "ice",
+      "rock",
+      "steel"
+    ],
+    "0.5": [
+      "normal",
+      "fire",
+      "poison",
+      "flying",
+      "bug"
+    ]
+  },
+  "evolution": null,
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

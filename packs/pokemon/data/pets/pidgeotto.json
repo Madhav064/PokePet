@@ -1,0 +1,164 @@
+{
+  "slug": "pidgeotto",
+  "name": "Pidgeotto",
+  "number": 17,
+  "group": 1,
+  "elements": [
+    "normal",
+    "flying"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/pidgeotto/spritesheet.webp",
+  "category": "Bird Pokémon",
+  "description": "Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
+  "blurb": "It flies over its wide territory in search of prey, downing it with its highly developed claws.",
+  "heightM": 1.1,
+  "weightKg": 30,
+  "stats": {
+    "hp": 63,
+    "atk": 60,
+    "def": 55,
+    "spa": 50,
+    "spd": 50,
+    "spe": 71
+  },
+  "abilities": [
+    {
+      "id": "keen-eye",
+      "name": "Keen Eye",
+      "hidden": false,
+      "effect": "Prevents accuracy from being lowered."
+    },
+    {
+      "id": "tangled-feet",
+      "name": "Tangled Feet",
+      "hidden": false,
+      "effect": "Doubles evasion when confused."
+    },
+    {
+      "id": "big-pecks",
+      "name": "Big Pecks",
+      "hidden": true,
+      "effect": "Protects against Defense drops."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Bird Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.1 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "30.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Flying"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "15"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Forest"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Brown"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Wings"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "120"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "122"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "ground",
+      "ghost"
+    ],
+    "2": [
+      "electric",
+      "ice",
+      "rock"
+    ],
+    "0.5": [
+      "grass",
+      "bug"
+    ]
+  },
+  "evolution": {
+    "key": "pidgey",
+    "name": "Pidgey",
+    "number": 16,
+    "slug": "pidgey",
+    "conditions": [],
+    "children": [
+      {
+        "key": "pidgeotto",
+        "name": "Pidgeotto",
+        "number": 17,
+        "slug": "pidgeotto",
+        "conditions": [
+          "Level 18"
+        ],
+        "children": [
+          {
+            "key": "pidgeot",
+            "name": "Pidgeot",
+            "number": 18,
+            "slug": "pidgeot",
+            "conditions": [
+              "Level 36"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

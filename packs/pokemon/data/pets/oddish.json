@@ -1,0 +1,170 @@
+{
+  "slug": "oddish",
+  "name": "Oddish",
+  "number": 43,
+  "group": 1,
+  "elements": [
+    "grass",
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/oddish/spritesheet.webp",
+  "category": "Weed Pokémon",
+  "description": "Its scientific name is Oddium wanderus. It is said to cover distances as far as 1,000 feet when night falls, walking on its two roots.",
+  "blurb": "It often plants its root feet in the ground during the day and sows seeds as it walks about at night.",
+  "heightM": 0.5,
+  "weightKg": 5.4,
+  "stats": {
+    "hp": 45,
+    "atk": 50,
+    "def": 55,
+    "spa": 75,
+    "spd": 65,
+    "spe": 30
+  },
+  "abilities": [
+    {
+      "id": "chlorophyll",
+      "name": "Chlorophyll",
+      "hidden": false,
+      "effect": "Doubles Speed during strong sunlight."
+    },
+    {
+      "id": "run-away",
+      "name": "Run Away",
+      "hidden": true,
+      "effect": "Ensures success fleeing from wild battles."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Weed Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "0.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "5.4 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Plant"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Legs"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "255"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "64"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "fire",
+      "ice",
+      "flying",
+      "psychic"
+    ],
+    "0.5": [
+      "water",
+      "electric",
+      "fighting",
+      "fairy"
+    ],
+    "0.25": [
+      "grass"
+    ]
+  },
+  "evolution": {
+    "key": "oddish",
+    "name": "Oddish",
+    "number": 43,
+    "slug": "oddish",
+    "conditions": [],
+    "children": [
+      {
+        "key": "gloom",
+        "name": "Gloom",
+        "number": 44,
+        "slug": "gloom",
+        "conditions": [
+          "Level 21"
+        ],
+        "children": [
+          {
+            "key": "vileplume",
+            "name": "Vileplume",
+            "number": 45,
+            "slug": "vileplume",
+            "conditions": [
+              "Use Leaf Stone"
+            ],
+            "children": []
+          },
+          {
+            "key": "bellossom",
+            "name": "Bellossom",
+            "number": 182,
+            "slug": "bellossom",
+            "conditions": [
+              "Use Sun Stone"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

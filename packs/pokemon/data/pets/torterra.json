@@ -1,0 +1,160 @@
+{
+  "slug": "torterra",
+  "name": "Torterra",
+  "number": 389,
+  "group": 4,
+  "elements": [
+    "grass",
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/torterra/spritesheet.webp",
+  "category": "Continent Pokémon",
+  "description": "Ancient people imagined that beneath the ground dwelt a gigantic Torterra.",
+  "blurb": "Some Pokémon are born on a Torterra’s back and spend their entire life there.",
+  "heightM": 2.2,
+  "weightKg": 310,
+  "stats": {
+    "hp": 95,
+    "atk": 109,
+    "def": 105,
+    "spa": 75,
+    "spd": 85,
+    "spe": 56
+  },
+  "abilities": [
+    {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "hidden": false,
+      "effect": "Strengthens Grass moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "shell-armor",
+      "name": "Shell Armor",
+      "hidden": true,
+      "effect": "Protects against critical hits."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Continent Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "2.2 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "310.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Plant"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "—"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Green"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Quadruped"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "236"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "2": [
+      "fire",
+      "flying",
+      "bug"
+    ],
+    "4": [
+      "ice"
+    ],
+    "0.5": [
+      "ground",
+      "rock"
+    ]
+  },
+  "evolution": {
+    "key": "turtwig",
+    "name": "Turtwig",
+    "number": 387,
+    "slug": "turtwig",
+    "conditions": [],
+    "children": [
+      {
+        "key": "grotle",
+        "name": "Grotle",
+        "number": 388,
+        "slug": "grotle",
+        "conditions": [
+          "Level 18"
+        ],
+        "children": [
+          {
+            "key": "torterra",
+            "name": "Torterra",
+            "number": 389,
+            "slug": "torterra",
+            "conditions": [
+              "Level 32"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

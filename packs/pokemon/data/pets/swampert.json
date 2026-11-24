@@ -1,0 +1,157 @@
+{
+  "slug": "swampert",
+  "name": "Swampert",
+  "number": 260,
+  "group": 3,
+  "elements": [
+    "water",
+    "ground"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/swampert/spritesheet.webp",
+  "category": "Mud Fish Pokémon",
+  "description": "Its arms are hard as rock. With one swing, it can break an enormous boulder into pieces.",
+  "blurb": "It can swim while towing a large ship. It bashes down foes with a swing of its thick arms.",
+  "heightM": 1.5,
+  "weightKg": 81.9,
+  "stats": {
+    "hp": 100,
+    "atk": 110,
+    "def": 90,
+    "spa": 85,
+    "spd": 90,
+    "spe": 60
+  },
+  "abilities": [
+    {
+      "id": "torrent",
+      "name": "Torrent",
+      "hidden": false,
+      "effect": "Strengthens Water moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+      "id": "damp",
+      "name": "Damp",
+      "hidden": true,
+      "effect": "Prevents Self-Destruct, Explosion, and Aftermath from working while the Pokémon is in battle."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Mud Fish Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "1.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "81.9 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "87.5% ♂ · 12.5% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Monster, Water1"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Waters Edge"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Blue"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Upright"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "45"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium Slow"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "241"
+    }
+  ],
+  "defenses": {
+    "0": [
+      "electric"
+    ],
+    "4": [
+      "grass"
+    ],
+    "0.5": [
+      "fire",
+      "poison",
+      "rock",
+      "steel"
+    ]
+  },
+  "evolution": {
+    "key": "mudkip",
+    "name": "Mudkip",
+    "number": 258,
+    "slug": "mudkip",
+    "conditions": [],
+    "children": [
+      {
+        "key": "marshtomp",
+        "name": "Marshtomp",
+        "number": 259,
+        "slug": "marshtomp",
+        "conditions": [
+          "Level 16"
+        ],
+        "children": [
+          {
+            "key": "swampert",
+            "name": "Swampert",
+            "number": 260,
+            "slug": "swampert",
+            "conditions": [
+              "Level 36"
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}

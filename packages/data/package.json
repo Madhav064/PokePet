@@ -1,0 +1,12 @@
+{
+  "name": "@pokepet/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:pokemon": "node scripts/import-pokeapi.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": { "@pokepet/core": "workspace:*" },
+  "devDependencies": { "@types/node": "22.20.5" }
+}

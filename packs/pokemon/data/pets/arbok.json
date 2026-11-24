@@ -1,0 +1,150 @@
+{
+  "slug": "arbok",
+  "name": "Arbok",
+  "number": 24,
+  "group": 1,
+  "elements": [
+    "poison"
+  ],
+  "isVariant": false,
+  "tags": [],
+  "spritesheet": "pets/arbok/spritesheet.webp",
+  "category": "Cobra Pokémon",
+  "description": "The pattern on its belly appears to be a frightening face. Weak foes will flee just at the sight of the pattern.",
+  "blurb": "The pattern on its belly is for intimidation. It constricts foes while they are frozen in fear.",
+  "heightM": 3.5,
+  "weightKg": 65,
+  "stats": {
+    "hp": 60,
+    "atk": 95,
+    "def": 69,
+    "spa": 65,
+    "spd": 79,
+    "spe": 80
+  },
+  "abilities": [
+    {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "hidden": false,
+      "effect": "Lowers opponents' Attack one stage upon entering battle."
+    },
+    {
+      "id": "shed-skin",
+      "name": "Shed Skin",
+      "hidden": false,
+      "effect": "Has a 33% chance of curing any major status ailment after each turn."
+    },
+    {
+      "id": "unnerve",
+      "name": "Unnerve",
+      "hidden": true,
+      "effect": "Prevents opposing Pokémon from eating held Berries."
+    }
+  ],
+  "facts": [
+    {
+      "id": "category",
+      "label": "Category",
+      "value": "Cobra Pokémon"
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "value": "3.5 m"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "value": "65.0 kg"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "value": "50% ♂ · 50% ♀"
+    },
+    {
+      "id": "egg-groups",
+      "label": "Egg groups",
+      "value": "Ground, Dragon"
+    },
+    {
+      "id": "hatch",
+      "label": "Egg cycles",
+      "value": "20"
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "value": "Grassland"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "value": "Purple"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "value": "Squiggle"
+    },
+    {
+      "id": "capture",
+      "label": "Catch rate",
+      "value": "90"
+    },
+    {
+      "id": "friendship",
+      "label": "Base friendship",
+      "value": "70"
+    },
+    {
+      "id": "growth",
+      "label": "Growth rate",
+      "value": "Medium"
+    },
+    {
+      "id": "base-exp",
+      "label": "Base exp.",
+      "value": "157"
+    }
+  ],
+  "defenses": {
+    "2": [
+      "ground",
+      "psychic"
+    ],
+    "0.5": [
+      "grass",
+      "fighting",
+      "poison",
+      "bug",
+      "fairy"
+    ]
+  },
+  "evolution": {
+    "key": "ekans",
+    "name": "Ekans",
+    "number": 23,
+    "slug": "ekans",
+    "conditions": [],
+    "children": [
+      {
+        "key": "arbok",
+        "name": "Arbok",
+        "number": 24,
+        "slug": "arbok",
+        "conditions": [
+          "Level 22"
+        ],
+        "children": []
+      }
+    ]
+  },
+  "variants": [],
+  "flags": {
+    "legendary": false,
+    "mythical": false,
+    "baby": false
+  }
+}
