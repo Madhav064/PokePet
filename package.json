@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "turbo run dev --filter=@pokepet/web",
     "build": "turbo run build",
+    "desktop": "pnpm --filter @pokepet/desktop app:dev",
+    "desktop:build": "pnpm --filter @pokepet/desktop app:build",
     "typecheck": "turbo run typecheck",
     "pack:pokemon": "node packages/data/scripts/import-pokeapi.ts"
   },

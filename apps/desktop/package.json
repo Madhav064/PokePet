@@ -1,0 +1,26 @@
+{
+  "name": "@pokepet/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-packs": "node scripts/sync-packs.ts",
+    "web:dev": "node scripts/sync-packs.ts && vite",
+    "web:build": "node scripts/sync-packs.ts && tsc --noEmit && vite build",
+    "app:dev": "tauri dev",
+    "app:build": "tauri build",
+    "tauri": "tauri",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pokepet/core": "workspace:*",
+    "@pokepet/sprite-engine": "workspace:*",
+    "@tauri-apps/api": "^2"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3",
+    "vite": "^7"
+  }
+}

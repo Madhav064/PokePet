@@ -25,12 +25,13 @@
         "label": "Run right",
         "row": 1,
         "frames": 8,
-        "frameMs": 90
+        "frameMs": 90,
+        "mirror": true
       },
       {
         "id": "running-left",
         "label": "Run left",
-        "row": 2,
+        "row": 1,
         "frames": 8,
         "frameMs": 90
       },

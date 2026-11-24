@@ -14,6 +14,12 @@ export interface SpriteStyle {
   backgroundPosition: string;
   backgroundRepeat: "no-repeat";
   imageRendering: "pixelated";
+  /**
+   * Horizontal flip for mirrored animations, as the standalone `scale` property.
+   * It flips around the element's own box, so move a wrapper element around, not the
+   * sprite element itself: a translated sprite would be flipped off to the other side.
+   */
+  scale: string;
 }
 
 /** Pure: the CSS for one frame. Safe to call on the server for the first paint. */
@@ -33,6 +39,7 @@ export function spriteStyle(
     backgroundPosition: `${-r.x * scale}px ${-r.y * scale}px`,
     backgroundRepeat: "no-repeat",
     imageRendering: "pixelated",
+    scale: anim.mirror ? "-1 1" : "1 1",
   };
 }
 
@@ -73,6 +80,7 @@ export function createSpritePlayer(el: HTMLElement, opts: PlayerOptions): Sprite
     el.style.height = s.height;
     el.style.backgroundSize = s.backgroundSize;
     el.style.backgroundPosition = s.backgroundPosition;
+    el.style.scale = s.scale;
   };
   el.style.backgroundImage = `url("${opts.src}")`;
   el.style.backgroundRepeat = "no-repeat";

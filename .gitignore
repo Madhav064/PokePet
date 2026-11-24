@@ -9,3 +9,6 @@ out/
 .cache/
 apps/web/public/packs/
 .DS_Store
+apps/desktop/public/packs/
+apps/desktop/dist/
+apps/desktop/src-tauri/target/
