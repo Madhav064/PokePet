@@ -1,4 +1,4 @@
-import type { EvolutionInfo } from "./evolution.ts";
+import type { EvolutionIndex, EvolutionInfo } from "./evolution.ts";
 
 const HOUR = 3_600_000;
 
@@ -43,6 +43,13 @@ export function growthOf(onScreenMs: number, info: EvolutionInfo | undefined): G
     remainingMs: Math.max(0, atMs - onScreenMs),
     ready: onScreenMs >= atMs,
   };
+}
+
+/** Label for the step into a pet on an evolution line, e.g. "After 5 h on screen". */
+export function evolutionStepLabel(index: EvolutionIndex, slug: string | undefined): string {
+  const stage = slug ? index[slug]?.stage : undefined;
+  const at = stage ? GROWTH_THRESHOLDS_MS[stage - 1] : undefined;
+  return at ? `After ${Math.round(at / HOUR)} h on screen` : "Evolves";
 }
 
 /** Picks what a pet evolves into. Branching lines (e.g. Eevee) are a surprise. */

@@ -1,0 +1,60 @@
+# Builds the Windows installer and publishes it as a GitHub release.
+# Run it by pushing a version tag, e.g.:  git tag v0.1.0 && git push origin v0.1.0
+# The installer is always uploaded as "PokePet-Setup.exe", so the website can link to
+#   https://github.com/Madhav064/PokePet/releases/latest/download/PokePet-Setup.exe
+name: Release desktop app
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: apps/desktop/src-tauri
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check the app version matches the tag
+        shell: bash
+        run: |
+          version=$(node -p "require('./apps/desktop/src-tauri/tauri.conf.json').version")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME doesn't match app version $version in tauri.conf.json"; exit 1
+          fi
+
+      - name: Build installer
+        run: pnpm --filter @pokepet/desktop app:build
+
+      - name: Publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          exe=$(ls apps/desktop/src-tauri/target/release/bundle/nsis/*-setup.exe | head -1)
+          cp "$exe" PokePet-Setup.exe
+          notes="Download **PokePet-Setup.exe**, open it, and your pet appears on screen.
+
+          Windows may say \"Windows protected your PC\" because the installer isn't signed yet: click **More info**, then **Run anyway**."
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" PokePet-Setup.exe --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" PokePet-Setup.exe --title "PokePet $GITHUB_REF_NAME" --notes "$notes"
+          fi

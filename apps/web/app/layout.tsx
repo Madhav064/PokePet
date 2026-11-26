@@ -6,6 +6,7 @@ import "@fontsource/pixelify-sans/700.css";
 import "./globals.css";
 import { routes, site } from "@/lib/site";
 import { getManifest } from "@/lib/packs";
+import { PendingBanner } from "@/features/download/PendingBanner";
 
 export const metadata: Metadata = {
   title: { default: `${site.name} · ${site.tagline}`, template: `%s · ${site.name}` },
@@ -36,9 +37,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <nav className="ml-auto flex items-center gap-5 text-sm text-muted">
               <Link href={routes.home} className="hover:text-ink">Dex</Link>
               <Link href={routes.about} className="hover:text-ink">About</Link>
+              <Link href={routes.download} className="h-8 px-3 rounded-lg bg-ink text-surface font-semibold inline-flex items-center hover:opacity-90">
+                Download
+              </Link>
             </nav>
           </div>
         </header>
+        <PendingBanner />
         <main id="main" className="flex-1">{children}</main>
         <footer className="border-t border-line mt-16">
           <div className="container-pp py-8 text-xs text-muted flex flex-col gap-2">

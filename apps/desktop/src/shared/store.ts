@@ -45,6 +45,10 @@ interface Backend {
   subscribe(fn: Listener): () => void;
   onEvolved(fn: (e: Evolved) => void): () => void;
   openManager(): Promise<void>;
+  /** Pets asked for by pokepet://adopt links (e.g. the website's Adopt button), oldest first. */
+  takePendingAdoptions(): Promise<string[]>;
+  /** Called when a new adopt link arrives; then call takePendingAdoptions. */
+  onAdoptLink(fn: () => void): () => void;
 }
 
 const on = <T,>(event: string, fn: (payload: T) => void) => {
@@ -52,8 +56,20 @@ const on = <T,>(event: string, fn: (payload: T) => void) => {
   return () => void off.then((stop) => stop());
 };
 
+/** Retries for a few seconds, in case the native side is still starting up. */
+async function getWithRetry(): Promise<Collection> {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await invoke<Collection>("get_collection");
+    } catch (e) {
+      if (attempt >= 25) throw e;
+      await new Promise((r) => setTimeout(r, 200));
+    }
+  }
+}
+
 const nativeBackend: Backend = {
-  get: () => invoke<Collection>("get_collection"),
+  get: getWithRetry,
   adopt: (species, line) => invoke<OwnedPet>("adopt", { species, line }),
   evolve: (id, into) => invoke("evolve", { id, into }),
   setActive: (id) => invoke("set_active", { id }),
@@ -61,6 +77,8 @@ const nativeBackend: Backend = {
   subscribe: (fn) => on<Collection>("collection-changed", fn),
   onEvolved: (fn) => on<Evolved>("pet-evolved", fn),
   openManager: () => invoke("open_manager"),
+  takePendingAdoptions: () => invoke<string[]>("take_pending_adoptions"),
+  onAdoptLink: (fn) => on<null>("adopt-link", fn),
 };
 
 /** Browser-only stand-in so the UI can be developed with plain `vite`. */
@@ -113,6 +131,16 @@ function localBackend(): Backend {
       return () => listeners.delete(fn);
     },
     openManager: async () => void window.open("/manager.html", "_blank"),
+    // In the browser, /manager.html?adopt=bulbasaur stands in for a pokepet://adopt link.
+    async takePendingAdoptions() {
+      const url = new URL(location.href);
+      const slug = url.searchParams.get("adopt");
+      if (!slug) return [];
+      url.searchParams.delete("adopt");
+      history.replaceState(null, "", url);
+      return [slug];
+    },
+    onAdoptLink: () => () => {},
   };
 }
 

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { store } from "../shared/store.ts";
+import { ownedFromLine, store } from "../shared/store.ts";
 import { Browse } from "./Browse.tsx";
 import { loadPack, useCollection, type PackData } from "./data.ts";
 import { MyPets } from "./MyPets.tsx";
@@ -63,6 +63,28 @@ export function App() {
     },
     [data, run, go],
   );
+
+  // "Adopt" on the website opens pokepet://adopt/<pet>: adopt it in one go when we can,
+  // otherwise show the right page (your existing pet, or what to adopt instead).
+  useEffect(() => {
+    if (!data) return;
+    const handle = async (slug: string) => {
+      const evo = data.evolution[slug];
+      const name = data.bySlug.get(slug)?.name ?? slug;
+      if (!evo) return setToast("That pet isn't in PokePet.");
+      const owned = ownedFromLine(await store.get(), evo.base);
+      if (owned) {
+        go({ tab: "pets", petId: owned.id });
+        const ownedName = data.bySlug.get(owned.species)?.name ?? owned.species;
+        return setToast(owned.species === slug ? `${name} is already yours` : `You already have this line: your ${ownedName}`);
+      }
+      if (!evo.adoptable) return go({ tab: "browse", pet: slug });
+      adopt(slug);
+    };
+    const drain = () => void store.takePendingAdoptions().then((slugs) => slugs.forEach((s) => void handle(s)));
+    drain();
+    return store.onAdoptLink(drain);
+  }, [data, adopt, go]);
 
   if (error) return <p className="p-10 text-muted">{error}</p>;
   if (!data || !collection) return <p className="p-10 text-muted">Loading…</p>;

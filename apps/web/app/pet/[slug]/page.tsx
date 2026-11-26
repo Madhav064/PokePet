@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { evolutionStepLabel, GROWTH_THRESHOLDS_MS } from "@pokepet/core";
 import { ElementBadge, EvolutionTree, StatBars } from "@pokepet/ui";
-import { getManifest, getPet, listPets } from "@/lib/packs";
+import { getEvolutionIndex, getManifest, getPet, listPets } from "@/lib/packs";
+import { AdoptButton } from "@/features/pet/AdoptButton";
 import { routes, site, spriteUrl } from "@/lib/site";
 import { AppLink } from "@/lib/AppLink";
 import { SpriteViewer } from "@/features/pet/SpriteViewer";
@@ -36,12 +38,22 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 export default async function PetPage({ params }: Props) {
   const { slug } = await params;
-  const [pack, pets, pet] = await Promise.all([
+  const [pack, pets, pet, evolution] = await Promise.all([
     getManifest(site.defaultPack),
     listPets(site.defaultPack),
     getPet(site.defaultPack, slug),
+    getEvolutionIndex(site.defaultPack),
   ]);
   if (!pet) notFound();
+
+  // Adoption follows the app's rules: only first forms, and pets grow by time on screen.
+  const evo = evolution[pet.slug];
+  const nameOf = (s: string) => pets.find((p) => p.slug === s)?.name ?? s;
+  const baseSummary = evo && !evo.adoptable && evo.base !== pet.slug ? pets.find((p) => p.slug === evo.base) : undefined;
+  const firstStepHours = Math.round(GROWTH_THRESHOLDS_MS[0] / 3_600_000);
+  const growthNote = evo?.next.length
+    ? `After ${firstStepHours} h on your screen it grows into ${evo.next.length > 3 ? `one of ${evo.next.length} forms` : evo.next.map(nameOf).join(" or ")}.`
+    : "Free, and it lives on your desktop.";
 
   const elements = new Map(pack.elements.map((e) => [e.id, e]));
   const i = pets.findIndex((p) => p.slug === slug);
@@ -108,12 +120,13 @@ export default async function PetPage({ params }: Props) {
             </div>
           )}
 
-          <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button type="button" disabled className="h-11 px-5 rounded-xl bg-accent text-white font-semibold opacity-60 cursor-not-allowed">
-              Adopt as desktop pet
-            </button>
-            <span className="text-sm text-muted">Coming soon</span>
-          </div>
+          <AdoptButton
+            slug={pet.slug}
+            name={pet.name}
+            adoptable={evo?.adoptable ?? false}
+            base={baseSummary && { slug: baseSummary.slug, name: baseSummary.name }}
+            growthNote={growthNote}
+          />
         </div>
       </div>
 
@@ -159,6 +172,7 @@ export default async function PetPage({ params }: Props) {
             hrefFor={routes.pet}
             Link={AppLink}
             numberLabel={pack.numberLabel}
+            conditionText={(node) => evolutionStepLabel(evolution, node.slug)}
           />
         ) : (
           <p className="text-muted text-sm">{pet.name} does not evolve.</p>

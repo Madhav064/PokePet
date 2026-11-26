@@ -99,7 +99,12 @@ async function start() {
     clearTimeout(sayTimer);
     sayTimer = window.setTimeout(() => document.body.classList.remove("saying"), 6000);
   });
-  show(await store.get());
+  // Never let a failed first load stop the pet: the next collection update will draw it.
+  try {
+    show(await store.get());
+  } catch (e) {
+    console.error("PokePet: couldn't load your pets yet", e);
+  }
 
   // ---- picking a spot (after a right click) ----------------------------------
   let ignoreNextContextMenu = false;

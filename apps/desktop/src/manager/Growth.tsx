@@ -1,17 +1,11 @@
-import { GROWTH_THRESHOLDS_MS, growthOf, type EvolutionNode } from "@pokepet/core";
+import { evolutionStepLabel, growthOf, type EvolutionNode } from "@pokepet/core";
 import type { OwnedPet } from "../shared/store.ts";
 import { formatDuration, type PackData } from "./data.ts";
 
 const hours = (ms: number) => Math.round(ms / 3_600_000);
 
 /** Label for the arrow into a stage on the evolution tree, e.g. "After 5 h on screen". */
-export function growthLabel(data: PackData) {
-  return (node: EvolutionNode) => {
-    const stage = node.slug ? data.evolution[node.slug]?.stage : undefined;
-    const at = stage ? GROWTH_THRESHOLDS_MS[stage - 1] : undefined;
-    return at ? `After ${hours(at)} h on screen` : "Evolves";
-  };
-}
+export const growthLabel = (data: PackData) => (node: EvolutionNode) => evolutionStepLabel(data.evolution, node.slug);
 
 /**
  * Progress towards a pet's next evolution: a bar, what it becomes and how much
