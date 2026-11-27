@@ -130,7 +130,8 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
+      # GitHub's Ubuntu runners come with the Android SDK and NDK (ANDROID_HOME and
+      # ANDROID_NDK_LATEST_HOME); Gradle downloads any SDK platform that's missing.
 
       - uses: dtolnay/rust-toolchain@stable
         with:
