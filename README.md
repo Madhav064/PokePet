@@ -9,7 +9,8 @@ Phase 1 is the website: a fast, static dex of 175 pixel pets with stats, abiliti
 ```
 pokepet/
 ├── apps/
-│   └── web/                 Next.js website (deployed on Vercel)
+│   ├── web/                 Next.js website (deployed on Vercel)
+│   └── desktop/             Tauri app for Windows and Android (src-tauri/pet-android: the Android wallpaper pet)
 ├── packages/
 │   ├── core/                Pack format, atlas spec, search/filter logic. No UI, no franchise names.
 │   ├── sprite-engine/       Framework-free spritesheet player (works in web, desktop and mobile webviews)
@@ -58,10 +59,11 @@ Data comes from PokeAPI's static mirror on GitHub and is cached in `.cache/`.
 ## Roadmap
 
 1. ✅ Website: browse pets, stats, evolutions
-2. Launch on a custom domain
-3. Desktop pet app (Tauri): pets walk along your screen, follow the cursor, react to petting; starts on boot
-4. One-click "Adopt" from the website into the desktop app
-5. Mobile app
+2. ✅ Launch on a custom domain ([pokepet.tech](https://pokepet.tech))
+3. ✅ Desktop pet app (Tauri): pets walk along your screen, react to petting, evolve; starts on boot
+4. ✅ One-click "Adopt" from the website into the desktop app
+5. 🚧 Android app (same Tauri app): the pet lives on your home and lock screen as a live wallpaper,
+   and can optionally walk over your apps
 6. AI-powered pets
 7. Original character packs and monetization
 

@@ -1,0 +1,16 @@
+[package]
+name = "tauri-plugin-pet-android"
+version = "0.1.0"
+description = "PokePet's Android side: the live-wallpaper pet and the optional pet over other apps"
+edition = "2021"
+publish = false
+# Required by tauri-plugin: lets the app's build find this plugin's Android library.
+links = "tauri-plugin-pet-android"
+
+[dependencies]
+tauri = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[build-dependencies]
+tauri-plugin = { version = "2", features = ["build"] }

@@ -2,6 +2,7 @@
 //! each has spent on screen (the clock that drives evolution). Saved as JSON in the
 //! app's data folder, so it survives restarts and both windows always agree.
 
+use std::collections::HashMap;
 use std::fs;
 use std::io;
 use std::path::Path;
@@ -32,6 +33,40 @@ pub struct Collection {
     pub pets: Vec<OwnedPet>,
     /// Id of the pet on screen. At most one at a time.
     pub active: Option<String>,
+    /// Android only: how much of each pet's phone screen time (see [`PhoneTime`]) has
+    /// already been added to its `on_screen_ms`. Read by the phone side too.
+    #[serde(default, skip_serializing_if = "HashMap::is_empty")]
+    pub phone_credited_ms: HashMap<String, u64>,
+}
+
+/// What the phone's wallpaper and over-apps pet record while the app may not be running,
+/// in phone-time.json. Written only by the Kotlin side (PetState.kt), read only here.
+#[cfg_attr(not(target_os = "android"), allow(dead_code))] // only the Android app folds phone time
+#[derive(Clone, Debug, Default, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PhoneTime {
+    /// Total time each pet has been on the phone's screen, in ms. Only ever grows.
+    #[serde(default)]
+    pub screen_ms: HashMap<String, u64>,
+    /// Pets that evolved on the phone, by id.
+    #[serde(default)]
+    pub evolved: HashMap<String, PhoneEvolution>,
+}
+
+#[cfg_attr(not(target_os = "android"), allow(dead_code))] // only the Android app folds phone time
+#[derive(Clone, Debug, Deserialize)]
+pub struct PhoneEvolution {
+    pub from: String,
+    pub to: String,
+}
+
+/// What folding in the phone's records changed.
+#[cfg_attr(not(target_os = "android"), allow(dead_code))] // only the Android app folds phone time
+#[derive(Debug, Default, PartialEq)]
+pub struct PhoneFold {
+    pub changed: bool,
+    /// (pet id, from, to) for every pet that evolved.
+    pub evolved: Vec<(String, String, String)>,
 }
 
 pub fn now_ms() -> u64 {
@@ -134,7 +169,44 @@ impl Collection {
         self.pets.len() != before
     }
 
+    /// Adds what the phone recorded since last time: new screen time, and evolutions
+    /// that still fit the pet (it hasn't changed species some other way since).
+    #[cfg_attr(not(target_os = "android"), allow(dead_code))]
+    pub fn fold_phone_time(&mut self, phone: &PhoneTime) -> PhoneFold {
+        let mut out = PhoneFold::default();
+        for (id, &total) in &phone.screen_ms {
+            let Some(pet) = self.pets.iter_mut().find(|p| &p.id == id) else { continue };
+            let credited = self.phone_credited_ms.entry(id.clone()).or_insert(0);
+            // A smaller total means the phone's record was reset: start counting from it.
+            if total > *credited {
+                pet.on_screen_ms += total - *credited;
+            }
+            if total != *credited {
+                *credited = total;
+                out.changed = true;
+            }
+        }
+        for (id, step) in &phone.evolved {
+            if !valid_species(&step.to) {
+                continue;
+            }
+            let Some(pet) = self.pets.iter_mut().find(|p| &p.id == id) else { continue };
+            if pet.species == step.from && pet.species != step.to {
+                pet.species = step.to.clone();
+                out.changed = true;
+                out.evolved.push((id.clone(), step.from.clone(), step.to.clone()));
+            }
+        }
+        // Forget released pets.
+        let before = self.phone_credited_ms.len();
+        let pets = &self.pets;
+        self.phone_credited_ms.retain(|id, _| pets.iter().any(|p| &p.id == id));
+        out.changed |= self.phone_credited_ms.len() != before;
+        out
+    }
+
     /// Credits on-screen time to the active pet. Returns false if no pet is on screen.
+    #[cfg_attr(target_os = "android", allow(dead_code))] // the phone counts its own time (PhoneTime)
     pub fn add_screen_time(&mut self, ms: u64) -> bool {
         let Some(active) = self.active.as_deref() else { return false };
         match self.pets.iter_mut().find(|p| p.id == active) {
@@ -198,6 +270,55 @@ mod tests {
         assert_eq!((pet.id.as_str(), pet.species.as_str(), pet.line.as_str()), (p.id.as_str(), "umbreon", "eevee"));
         assert_eq!(pet.on_screen_ms, 5 * 3_600_000);
         assert!(c.evolve(&p.id, "umbreon").is_none(), "no-op evolve reports nothing");
+    }
+
+    fn phone(screen: &[(&str, u64)], evolved: &[(&str, &str, &str)]) -> PhoneTime {
+        PhoneTime {
+            screen_ms: screen.iter().map(|(id, ms)| (id.to_string(), *ms)).collect(),
+            evolved: evolved
+                .iter()
+                .map(|(id, from, to)| (id.to_string(), PhoneEvolution { from: from.to_string(), to: to.to_string() }))
+                .collect(),
+        }
+    }
+
+    #[test]
+    fn phone_time_is_counted_once() {
+        let mut c = Collection::default();
+        let p = c.adopt("bulbasaur", "bulbasaur").unwrap();
+        c.add_screen_time(1_000);
+        assert!(c.fold_phone_time(&phone(&[(&p.id, 5_000)], &[])).changed);
+        assert_eq!(c.pets[0].on_screen_ms, 6_000);
+        // Same record again: nothing new.
+        assert_eq!(c.fold_phone_time(&phone(&[(&p.id, 5_000)], &[])), PhoneFold::default());
+        assert_eq!(c.pets[0].on_screen_ms, 6_000);
+        // The phone counted 2 s more.
+        c.fold_phone_time(&phone(&[(&p.id, 7_000)], &[]));
+        assert_eq!(c.pets[0].on_screen_ms, 8_000);
+        // Unknown pets are ignored.
+        assert!(!c.fold_phone_time(&phone(&[("nobody", 9_000), (&p.id, 7_000)], &[])).changed);
+    }
+
+    #[test]
+    fn phone_evolutions_apply_once_and_only_if_they_still_fit() {
+        let mut c = Collection::default();
+        let p = c.adopt("bulbasaur", "bulbasaur").unwrap();
+        let fold = c.fold_phone_time(&phone(&[], &[(&p.id, "bulbasaur", "venusaur")]));
+        assert_eq!(fold.evolved, vec![(p.id.clone(), "bulbasaur".into(), "venusaur".into())]);
+        assert_eq!(c.pets[0].species, "venusaur");
+        assert!(c.fold_phone_time(&phone(&[], &[(&p.id, "bulbasaur", "venusaur")])).evolved.is_empty());
+        // Stale record from an older species: ignored.
+        assert!(c.fold_phone_time(&phone(&[], &[(&p.id, "bulbasaur", "ivysaur")])).evolved.is_empty());
+        assert_eq!(c.pets[0].species, "venusaur");
+        assert!(c.fold_phone_time(&phone(&[], &[(&p.id, "venusaur", "../evil")])).evolved.is_empty());
+    }
+
+    #[test]
+    fn desktop_saves_are_unchanged() {
+        let mut c = Collection::default();
+        c.adopt("pichu", "pichu");
+        let json = serde_json::to_string(&c).unwrap();
+        assert!(!json.contains("phoneCreditedMs"));
     }
 
     #[test]

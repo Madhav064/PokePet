@@ -16,9 +16,15 @@ tauri = { version = "2", features = ["tray-icon"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 tauri-plugin-deep-link = "2"
-tauri-plugin-autostart = "2"
 url = "2"
+
+[target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
+tauri-plugin-autostart = "2"
 tauri-plugin-single-instance = { version = "2", features = ["deep-link"] }
+
+# The pet on the phone's home and lock screens, and over other apps (see pet-android/).
+[target.'cfg(target_os = "android")'.dependencies]
+tauri-plugin-pet-android = { path = "pet-android" }
 
 [profile.release]
 codegen-units = 1

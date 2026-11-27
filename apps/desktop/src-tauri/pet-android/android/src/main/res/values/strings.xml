@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pokepet_wallpaper_name">PokePet</string>
+    <string name="pokepet_wallpaper_description">Your pet lives on your home screen and lock screen. Tap it to say hi, or tap an empty spot to call it over.</string>
+    <string name="pokepet_overlay_channel">Pet over your apps</string>
+    <string name="pokepet_overlay_notification">Your pet is walking over your apps</string>
+    <string name="pokepet_overlay_notification_text">Tap to open PokePet. You can turn this off there.</string>
+</resources>

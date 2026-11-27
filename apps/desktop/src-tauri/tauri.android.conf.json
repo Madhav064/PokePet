@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "identifier": "app.pokepet",
+  "app": {
+    "windows": [
+      {
+        "label": "manager",
+        "create": false,
+        "title": "PokePet",
+        "url": "manager.html",
+        "theme": "Dark",
+        "backgroundColor": "#0e1014"
+      }
+    ]
+  },
+  "bundle": {
+    "android": {
+      "minSdkVersion": 24
+    }
+  }
+}

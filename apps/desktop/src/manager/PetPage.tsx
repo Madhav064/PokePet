@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { GROWTH_THRESHOLDS_MS, type PetDetail } from "@pokepet/core";
 import { ElementBadge, EvolutionTree, Sprite } from "@pokepet/ui";
+import { isPhone } from "../shared/phone.ts";
 import { ownedFromLine, type Collection } from "../shared/store.ts";
 import { useOpenLink } from "./Browse.tsx";
 import { loadPet, padNumber, spriteUrl, type PackData } from "./data.ts";
@@ -77,6 +78,11 @@ export function PetPage({ data, slug, collection, onBack, onOpen, onOpenOwned, o
                     ? `After ${Math.round(GROWTH_THRESHOLDS_MS[0] / 3_600_000)} h on your screen it grows into ${evo.next.length > 3 ? `one of ${evo.next.length} forms` : evo.next.map((s) => data.bySlug.get(s)?.name ?? s).join(" or ")}.`
                     : "This pet doesn't evolve."}
                 </span>
+                {isPhone && (
+                  <span className="text-xs text-muted basis-full">
+                    On your phone, your pet lives on your wallpaper. PokePet asks before it replaces yours.
+                  </span>
+                )}
               </>
             ) : base ? (
               <>

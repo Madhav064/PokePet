@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.pokepet_desktop" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- PokePet is always dark, like pokepet.tech. -->
+        <item name="android:windowBackground">@color/pokepet_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <color name="pokepet_background">#0E1014</color>
+</resources>
