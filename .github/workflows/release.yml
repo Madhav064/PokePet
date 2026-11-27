@@ -1,0 +1,167 @@
+# Builds the Windows installer and the Android app and publishes them as a GitHub release.
+# Run it by pushing a version tag, e.g.:  git tag v0.1.0 && git push origin v0.1.0
+# The files are always uploaded under the same names, so the website can link to
+#   https://github.com/Madhav064/PokePet/releases/latest/download/PokePet-Setup.exe
+#   https://github.com/Madhav064/PokePet/releases/latest/download/PokePet.apk
+#
+# The Android app must always be signed with the same key, or phones refuse to install
+# updates over the old version. The key lives in three repository secrets:
+#   ANDROID_KEYSTORE_BASE64    the keystore file, base64-encoded
+#   ANDROID_KEYSTORE_PASSWORD  its password
+#   ANDROID_KEY_ALIAS          the key's alias (e.g. "pokepet")
+#
+# The Windows app updates itself (Tauri's updater). Each installer is signed with the updater
+# key, whose public half is in tauri.conf.json; the private half lives in two secrets:
+#   TAURI_SIGNING_PRIVATE_KEY           the key file's contents
+#   TAURI_SIGNING_PRIVATE_KEY_PASSWORD  its password
+# The release also gets latest.json, which installed apps read to find the new version.
+name: Release apps
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: apps/desktop/src-tauri
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check the app version matches the tag
+        shell: bash
+        run: |
+          version=$(node -p "require('./apps/desktop/src-tauri/tauri.conf.json').version")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME doesn't match app version $version in tauri.conf.json"; exit 1
+          fi
+
+      - name: Check the updater key is set up
+        shell: bash
+        env:
+          KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: |
+          if [ -z "$KEY" ] || [ -z "$PASSWORD" ]; then
+            echo "::error::Add the TAURI_SIGNING_PRIVATE_KEY and TAURI_SIGNING_PRIVATE_KEY_PASSWORD secrets first (see the top of this file)."
+            exit 1
+          fi
+          if [ -z "$(node -p "require('./apps/desktop/src-tauri/tauri.conf.json').plugins.updater.pubkey")" ]; then
+            echo "::error::Put the updater's public key in plugins.updater.pubkey in tauri.conf.json."
+            exit 1
+          fi
+
+      # Also writes the installer's signature (a .sig file next to it) for the updater.
+      - name: Build installer
+        shell: bash
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: pnpm --filter @pokepet/desktop tauri build --config '{"bundle":{"createUpdaterArtifacts":true}}'
+
+      - name: Publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          exe=$(ls apps/desktop/src-tauri/target/release/bundle/nsis/*-setup.exe | head -1)
+          cp "$exe" PokePet-Setup.exe
+          # What installed apps read to update themselves: the version, the installer and its signature.
+          node -e '
+            const fs = require("fs");
+            const tag = process.env.GITHUB_REF_NAME;
+            fs.writeFileSync("latest.json", JSON.stringify({
+              version: tag.replace(/^v/, ""),
+              pub_date: new Date().toISOString(),
+              platforms: {
+                "windows-x86_64": {
+                  signature: fs.readFileSync(process.argv[1], "utf8").trim(),
+                  url: `https://github.com/${process.env.GITHUB_REPOSITORY}/releases/download/${tag}/PokePet-Setup.exe`,
+                },
+              },
+            }, null, 2));
+          ' "$exe.sig"
+          bash .github/publish-release.sh PokePet-Setup.exe latest.json
+
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the signing key is set up
+        env:
+          KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ -z "$KEYSTORE" ] || [ -z "$PASSWORD" ] || [ -z "$ALIAS" ]; then
+            echo "::error::Add the ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD and ANDROID_KEY_ALIAS secrets first (see the top of this file)."
+            exit 1
+          fi
+          echo "$KEYSTORE" | base64 --decode > "$RUNNER_TEMP/pokepet.jks"
+          echo "POKEPET_KEYSTORE_FILE=$RUNNER_TEMP/pokepet.jks" >> "$GITHUB_ENV"
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: android-actions/setup-android@v3
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: apps/desktop/src-tauri
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check the app version matches the tag
+        run: |
+          version=$(node -p "require('./apps/desktop/src-tauri/tauri.conf.json').version")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME doesn't match app version $version in tauri.conf.json"; exit 1
+          fi
+
+      # 64-bit ARM only: nearly every phone from the last several years. (Adding armv7 for old
+      # 32-bit phones would grow the download from about 15 MB to about 24 MB.)
+      - name: Build APK
+        env:
+          NDK_HOME: ${{ env.ANDROID_NDK_LATEST_HOME }}
+          POKEPET_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          POKEPET_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: pnpm --filter @pokepet/desktop tauri android build --apk --target aarch64 --ci
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          apk=$(find apps/desktop/src-tauri/gen/android/app/build/outputs/apk -name '*-release.apk' | head -1)
+          cp "$apk" PokePet.apk
+          bash .github/publish-release.sh PokePet.apk
