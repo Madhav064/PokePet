@@ -13,7 +13,7 @@
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --pp-bg: #0e1014;
     --pp-surface: #16191f;
     --pp-ink: #eceef2;
@@ -23,6 +23,17 @@
     --pp-accent: #ff5e4f;
     color-scheme: dark;
   }
+}
+/* A page can pin a theme with <html data-theme="dark"> (the PokePet app is always dark). */
+:root[data-theme="dark"] {
+  --pp-bg: #0e1014;
+  --pp-surface: #16191f;
+  --pp-ink: #eceef2;
+  --pp-muted: #8d95a6;
+  --pp-line: #262a33;
+  --pp-tile: #20242c;
+  --pp-accent: #ff5e4f;
+  color-scheme: dark;
 }
 
 @theme inline {

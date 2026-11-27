@@ -1,8 +1,9 @@
 "use client";
-import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { filterPets, type PackManifest, type PetSummary, type SortKey } from "@pokepet/core";
 import type { LinkComponent } from "./link.ts";
 import { PetCard } from "./PetCard.tsx";
+import { TypeFilter } from "./TypeFilter.tsx";
 
 interface State {
   q: string;
@@ -125,21 +126,7 @@ export function DexBrowser({ pack, pets, spriteUrl, hrefFor, Link, syncUrl = fal
             </select>
           </label>
           {toolbarExtra}
-        </div>
-        <div className="flex gap-2 overflow-x-auto pb-1 -mb-1" role="group" aria-label="Type">
-          {usedElements.map((el) => (
-            <button
-              key={el.id}
-              type="button"
-              className="chip"
-              aria-pressed={s.elements.includes(el.id)}
-              style={{ "--el": el.color } as CSSProperties}
-              onClick={() => setS({ ...s, elements: toggle(s.elements, el.id) })}
-            >
-              <span className="dot" aria-hidden="true" />
-              {el.label}
-            </button>
-          ))}
+          <TypeFilter elements={usedElements} selected={s.elements} onChange={(elements) => setS({ ...s, elements })} />
         </div>
       </div>
 
