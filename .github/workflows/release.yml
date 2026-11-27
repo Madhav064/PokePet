@@ -153,10 +153,12 @@ jobs:
       # 32-bit phones would grow the download from about 15 MB to about 24 MB.)
       - name: Build APK
         env:
-          NDK_HOME: ${{ env.ANDROID_NDK_LATEST_HOME }}
           POKEPET_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           POKEPET_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-        run: pnpm --filter @pokepet/desktop tauri android build --apk --target aarch64 --ci
+        run: |
+          # The runner comes with an Android NDK; Tauri finds it through NDK_HOME.
+          export NDK_HOME="$ANDROID_NDK_LATEST_HOME"
+          pnpm --filter @pokepet/desktop tauri android build --apk --target aarch64 --ci
 
       - name: Publish release
         env:
