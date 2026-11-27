@@ -8,6 +8,14 @@ export const site = {
   defaultPack: "pokemon",
 } as const;
 
+/** Who builds PokePet, shown in the footer so visitors can get in touch. */
+export const developer = {
+  email: "madhav70sharma@gmail.com",
+  github: "https://github.com/Madhav064/PokePet",
+  /** Leave empty to hide the LinkedIn button. */
+  linkedin: "https://www.linkedin.com/in/madhav-raj-sharma/",
+};
+
 export const routes = {
   home: "/",
   pet: (slug: string) => `/pet/${slug}`,

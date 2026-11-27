@@ -7,6 +7,7 @@ import "./globals.css";
 import { routes, site } from "@/lib/site";
 import { getManifest } from "@/lib/packs";
 import { PendingBanner } from "@/features/download/PendingBanner";
+import { ContactLinks } from "@/features/footer/ContactLinks";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -49,11 +50,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <PendingBanner />
         <main id="main" className="flex-1">{children}</main>
         <footer className="border-t border-line mt-16">
-          <div className="container-pp py-8 text-xs text-muted flex flex-col gap-2">
-            <p>
-              {site.name} is a free, non-commercial fan project. It is not affiliated with or endorsed by Nintendo, Game Freak, Creatures Inc. or The Pokémon Company.
-            </p>
-            <p>{pack.attribution}</p>
+          <div className="container-pp py-8 flex flex-col gap-6">
+            <ContactLinks />
+            <div className="text-xs text-muted flex flex-col gap-2 pt-6 border-t border-line">
+              <p>
+                {site.name} is a free, non-commercial fan project. It is not affiliated with or endorsed by Nintendo, Game Freak, Creatures Inc. or The Pokémon Company.
+              </p>
+              <p>{pack.attribution}</p>
+            </div>
           </div>
         </footer>
       </body>
