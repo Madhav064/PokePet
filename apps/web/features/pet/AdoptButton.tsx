@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { adoptLink, downloadUrlFor, routes } from "@/lib/site";
+import { adoptLink, androidDownloadUrl, downloadUrlFor, routes } from "@/lib/site";
 import { clearPending, savePending } from "@/lib/pending";
+import { usePlatform } from "@/lib/platform";
 
 type Status = "idle" | "opening" | "opened" | "missing";
 
@@ -23,13 +24,12 @@ interface Props {
  */
 export function AdoptButton({ slug, name, adoptable, base, growthNote }: Props) {
   const [status, setStatus] = useState<Status>("idle");
-  const [windows, setWindows] = useState(true);
+  const platform = usePlatform();
+  const supported = platform !== "other";
+  const android = platform === "android";
   const timer = useRef<number | undefined>(undefined);
 
-  useEffect(() => {
-    setWindows(/Windows/i.test(navigator.userAgent));
-    return () => window.clearTimeout(timer.current);
-  }, []);
+  useEffect(() => () => window.clearTimeout(timer.current), []);
 
   if (!adoptable && base) {
     return (
@@ -65,13 +65,13 @@ export function AdoptButton({ slug, name, adoptable, base, growthNote }: Props) 
     }, 2200);
   };
 
-  // The download carries this pet, so the app adopts it on first launch; we also remember
-  // it here in case the installer can't pass it on.
-  const download = {
-    href: downloadUrlFor(slug),
-    referrerPolicy: "unsafe-url" as const,
-    onClick: () => savePending(slug, name),
-  };
+  // The Windows download carries this pet, so the app adopts it on first launch. We also
+  // remember it here, for when the installer can't pass it on and for Android, where the
+  // site offers to finish adopting once the app is installed.
+  const download = android
+    ? { href: androidDownloadUrl, onClick: () => savePending(slug, name) }
+    : { href: downloadUrlFor(slug), referrerPolicy: "unsafe-url" as const, onClick: () => savePending(slug, name) };
+  const downloadLabel = android ? "Download for Android" : "Download for Windows";
 
   return (
     <div className="flex flex-col gap-3 pt-2">
@@ -79,19 +79,19 @@ export function AdoptButton({ slug, name, adoptable, base, growthNote }: Props) 
         <button
           type="button"
           onClick={adopt}
-          disabled={!windows || status === "opening"}
+          disabled={!supported || status === "opening"}
           className="h-11 px-5 rounded-xl bg-accent text-white font-semibold hover:brightness-95 disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {status === "opening" ? "Opening PokePet…" : `Adopt ${name}`}
         </button>
         <span className="text-sm text-muted">
-          {!windows ? "The PokePet app is Windows-only for now." : growthNote}
+          {!supported ? "The PokePet app is for Windows and Android for now." : growthNote}
         </span>
       </div>
 
       {status === "opened" && (
         <p className="text-sm" role="status">
-          Check your desktop: {name} should be there. Didn&apos;t work?{" "}
+          {android ? `PokePet should have opened with ${name}.` : `Check your desktop: ${name} should be there.`} Didn&apos;t work?{" "}
           <a {...download} className="text-accent underline underline-offset-4">Get the app</a>.
         </p>
       )}
@@ -100,13 +100,15 @@ export function AdoptButton({ slug, name, adoptable, base, growthNote }: Props) 
           <div className="flex flex-col gap-1">
             <span className="font-semibold">Get PokePet first</span>
             <span className="text-sm text-muted">
-              It looks like the app isn&apos;t installed yet. It&apos;s free and takes a minute, and {name} will be waiting on your screen
-              when PokePet opens.
+              It looks like the app isn&apos;t installed yet. It&apos;s free and takes a minute
+              {android
+                ? `. Once it's installed, come back here to finish adopting ${name}.`
+                : `, and ${name} will be waiting on your screen when PokePet opens.`}
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <a {...download} className="h-10 px-4 rounded-lg bg-ink text-surface font-semibold inline-flex items-center">
-              Download for Windows
+              {downloadLabel}
             </a>
             <Link href={`${routes.download}?pet=${slug}`} className="text-sm text-muted hover:text-ink underline underline-offset-4">
               How it works
@@ -114,7 +116,7 @@ export function AdoptButton({ slug, name, adoptable, base, growthNote }: Props) 
           </div>
         </div>
       )}
-      {status === "idle" && windows && (
+      {status === "idle" && supported && (
         <span className="text-xs text-muted">
           Needs the free PokePet app.{" "}
           <Link href={`${routes.download}?pet=${slug}`} className="underline underline-offset-4 hover:text-ink">Download it here</Link>.

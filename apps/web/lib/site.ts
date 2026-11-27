@@ -4,7 +4,7 @@ export const site = {
   /** Public address, used for link previews and canonical URLs. */
   url: "https://pokepet.tech",
   tagline: "Pixel pets for your screen",
-  description: "Animated pixel pets that live on your desktop and evolve the longer they stay. Free for Windows.",
+  description: "Animated pixel pets that live on your desktop and evolve the longer they stay. Free for Windows and Android.",
   defaultPack: "pokemon",
 } as const;
 
@@ -26,10 +26,11 @@ export const routes = {
 export const spriteUrl = (packId: string, slug: string) => `/packs/${packId}/pets/${slug}/spritesheet.webp`;
 
 /**
- * The Windows installer. The release workflow (.github/workflows/release-desktop.yml)
- * always uploads it under this name, so this link points at the newest version.
+ * The Windows installer and the Android app. The release workflow (.github/workflows/release.yml)
+ * always uploads them under these names, so these links point at the newest version.
  */
 export const downloadUrl = "https://github.com/Madhav064/PokePet/releases/latest/download/PokePet-Setup.exe";
+export const androidDownloadUrl = "https://github.com/Madhav064/PokePet/releases/latest/download/PokePet.apk";
 
 /**
  * Download link that remembers the pet the visitor picked. Browsers record where a
