@@ -1,6 +1,8 @@
 /** Brand and routing config in one place, so renaming the product is a one-file change. */
 export const site = {
   name: "PokePet",
+  /** Public address, used for link previews and canonical URLs. */
+  url: "https://pokepet.tech",
   tagline: "Pixel pets for your screen",
   description: "Animated pixel pets that live on your desktop and evolve the longer they stay. Free for Windows.",
   defaultPack: "pokemon",

@@ -9,8 +9,11 @@ import { getManifest } from "@/lib/packs";
 import { PendingBanner } from "@/features/download/PendingBanner";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: { default: `${site.name} · ${site.tagline}`, template: `%s · ${site.name}` },
   description: site.description,
+  alternates: { canonical: "./" },
+  openGraph: { siteName: site.name, url: "./", type: "website" },
 };
 
 export const viewport: Viewport = {

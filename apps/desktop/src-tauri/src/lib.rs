@@ -473,15 +473,15 @@ mod tests {
 
     #[test]
     fn finds_the_pet_in_a_download_note() {
-        let from_pet_page = "[ZoneTransfer]\r\nZoneId=3\r\nReferrerUrl=https://poke-pet-murex.vercel.app/pet/bulbasaur\r\nHostUrl=https://objects.githubusercontent.com/x?sig=abc==\r\n";
+        let from_pet_page = "[ZoneTransfer]\r\nZoneId=3\r\nReferrerUrl=https://pokepet.tech/pet/bulbasaur\r\nHostUrl=https://objects.githubusercontent.com/x?sig=abc==\r\n";
         assert_eq!(pet_from_zone_identifier(from_pet_page).as_deref(), Some("bulbasaur"));
-        let from_param = "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://poke-pet-murex.vercel.app/\nHostUrl=https://github.com/Madhav064/PokePet/releases/latest/download/PokePet-Setup.exe?pet=mr-mime\n";
+        let from_param = "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://pokepet.tech/\nHostUrl=https://github.com/Madhav064/PokePet/releases/latest/download/PokePet-Setup.exe?pet=mr-mime\n";
         assert_eq!(pet_from_zone_identifier(from_param).as_deref(), Some("mr-mime"));
     }
 
     #[test]
     fn no_pet_when_the_note_has_none() {
-        assert_eq!(pet_from_zone_identifier("[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://poke-pet-murex.vercel.app/download\n"), None);
+        assert_eq!(pet_from_zone_identifier("[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://pokepet.tech/download\n"), None);
         assert_eq!(pet_from_zone_identifier("[ZoneTransfer]\nZoneId=3\n"), None);
         assert_eq!(pet_from_zone_identifier("ReferrerUrl=https://x.test/pet/..%2Fevil"), None);
     }
