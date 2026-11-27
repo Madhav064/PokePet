@@ -6,6 +6,8 @@ import { loadPack, useCollection, type PackData } from "./data.ts";
 import { MyPets } from "./MyPets.tsx";
 import { OwnedPetPage } from "./OwnedPetPage.tsx";
 import { PetPage } from "./PetPage.tsx";
+import { UpdateBanner } from "./UpdateBanner.tsx";
+import { useUpdate } from "../shared/updates.ts";
 import { petHasAHome, PhoneSettings, PickUpDialog, usePhoneStatus, WallpaperBanner, WallpaperDialog } from "./PhoneSettings.tsx";
 
 /** Remembers that "Pick up your pet?" was asked, so it's only asked once. */
@@ -20,6 +22,7 @@ export function App() {
   const [view, setView] = useState<View>({ tab: "pets" });
   const [toast, setToast] = useState<string | null>(null);
   const [phoneStatus, setPhoneStatus] = usePhoneStatus();
+  const update = useUpdate();
   /** The "this replaces your wallpaper" question, open (with the new pet's name after adopting). */
   const [askWallpaper, setAskWallpaper] = useState<{ petName?: string } | null>(null);
   /** "Pick up your pet?", asked once after the wallpaper is set. */
@@ -163,6 +166,7 @@ export function App() {
       </header>
 
       <main className="container-pp flex-1 pt-8 pb-16">
+        {update && <UpdateBanner update={update} onError={setToast} />}
         {needsHome && view.tab !== "phone" && <WallpaperBanner onSet={askToSetWallpaper} />}
         {view.tab === "phone" ? (
           <PhoneSettings status={phoneStatus} onSetWallpaper={askToSetWallpaper} onChange={setPhoneStatus} onToast={setToast} />

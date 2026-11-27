@@ -1,0 +1,8 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "desktop",
+  "description": "Updating PokePet from the PokePet window (Windows only; Android updates through its installer)",
+  "platforms": ["windows", "macOS", "linux"],
+  "windows": ["manager"],
+  "permissions": ["updater:default", "process:allow-restart"]
+}

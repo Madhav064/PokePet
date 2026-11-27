@@ -8,9 +8,23 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
+    <!-- Installing a PokePet update the user downloaded from inside the app. -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
     <uses-feature android:name="android.software.live_wallpaper" android:required="false" />
 
     <application>
+        <!-- Hands a downloaded update to Android's installer. -->
+        <provider
+            android:name=".UpdateFileProvider"
+            android:authorities="${applicationId}.pokepet.updates"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/pokepet_update_paths" />
+        </provider>
+
         <!-- The pet on the home screen and lock screen. -->
         <service
             android:name=".PetWallpaperService"

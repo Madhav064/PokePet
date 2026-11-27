@@ -30,6 +30,11 @@ class ConfigureArgs {
 }
 
 @InvokeArg
+class UpdateArgs {
+    lateinit var url: String
+}
+
+@InvokeArg
 class OverAppsArgs {
     var on: Boolean = false
 }
@@ -128,6 +133,49 @@ class PetPlugin(private val activity: Activity) : Plugin(activity) {
         if (!Settings.canDrawOverlays(ctx)) Prefs.of(ctx).edit().putBoolean(Prefs.OVER_APPS, false).apply()
         OverlayService.sync(ctx)
         invoke.resolve(currentStatus())
+    }
+
+    /** The download link of the update being installed, while Android asks for permission. */
+    private var pendingUpdate: String? = null
+
+    /**
+     * Downloads a new PokePet APK and opens Android's install screen. The first time, Android
+     * asks the user to allow PokePet to install apps; we carry on when they come back.
+     */
+    @Command
+    fun installUpdate(invoke: Invoke) {
+        val url = invoke.parseArgs(UpdateArgs::class.java).url
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !ctx.packageManager.canRequestPackageInstalls()) {
+            pendingUpdate = url
+            val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:${ctx.packageName}"))
+            startActivityForResult(invoke, intent, "afterInstallPermission")
+            return
+        }
+        downloadAndInstall(invoke, url)
+    }
+
+    @ActivityCallback
+    fun afterInstallPermission(invoke: Invoke, result: ActivityResult) {
+        val url = pendingUpdate
+        pendingUpdate = null
+        if (url == null || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !ctx.packageManager.canRequestPackageInstalls())) {
+            return invoke.reject("PokePet wasn't allowed to install the update.")
+        }
+        downloadAndInstall(invoke, url)
+    }
+
+    private fun downloadAndInstall(invoke: Invoke, url: String) {
+        Thread {
+            try {
+                val apk = Updates.download(ctx, url)
+                activity.runOnUiThread {
+                    Updates.install(activity, apk)
+                    invoke.resolve()
+                }
+            } catch (e: Exception) {
+                invoke.reject("Couldn't download the update. Check your connection and try again.")
+            }
+        }.start()
     }
 
     /** Lets the user pick a photo to show behind the pet. No storage permission needed. */

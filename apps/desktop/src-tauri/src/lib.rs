@@ -130,6 +130,8 @@ pub fn run() {
         .plugin(tauri_plugin_single_instance::init(|app, _argv, _cwd| desktop::show_manager(app)))
         .plugin(tauri_plugin_deep_link::init())
         .plugin(tauri_plugin_autostart::init(tauri_plugin_autostart::MacosLauncher::LaunchAgent, None))
+        .plugin(tauri_plugin_updater::Builder::new().build())
+        .plugin(tauri_plugin_process::init())
         .manage(desktop::PetHitbox::default())
         .manage(desktop::CaptureMouse::default())
         .invoke_handler(tauri::generate_handler![
@@ -159,6 +161,7 @@ pub fn run() {
             phone::phone_set_wallpaper,
             phone::phone_set_over_apps,
             phone::phone_allow_pick_up,
+            phone::phone_install_update,
             phone::phone_pick_background,
             phone::phone_clear_background
         ]);

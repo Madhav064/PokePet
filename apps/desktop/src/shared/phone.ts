@@ -28,6 +28,8 @@ interface Phone {
   /** Shows Android's "Display over other apps" screen, so the pet can be picked up. */
   allowPickUp(): Promise<PhoneStatus>;
   pickBackground(): Promise<PhoneStatus>;
+  /** Downloads a new PokePet APK and opens Android's install screen. */
+  installUpdate(url: string): Promise<void>;
   clearBackground(): Promise<PhoneStatus>;
 }
 
@@ -44,6 +46,7 @@ const nativePhone: Phone = {
   setOverApps: (on) => invoke<PhoneStatus>("phone_set_over_apps", { on }),
   allowPickUp: () => invoke<PhoneStatus>("phone_allow_pick_up"),
   pickBackground: () => invoke<PhoneStatus>("phone_pick_background"),
+  installUpdate: (url) => invoke<void>("phone_install_update", { url }),
   clearBackground: () => invoke<PhoneStatus>("phone_clear_background"),
 };
 
@@ -58,6 +61,7 @@ function browserPhone(): Phone {
     setOverApps: (on) => later({ overApps: on, canPickUp: s.canPickUp || on }),
     allowPickUp: () => later({ canPickUp: true }),
     pickBackground: () => later({ hasBackground: true }),
+    installUpdate: async () => {},
     clearBackground: () => later({ hasBackground: false }),
   };
 }

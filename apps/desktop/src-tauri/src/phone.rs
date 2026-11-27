@@ -115,6 +115,12 @@ pub async fn phone_allow_pick_up(pet: Pet<'_>) -> Result<PhoneStatus, String> {
     pet.call("allowPickUp", json!({})).await
 }
 
+/// Downloads a new PokePet APK from the GitHub release and opens Android's install screen.
+#[tauri::command]
+pub async fn phone_install_update(pet: Pet<'_>, url: String) -> Result<(), String> {
+    pet.call::<_, serde_json::Value>("installUpdate", json!({ "url": url })).await.map(|_| ())
+}
+
 #[tauri::command]
 pub async fn phone_pick_background(pet: Pet<'_>) -> Result<PhoneStatus, String> {
     pet.call("pickBackground", json!({})).await
