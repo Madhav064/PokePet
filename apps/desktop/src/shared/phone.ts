@@ -71,11 +71,14 @@ export const phone: Phone = native ? nativePhone : browserPhone();
 /** Keeps the page clear of the status bar and navigation bar (as --safe-top / --safe-bottom). */
 export function applyInsets() {
   if (!isPhone) return;
-  const apply = () =>
+  const apply = (attempt = 0) =>
     void phone.insets().then(({ top, bottom }) => {
       document.documentElement.style.setProperty("--safe-top", `${top}px`);
       document.documentElement.style.setProperty("--safe-bottom", `${bottom}px`);
+      // On a slow first start Android may not know the bar sizes yet (a phone always has a
+      // status bar), so ask again shortly.
+      if (top === 0 && attempt < 20) setTimeout(() => apply(attempt + 1), 250);
     }, () => {});
   apply();
-  addEventListener("resize", apply);
+  addEventListener("resize", () => apply());
 }
